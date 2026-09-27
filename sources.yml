@@ -1,0 +1,28 @@
+# Blogs the weekly fetch pulls from. One entry per feed.
+# To add a blog: copy an entry, change name and url. To pause one: comment it out.
+# All active entries below were confirmed working on 2026-09-26.
+
+sources:
+  - name: Netflix TechBlog
+    url: https://netflixtechblog.com/feed
+  - name: Airbnb Tech Blog
+    url: https://airbnb.tech/feed
+  - name: Booking.com ML & DS
+    url: https://booking.ai/feed
+  - name: Lyft Engineering
+    url: https://eng.lyft.com/feed
+  - name: Pinterest Engineering
+    url: https://medium.com/feed/pinterest-engineering
+  - name: Instacart Tech
+    url: https://tech.instacart.com/feed
+  - name: Spotify Engineering
+    url: https://engineering.atspotify.com/feed/
+  - name: Shopify Engineering
+    url: https://shopify.engineering/blog.atom     # full archive, not just recent posts
+
+# Not included: vendor blogs that mostly carry product launches and case studies.
+#
+# Not included, all block or lack automated access:
+#   LinkedIn Engineering  - blocks automated access
+#   DoorDash Engineering  - 403 on careersatdoordash.com/feed/ and doordash.engineering/feed/
+#   Uber Engineering      - no RSS at /blog/engineering/rss/ (404 once a proper Accept header is sent)

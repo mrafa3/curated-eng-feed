@@ -1,0 +1,21 @@
+[
+  "https://airbnb.tech/ai-ml/beyond-the-model-engineering-ai-infra-with-scientific-judgement/",
+  "https://airbnb.tech/ai-ml/eval-driven-development-lessons-from-evaluating-genai-at-scale/",
+  "https://airbnb.tech/ai-ml/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn/",
+  "https://booking.ai/a-recap-of-the-2026-experimentation-conference-at-booking-com-f43d48698fcd",
+  "https://booking.ai/ai-agent-evaluation-82e781439d97",
+  "https://booking.ai/from-traditional-ml-to-ai-agents-how-booking-com-scales-ai-observability-with-arize-ai-625ac3996c7e",
+  "https://booking.ai/outlier-handling-at-scale-in-experimentation-a8bb140e1ab8",
+  "https://booking.ai/scaling-experimentation-quality-at-booking-com-726152ee4ef0",
+  "https://booking.ai/the-causality-gap-measuring-the-true-impact-of-voluntary-adoption-in-digital-marketplaces-ea68b5a35120",
+  "https://eng.lyft.com/from-day-1-to-production-building-lyfts-analytics-rides-intelligence-assistant-as-onboarding-5c5643c192d9",
+  "https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29",
+  "https://eng.lyft.com/predicting-rider-conversion-in-sparse-data-environments-with-bayesian-trees-07227ff92789",
+  "https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261",
+  "https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788",
+  "https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab",
+  "https://medium.com/pinterest-engineering/becoming-an-ai-team-866d6b567803",
+  "https://medium.com/pinterest-engineering/partition-finalization-in-pinterests-next-generation-db-ingestion-framework-4c7da6e4cc8f",
+  "https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8",
+  "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model"
+]

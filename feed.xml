@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Curated Engineering Reads</title>
+    <link>https://mrafa3.github.io/curated-eng-feed/</link>
+    <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Sep 2026 02:32:09 GMT</lastBuildDate>
+    <item>
+      <title>The Causality Gap: Measuring the True Impact of Voluntary Adoption in Digital Marketplaces</title>
+      <link>https://booking.ai/the-causality-gap-measuring-the-true-impact-of-voluntary-adoption-in-digital-marketplaces-ea68b5a35120</link>
+      <guid isPermaLink="true">https://booking.ai/the-causality-gap-measuring-the-true-impact-of-voluntary-adoption-in-digital-marketplaces-ea68b5a35120</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Booking.com ML &amp; DS</category>
+      <description>For opt-in features, a flat A/B topline can hide a strong product behind low adoption. Randomized encouragement plus DoubleML separates the effect on adopters (ATT) from the rollout effect (ITT), and the gap tells you whether to fix the product or the adoption funnel.
+
+Source: Booking.com ML &amp; DS</description>
+    </item>
+    <item>
+      <title>Scaling Experimentation Quality at Booking.com</title>
+      <link>https://booking.ai/scaling-experimentation-quality-at-booking-com-726152ee4ef0</link>
+      <guid isPermaLink="true">https://booking.ai/scaling-experimentation-quality-at-booking-com-726152ee4ef0</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Booking.com ML &amp; DS</category>
+      <description>A three-pillar quality metric (design, execution, decision) tracked per experiment, plus the finding that strong tool defaults beat enforcement. Useful template for how a working group measures and raises experiment quality.
+
+Source: Booking.com ML &amp; DS</description>
+    </item>
+    <item>
+      <title>Outlier Handling at Scale in Experimentation</title>
+      <link>https://booking.ai/outlier-handling-at-scale-in-experimentation-a8bb140e1ab8</link>
+      <guid isPermaLink="true">https://booking.ai/outlier-handling-at-scale-in-experimentation-a8bb140e1ab8</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Booking.com ML &amp; DS</category>
+      <description>Use A/A permutation tests to detect metrics that heavy tails are breaking, then winsorize. Includes a practical heuristic for picking the cap and a max-to-99.9th-percentile ratio as a quick warning sign.
+
+Source: Booking.com ML &amp; DS</description>
+    </item>
+    <item>
+      <title>A Recap of the 2026 Experimentation Conference at Booking.com</title>
+      <link>https://booking.ai/a-recap-of-the-2026-experimentation-conference-at-booking-com-f43d48698fcd</link>
+      <guid isPermaLink="true">https://booking.ai/a-recap-of-the-2026-experimentation-conference-at-booking-com-f43d48698fcd</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Booking.com ML &amp; DS</category>
+      <description>Two ideas worth taking: Deliveroo builds its testing standards into the tooling (locked primary metrics, mandatory guardrails), and Booking's micro-conversions cut runtime from 34 to 14 days while keeping the business metric as a guardrail.
+
+Source: Booking.com ML &amp; DS</description>
+    </item>
+    <item>
+      <title>How we knew COVID was over (and what our models had to unlearn)</title>
+      <link>https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab</link>
+      <guid isPermaLink="true">https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Airbnb Tech Blog</category>
+      <description>A decision rule for drifting forecasts: refit, respecify, or hold. Misses that stay one-sided point to a structural problem a refit can't fix. Directly applicable to running a demand forecast in production.
+
+Source: Airbnb Tech Blog</description>
+    </item>
+    <item>
+      <title>Predicting Rider Conversion in Sparse Data Environments with Bayesian Trees</title>
+      <link>https://eng.lyft.com/predicting-rider-conversion-in-sparse-data-environments-with-bayesian-trees-07227ff92789</link>
+      <guid isPermaLink="true">https://eng.lyft.com/predicting-rider-conversion-in-sparse-data-environments-with-bayesian-trees-07227ff92789</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Lyft Engineering</category>
+      <description>A hierarchy of small models where each child is pulled toward its parent's parameters when it has little data. The same pattern fits forecasting down to thin segments without overfitting.
+
+Source: Lyft Engineering</description>
+    </item>
+    <item>
+      <title>Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions</title>
+      <link>https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29</link>
+      <guid isPermaLink="true">https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Lyft Engineering</category>
+      <description>Metric definitions as YAML plus Jinja SQL, admitted only with two or more real use cases, each owned by a business team and a data team. The MCP layer on top lets AI tools answer from the same governed definitions. Maps onto the gold layer and Sigma.
+
+Source: Lyft Engineering</description>
+    </item>
+    <item>
+      <title>Modeling Device Capabilities for Analytics</title>
+      <link>https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8</link>
+      <guid isPermaLink="true">https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Netflix TechBlog</category>
+      <description>A short gold-layer pattern: a cumulative latest-state table paired with a 28-day histogram table for distribution questions.
+
+Source: Netflix TechBlog</description>
+    </item>
+    <item>
+      <title>Partition Finalization in Pinterest's Next-Generation DB Ingestion Framework</title>
+      <link>https://medium.com/pinterest-engineering/partition-finalization-in-pinterests-next-generation-db-ingestion-framework-4c7da6e4cc8f</link>
+      <guid isPermaLink="true">https://medium.com/pinterest-engineering/partition-finalization-in-pinterests-next-generation-db-ingestion-framework-4c7da6e4cc8f</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Pinterest Engineering</category>
+      <description>Answers 'when is a streaming partition complete enough to read?' with an event-time watermark stored in Iceberg table metadata. A good model for gating downstream gold jobs on streaming sources.
+
+Source: Pinterest Engineering</description>
+    </item>
+    <item>
+      <title>Eval-driven development: Lessons from evaluating GenAI at scale</title>
+      <link>https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788</link>
+      <guid isPermaLink="true">https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Airbnb Tech Blog</category>
+      <description>A practical eval playbook: read outputs first, build a 50 to 100 example golden set with bad examples, keep 3 to 5 calibrated LLM judges, and evaluate agent trajectories, not only final answers.
+
+Source: Airbnb Tech Blog</description>
+    </item>
+    <item>
+      <title>Beyond the model: Engineering AI infra with scientific judgement</title>
+      <link>https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261</link>
+      <guid isPermaLink="true">https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Airbnb Tech Blog</category>
+      <description>Argues the methodology belongs in the harness around the model, so analysis is reproducible and auditable. Close to how an agent workforce for data work should be framed.
+
+Source: Airbnb Tech Blog</description>
+    </item>
+    <item>
+      <title>From Traditional ML to AI Agents: How Booking.com Scales AI Observability With Arize AI</title>
+      <link>https://booking.ai/from-traditional-ml-to-ai-agents-how-booking-com-scales-ai-observability-with-arize-ai-625ac3996c7e</link>
+      <guid isPermaLink="true">https://booking.ai/from-traditional-ml-to-ai-agents-how-booking-com-scales-ai-observability-with-arize-ai-625ac3996c7e</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Booking.com ML &amp; DS</category>
+      <description>Two telemetry paths, OpenTelemetry traces for agents and warehouse logs for classic ML, into one observability platform. Relevant to tracing a job-failure triage agent.
+
+Source: Booking.com ML &amp; DS</description>
+    </item>
+    <item>
+      <title>AI Agent Evaluation</title>
+      <link>https://booking.ai/ai-agent-evaluation-82e781439d97</link>
+      <guid isPermaLink="true">https://booking.ai/ai-agent-evaluation-82e781439d97</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Booking.com ML &amp; DS</category>
+      <description>Black-box versus glass-box agent evaluation, with task completion scored by an LLM judge as the headline metric.
+
+Source: Booking.com ML &amp; DS</description>
+    </item>
+    <item>
+      <title>Building an agentic harness that outlasts the model</title>
+      <link>https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model</link>
+      <guid isPermaLink="true">https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Shopify Engineering</category>
+      <description>How to design agent infrastructure so it survives model upgrades rather than being rebuilt around each one.
+
+Source: Shopify Engineering</description>
+    </item>
+    <item>
+      <title>Becoming an AI Team</title>
+      <link>https://medium.com/pinterest-engineering/becoming-an-ai-team-866d6b567803</link>
+      <guid isPermaLink="true">https://medium.com/pinterest-engineering/becoming-an-ai-team-866d6b567803</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Pinterest Engineering</category>
+      <description>A manager's view of moving to an AI-first operating model: the capacity tipping point and how the manager role shifts toward strategy. Worth sharing with the team.
+
+Source: Pinterest Engineering</description>
+    </item>
+    <item>
+      <title>From Day 1 to Production: Building Lyft's Analytics &amp; Rides Intelligence Assistant</title>
+      <link>https://eng.lyft.com/from-day-1-to-production-building-lyfts-analytics-rides-intelligence-assistant-as-onboarding-5c5643c192d9</link>
+      <guid isPermaLink="true">https://eng.lyft.com/from-day-1-to-production-building-lyfts-analytics-rides-intelligence-assistant-as-onboarding-5c5643c192d9</guid>
+      <pubDate>Sun, 27 Sep 2026 02:16:39 GMT</pubDate>
+      <category>Lyft Engineering</category>
+      <description>A natural-language analytics assistant going from Streamlit prototype to production service. Skim it if the data agents need a proper front end.
+
+Source: Lyft Engineering</description>
+    </item>
+  </channel>
+</rss>

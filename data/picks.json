@@ -1,0 +1,130 @@
+[
+  {
+    "title": "The Causality Gap: Measuring the True Impact of Voluntary Adoption in Digital Marketplaces",
+    "link": "https://booking.ai/the-causality-gap-measuring-the-true-impact-of-voluntary-adoption-in-digital-marketplaces-ea68b5a35120",
+    "source": "Booking.com ML & DS",
+    "published": "2026-05-22T08:05:43+00:00",
+    "note": "For opt-in features, a flat A/B topline can hide a strong product behind low adoption. Randomized encouragement plus DoubleML separates the effect on adopters (ATT) from the rollout effect (ITT), and the gap tells you whether to fix the product or the adoption funnel.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Scaling Experimentation Quality at Booking.com",
+    "link": "https://booking.ai/scaling-experimentation-quality-at-booking-com-726152ee4ef0",
+    "source": "Booking.com ML & DS",
+    "published": "2026-03-24T11:44:21+00:00",
+    "note": "A three-pillar quality metric (design, execution, decision) tracked per experiment, plus the finding that strong tool defaults beat enforcement. Useful template for how a working group measures and raises experiment quality.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Outlier Handling at Scale in Experimentation",
+    "link": "https://booking.ai/outlier-handling-at-scale-in-experimentation-a8bb140e1ab8",
+    "source": "Booking.com ML & DS",
+    "published": "2026-07-01T13:44:26+00:00",
+    "note": "Use A/A permutation tests to detect metrics that heavy tails are breaking, then winsorize. Includes a practical heuristic for picking the cap and a max-to-99.9th-percentile ratio as a quick warning sign.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "A Recap of the 2026 Experimentation Conference at Booking.com",
+    "link": "https://booking.ai/a-recap-of-the-2026-experimentation-conference-at-booking-com-f43d48698fcd",
+    "source": "Booking.com ML & DS",
+    "published": "2026-07-16T08:18:03+00:00",
+    "note": "Two ideas worth taking: Deliveroo builds its testing standards into the tooling (locked primary metrics, mandatory guardrails), and Booking's micro-conversions cut runtime from 34 to 14 days while keeping the business metric as a guardrail.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "How we knew COVID was over (and what our models had to unlearn)",
+    "link": "https://medium.com/airbnb-engineering/how-we-knew-covid-was-over-and-what-our-models-had-to-unlearn-c606b9bdb0ab",
+    "source": "Airbnb Tech Blog",
+    "published": "2026-08-19T17:01:03+00:00",
+    "note": "A decision rule for drifting forecasts: refit, respecify, or hold. Misses that stay one-sided point to a structural problem a refit can't fix. Directly applicable to running a demand forecast in production.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Predicting Rider Conversion in Sparse Data Environments with Bayesian Trees",
+    "link": "https://eng.lyft.com/predicting-rider-conversion-in-sparse-data-environments-with-bayesian-trees-07227ff92789",
+    "source": "Lyft Engineering",
+    "published": "2026-03-30T14:43:41+00:00",
+    "note": "A hierarchy of small models where each child is pulled toward its parent's parameters when it has little data. The same pattern fits forecasting down to thin segments without overfitting.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Metric Semantic Layer: How Lyft Governs and Scales Key Data Definitions",
+    "link": "https://eng.lyft.com/metric-semantic-layer-how-lyft-governs-and-scales-key-data-definitions-56bee3643c29",
+    "source": "Lyft Engineering",
+    "published": "2026-06-10T18:42:08+00:00",
+    "note": "Metric definitions as YAML plus Jinja SQL, admitted only with two or more real use cases, each owned by a business team and a data team. The MCP layer on top lets AI tools answer from the same governed definitions. Maps onto the gold layer and Sigma.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Modeling Device Capabilities for Analytics",
+    "link": "https://netflixtechblog.com/modeling-device-capabilities-for-analytics-e7607acebde8",
+    "source": "Netflix TechBlog",
+    "published": "2026-07-31T16:01:02+00:00",
+    "note": "A short gold-layer pattern: a cumulative latest-state table paired with a 28-day histogram table for distribution questions.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Partition Finalization in Pinterest's Next-Generation DB Ingestion Framework",
+    "link": "https://medium.com/pinterest-engineering/partition-finalization-in-pinterests-next-generation-db-ingestion-framework-4c7da6e4cc8f",
+    "source": "Pinterest Engineering",
+    "published": "2026-09-25T15:01:03+00:00",
+    "note": "Answers 'when is a streaming partition complete enough to read?' with an event-time watermark stored in Iceberg table metadata. A good model for gating downstream gold jobs on streaming sources.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Eval-driven development: Lessons from evaluating GenAI at scale",
+    "link": "https://medium.com/airbnb-engineering/eval-driven-development-lessons-from-evaluating-genai-at-scale-e817e5ae5788",
+    "source": "Airbnb Tech Blog",
+    "published": "2026-07-28T17:01:03+00:00",
+    "note": "A practical eval playbook: read outputs first, build a 50 to 100 example golden set with bad examples, keep 3 to 5 calibrated LLM judges, and evaluate agent trajectories, not only final answers.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Beyond the model: Engineering AI infra with scientific judgement",
+    "link": "https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261",
+    "source": "Airbnb Tech Blog",
+    "published": "2026-09-15T17:06:18+00:00",
+    "note": "Argues the methodology belongs in the harness around the model, so analysis is reproducible and auditable. Close to how an agent workforce for data work should be framed.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "From Traditional ML to AI Agents: How Booking.com Scales AI Observability With Arize AI",
+    "link": "https://booking.ai/from-traditional-ml-to-ai-agents-how-booking-com-scales-ai-observability-with-arize-ai-625ac3996c7e",
+    "source": "Booking.com ML & DS",
+    "published": "2026-07-10T07:52:18+00:00",
+    "note": "Two telemetry paths, OpenTelemetry traces for agents and warehouse logs for classic ML, into one observability platform. Relevant to tracing a job-failure triage agent.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "AI Agent Evaluation",
+    "link": "https://booking.ai/ai-agent-evaluation-82e781439d97",
+    "source": "Booking.com ML & DS",
+    "published": "2026-01-21T13:11:23+00:00",
+    "note": "Black-box versus glass-box agent evaluation, with task completion scored by an LLM judge as the headline metric.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Building an agentic harness that outlasts the model",
+    "link": "https://shopify.engineering/building-an-agentic-harness-that-outlasts-the-model",
+    "source": "Shopify Engineering",
+    "published": "2026-07-29T00:00:00+00:00",
+    "note": "How to design agent infrastructure so it survives model upgrades rather than being rebuilt around each one.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "Becoming an AI Team",
+    "link": "https://medium.com/pinterest-engineering/becoming-an-ai-team-866d6b567803",
+    "source": "Pinterest Engineering",
+    "published": "2026-09-01T15:01:06+00:00",
+    "note": "A manager's view of moving to an AI-first operating model: the capacity tipping point and how the manager role shifts toward strategy. Worth sharing with the team.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  },
+  {
+    "title": "From Day 1 to Production: Building Lyft's Analytics & Rides Intelligence Assistant",
+    "link": "https://eng.lyft.com/from-day-1-to-production-building-lyfts-analytics-rides-intelligence-assistant-as-onboarding-5c5643c192d9",
+    "source": "Lyft Engineering",
+    "published": "2026-07-09T22:01:15+00:00",
+    "note": "A natural-language analytics assistant going from Streamlit prototype to production service. Skim it if the data agents need a proper front end.",
+    "curated_at": "2026-09-27T02:16:39.183521+00:00"
+  }
+]
