@@ -1,5 +1,45 @@
 [
   {
+    "title": "A problem well-defined is half solved: Measuring Hypothesis Quality at Booking.com",
+    "link": "https://booking.ai/a-problem-well-defined-is-half-solved-measuring-hypothesis-quality-at-booking-com-a85e845178a3",
+    "source": "Booking.com ML & DS",
+    "published": "2026-09-29T09:42:29+00:00",
+    "note": "Booking makes the hypothesis itself the quality gate: the evidence behind the idea, the user response expected, and the decision criteria all written down before launch, then scored. That is a rubric you can drop into your own experiment intake so a clear result arrives already attached to a decision instead of a debate.",
+    "curated_at": "2026-09-30T13:03:42.362073+00:00"
+  },
+  {
+    "title": "Why Spotify Is Not Using Bayesian A/B Testing",
+    "link": "https://engineering.atspotify.com/2026/9/why-spotify-is-not-using-bayesian-a-b-testing/",
+    "source": "Spotify Engineering",
+    "published": "2026-09-08T13:18:44+00:00",
+    "note": "A team that runs experimentation at scale explaining why it stayed frequentist and what the Bayesian label does and does not actually change. Read it before your team spends a quarter evaluating a switch, and keep it for the next time someone asks why you haven't.",
+    "curated_at": "2026-09-30T13:03:42.362073+00:00"
+  },
+  {
+    "title": "When Can LLMs Replace Humans in A/B Tests?",
+    "link": "https://engineering.atspotify.com/2026/8/when-can-llms-replace-humans-in-a-b-tests/",
+    "source": "Spotify Engineering",
+    "published": "2026-08-13T18:57:22+00:00",
+    "note": "The useful part is the framing: LLM-predicted outcomes substitute for human ones only under assumptions you have to state and defend, not as a free measurement upgrade. Directly relevant if you are tempted to let a judge model stand in for a real metric in a test.",
+    "curated_at": "2026-09-30T13:03:42.362073+00:00"
+  },
+  {
+    "title": "From weeks to a day: how we made LLM evaluation fast enough to iterate on",
+    "link": "https://airbnb.tech/ai-ml/from-weeks-to-a-day-how-we-made-llm-evaluation-fast-enough-to-iterate-on/",
+    "source": "Airbnb Tech Blog",
+    "published": "2026-07-27T18:57:46+00:00",
+    "note": "Airbnb's cut from weeks to a day came from ordinary engineering on the eval harness - caching, determinism, handling judges that disagree with themselves - not from better models. The layered breakdown is a good checklist for why your own agent evals are too slow to iterate on.",
+    "curated_at": "2026-09-30T13:03:42.362073+00:00"
+  },
+  {
+    "title": "Blueberry: Force Multiplier For The On-Call Engineer",
+    "link": "https://tech.instacart.com/blueberry-force-multiplier-for-the-on-call-engineer-98c446dfcc12",
+    "source": "Instacart Tech",
+    "published": "2026-07-14T16:39:20+00:00",
+    "note": "A Slack-native reasoning harness aimed at the worst minutes of an incident, when nobody yet agrees what is broken, and at turning tribal knowledge into context the agent can reuse. Close to the operational triage work you are building, and concrete about where the harness boundary sits.",
+    "curated_at": "2026-09-30T13:03:42.362073+00:00"
+  },
+  {
     "title": "The Causality Gap: Measuring the True Impact of Voluntary Adoption in Digital Marketplaces",
     "link": "https://booking.ai/the-causality-gap-measuring-the-true-impact-of-voluntary-adoption-in-digital-marketplaces-ea68b5a35120",
     "source": "Booking.com ML & DS",

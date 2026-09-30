@@ -6,7 +6,57 @@
     <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Sep 2026 02:32:09 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 13:03:42 GMT</lastBuildDate>
+    <item>
+      <title>A problem well-defined is half solved: Measuring Hypothesis Quality at Booking.com</title>
+      <link>https://booking.ai/a-problem-well-defined-is-half-solved-measuring-hypothesis-quality-at-booking-com-a85e845178a3</link>
+      <guid isPermaLink="true">https://booking.ai/a-problem-well-defined-is-half-solved-measuring-hypothesis-quality-at-booking-com-a85e845178a3</guid>
+      <pubDate>Wed, 30 Sep 2026 13:03:42 GMT</pubDate>
+      <category>Booking.com ML &amp; DS</category>
+      <description>Booking makes the hypothesis itself the quality gate: the evidence behind the idea, the user response expected, and the decision criteria all written down before launch, then scored. That is a rubric you can drop into your own experiment intake so a clear result arrives already attached to a decision instead of a debate.
+
+Source: Booking.com ML &amp; DS</description>
+    </item>
+    <item>
+      <title>Why Spotify Is Not Using Bayesian A/B Testing</title>
+      <link>https://engineering.atspotify.com/2026/9/why-spotify-is-not-using-bayesian-a-b-testing/</link>
+      <guid isPermaLink="true">https://engineering.atspotify.com/2026/9/why-spotify-is-not-using-bayesian-a-b-testing/</guid>
+      <pubDate>Wed, 30 Sep 2026 13:03:42 GMT</pubDate>
+      <category>Spotify Engineering</category>
+      <description>A team that runs experimentation at scale explaining why it stayed frequentist and what the Bayesian label does and does not actually change. Read it before your team spends a quarter evaluating a switch, and keep it for the next time someone asks why you haven't.
+
+Source: Spotify Engineering</description>
+    </item>
+    <item>
+      <title>When Can LLMs Replace Humans in A/B Tests?</title>
+      <link>https://engineering.atspotify.com/2026/8/when-can-llms-replace-humans-in-a-b-tests/</link>
+      <guid isPermaLink="true">https://engineering.atspotify.com/2026/8/when-can-llms-replace-humans-in-a-b-tests/</guid>
+      <pubDate>Wed, 30 Sep 2026 13:03:42 GMT</pubDate>
+      <category>Spotify Engineering</category>
+      <description>The useful part is the framing: LLM-predicted outcomes substitute for human ones only under assumptions you have to state and defend, not as a free measurement upgrade. Directly relevant if you are tempted to let a judge model stand in for a real metric in a test.
+
+Source: Spotify Engineering</description>
+    </item>
+    <item>
+      <title>From weeks to a day: how we made LLM evaluation fast enough to iterate on</title>
+      <link>https://airbnb.tech/ai-ml/from-weeks-to-a-day-how-we-made-llm-evaluation-fast-enough-to-iterate-on/</link>
+      <guid isPermaLink="true">https://airbnb.tech/ai-ml/from-weeks-to-a-day-how-we-made-llm-evaluation-fast-enough-to-iterate-on/</guid>
+      <pubDate>Wed, 30 Sep 2026 13:03:42 GMT</pubDate>
+      <category>Airbnb Tech Blog</category>
+      <description>Airbnb's cut from weeks to a day came from ordinary engineering on the eval harness - caching, determinism, handling judges that disagree with themselves - not from better models. The layered breakdown is a good checklist for why your own agent evals are too slow to iterate on.
+
+Source: Airbnb Tech Blog</description>
+    </item>
+    <item>
+      <title>Blueberry: Force Multiplier For The On-Call Engineer</title>
+      <link>https://tech.instacart.com/blueberry-force-multiplier-for-the-on-call-engineer-98c446dfcc12</link>
+      <guid isPermaLink="true">https://tech.instacart.com/blueberry-force-multiplier-for-the-on-call-engineer-98c446dfcc12</guid>
+      <pubDate>Wed, 30 Sep 2026 13:03:42 GMT</pubDate>
+      <category>Instacart Tech</category>
+      <description>A Slack-native reasoning harness aimed at the worst minutes of an incident, when nobody yet agrees what is broken, and at turning tribal knowledge into context the agent can reuse. Close to the operational triage work you are building, and concrete about where the harness boundary sits.
+
+Source: Instacart Tech</description>
+    </item>
     <item>
       <title>The Causality Gap: Measuring the True Impact of Voluntary Adoption in Digital Marketplaces</title>
       <link>https://booking.ai/the-causality-gap-measuring-the-true-impact-of-voluntary-adoption-in-digital-marketplaces-ea68b5a35120</link>
