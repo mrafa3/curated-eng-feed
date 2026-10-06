@@ -1,273 +1,35 @@
 {
-  "fetched_at": "2026-09-29T16:50:30.429835+00:00",
+  "fetched_at": "2026-10-06T17:05:56.735654+00:00",
   "max_age_days": 90,
   "failures": [],
   "candidates": [
     {
-      "title": "A problem well-defined is half solved: Measuring Hypothesis Quality at Booking.com",
-      "link": "https://booking.ai/a-problem-well-defined-is-half-solved-measuring-hypothesis-quality-at-booking-com-a85e845178a3",
-      "published": "2026-09-29T09:42:29+00:00",
-      "summary": "Even after an experiment (or A/B test) ends, it may not be clear what action to take or what was learned. The test may be properly powered, run for the right amount of time, and produce a statistically clear result. But if the hypothesis never made the original problem, reasoning for the change, or decision criteria explicit, the result is difficult to interpret. This is why hypothesis quality matters. A well-written hypothesis does more than improve an experiment at launch; it improves the quality of the decision that follows. By recording the evidence behind an idea, the user response we expect, and the metrics that would support or challenge it, teams create a clearer standard for interpreting the outcome. The benefits compound over time. A hypothesis that records only an implementation is difficult for another team (or an AI system), to find, compare, or reuse. A hypothesis that captures the underlying theory and expected behavioural response becomes a searchable explanation of why an experiment was run. Over time, this gives Booking.com a richer map of what we have learned: which user problems recur, which mechanisms tend to work, and where our assumptions repeatedly fail. In our earlier posts on experimentation quality and scaling that quality across Booking.com , we described how shared standards, measurement, education, and tooling can make better experimentation easier to practice at scale. This post focuses on the next layer of that work: how we are helping teams ma",
+      "title": "Metrics Board: Building an Agent-ready Metrics Layer",
+      "link": "https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756",
+      "published": "2026-10-06T16:01:02+00:00",
+      "summary": "Michele Ceccacci; Software Engineer I | Jason Coffman; Sr. Software Engineer | Colm O\u2019Shaughnessy; Software Engineer II | Laura Palmer; Staff Product Manager | Adam Podraza; Manager, Engineering | Surya Karri; Manager, Engineering At Pinterest, reliable and trustworthy metrics are behind every decision: from measuring company-wide business performance to evaluating each feature experiment results. Hundreds of data producers \u2014 analysts, data scientists, and engineers across Pinterest \u2014 create thousands of metrics from our petabyte scale data lake. A metrics ecosystem this size can\u2019t be ad hoc; it has to be organized, scalable, and resilient. So we built Metrics Board : an end-to-end platform that automates metric creation, enforces quality and enables agent-driven analytics. In this post we walk through the product experience, architecture, integrations and explain some of the design choices we made to make metrics work at planet scale. Why Metrics Matter at Pinterest Most organizations rely on a familiar set of metrics \u2014 revenue, growth, engagement \u2014 to steer the business. Metrics are how we understand whether Pinterest is delivering value to users and advertisers. Measures related to areas such as revenue, growth, and engagement turn the complexity of user behavior and Pinterest performance into a shared view of what is working, where we are falling short, and what matters most. These metrics drive the decisions our product, finance, and executive leaders make every day, fro",
+      "source": "Pinterest Engineering"
+    },
+    {
+      "title": "Introducing AgentHub: Booking.com Platform for Modular Travel AI Agents",
+      "link": "https://booking.ai/introducing-agenthub-booking-com-platform-for-modular-travel-ai-agents-68bc521a0f50",
+      "published": "2026-10-02T16:12:51+00:00",
+      "summary": "Authors: Moran Beladev , Hadas Harush , Chana Ross At Booking.com we developed AgentHub, a platform to power intelligent, modular, and multi-modal travel experiences through LLM-driven agents. Our platform provides configurable agents capable of performing a wide range of tasks, along with out-of-the-box agent management and monitoring capabilities. With AgentHub, different teams can build and deploy AI agents in a matter of hours, based on configuration and reusable components. Background As AI capabilities continue to advance rapidly, agentic AI is becoming a defining force in the technology landscape. Unlike traditional generative systems, agentic AI extends large language models (LLMs) with iterative planning, autonomous decision-making, and the ability to take action through tools. By enabling direct interaction with internal systems and APIs, these agents can leverage proprietary data and orchestrate workflows end to end \u2014 unlocking deeper contextual understanding and highly personalized user experiences. The Evolution from Generative AI to Agentic AI ( source ) To support a wide range of GenAI use cases at Booking.com, from simple LLM-powered features to fully agentic capabilities, we built the AgentHub platform. AgentHub enables rapid agent creation through configuration-driven setups, backed by robust shared infrastructure. This approach democratizes GenAI across the company, empowering diverse roles such as UX writers, product managers, developers, and more to build",
       "source": "Booking.com ML & DS"
     },
     {
-      "title": "Trading a Cloud Identity for Your Own: Workload Attestation on Managed Compute",
-      "link": "https://netflixtechblog.com/trading-a-cloud-identity-for-your-own-workload-attestation-on-managed-compute-516d5a29b252",
-      "published": "2026-09-25T16:01:03+00:00",
-      "summary": "By Dhruv Pratap Introduction Organizations that have been around for a while usually run two identity systems side by side. One belongs to the cloud provider: IAM roles, instance profiles, execution roles. The other is your own, and it is the one your internal services actually check when they decide whether to answer a request. On infrastructure you build yourself, you can bootstrap your own identity however you like. On managed compute you cannot. The provider hands your process a cloud identity and nothing else. This post describes how we close that gap for Apache Spark workloads running on Amazon EMR. A workload that starts with only an AWS identity has to end up holding a first-class internal identity. Doing the exchange is straightforward. Making it trustworthy is the part that took the design work. Very little of what follows is specific to Spark or to EMR. Two identity systems Internal service-to-service authentication at Netflix runs on a private PKI called Metatron. Every workload gets a short-lived X.509 certificate, and services authenticate each other with mutual TLS. A workload cannot simply ask for a certificate. It is issued only after the identity service has satisfied itself that the requester really is the workload it claims to be. That verification step is called attestation. In each environment we support (VMs, containers, functions) attestation rests on some environment-specific proof that the platform can check on its own. The second concept is the Data",
-      "source": "Netflix TechBlog"
+      "title": "ShopGym: Realistic, reproducible sandboxes for shopping agents",
+      "link": "https://shopify.engineering/shopgym",
+      "published": "2026-10-01T16:23:24+00:00",
+      "summary": "ShopGym creates realistic online stores and generates shopping tasks based on each store\u2019s products and features. Developers can then repeatedly test shopping agents under consistent conditions.",
+      "source": "Shopify Engineering"
     },
     {
-      "title": "The guest journey, updated in real time: extending Airbnb\u2019s sequence recommender with Chronon",
-      "link": "https://airbnb.tech/ai-ml/the-guest-journey-updated-in-real-time-extending-airbnbs-sequence-recommender-with-chronon/",
-      "published": "2026-09-23T20:21:27+00:00",
-      "summary": "By : Pengyu Hou , Yuli Han , Daochen Zha , Haozhen Ding , Xin Liu , Sophie Wang , Pallavi Adusumilli , Sherry Li , Henry Saputra , Chun How Tan , Huiji Gao , Yan Zhang , Stephanie Moyerman , Yi Li , and Sanjeev Katariya A guest\u2019s interaction with Airbnb doesn\u2019t pause to wait for a nightly batch job. Someone might browse a dozen listings on a Tuesday afternoon, run a new search that evening, and expect the next search to reflect the recent activity; it\u2019s also to Airbnb\u2019s benefit for that to be the case. In our previous post, Personalizing Airbnb search by learning from the guest journey , we described how we built a Transformer-based sequence encoder that creates better, more personalized search rankings for a guest using the booking, review, and browsing data that is most relevant to them \u2014 their own. That system ran as a daily batch job: each night it processed the previous day\u2019s activity and refreshed embeddings for guests who had something new to show for it. That design worked well, but it left a gap. Activity from earlier the same day wouldn\u2019t show up in the embedding until the following day\u2019s run, on top of the pipeline\u2019s own processing lag \u2014 in practice, up to nearly two days of staleness. For a guest actively planning a trip, that meant the ranking model was often working from a slightly outdated picture of what they wanted, and the recent activities are often highly relevant to current search needs. This is a limitation that our original JourneyFormer research had al",
+      "title": "Personalization without user identity",
+      "link": "https://airbnb.tech/infrastructure/personalization-without-user-identity/",
+      "published": "2026-09-29T21:32:38+00:00",
+      "summary": "How Airbnb uses proximity signals to personalize without relying on individual user history. By : Wei Jiang , Bin Xu , Bharathi Thangamani , Weiwei Guo , Sundar Srinivasavaradhan , Tracy Yu , Huiji Gao , Swapnil Ghike , Michael Kinoti Great personalization starts with knowing your user. But what happens when the user is a stranger? A significant share of Airbnb users arrive without a login, without a recent search history, or without any prior booking \u2014 especially those landing from paid advertising or organic search. For these users, the ML models that power search ranking, destination recommendations, and marketing landing pages face the cold-start problem : there is little to no user signal available. In this blog post, we describe Proximity Features \u2014 a new class of ML features that addresses both the cold-start problem and evolving privacy constraints simultaneously. The core hypothesis: aggregate activity patterns within a proximity bucket can provide useful signals for cold-start personalization without relying on individual user identity. By grouping nearby users into buckets and aggregating their collective signals, we can construct rich, location-aware features available immediately for any user whose IP can be geo-located \u2014 no login, no prior history, and no persistent user identifier required. The challenge: serving users without individual signals Personalization at Airbnb has historically relied heavily on a user\u2019s identifier to link together past searches, book",
       "source": "Airbnb Tech Blog"
-    },
-    {
-      "title": "Helix: The internal tool powering our Shopify app's native migration",
-      "link": "https://shopify.engineering/helix",
-      "published": "2026-09-21T21:12:33+00:00",
-      "summary": "We built Helix to help LLMs rebuild the Shopify app in Swift and Kotlin, using small checkpoints and strict quality gates to keep the code shippable.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "Leave the Class Path in the Rearview Mirror",
-      "link": "https://netflixtechblog.com/leave-the-class-path-in-the-rearview-mirror-67a85b15b6be",
-      "published": "2026-09-18T16:01:02+00:00",
-      "summary": "Introducing composable, module system native and agent friendly command line tools for modern Java development By Danny Thomas, JVM Ecosystem Team Recent work on the Java language to pave the on-ramp has made it easier than ever to start a Java program and evolve it using the full language and platform. At the end of that on-ramp lies Java\u2019s mature build and dependency management ecosystem, capable of carrying software to enormous scale and complexity. That ecosystem reached its maturity by developing strong models for projects, dependencies, and builds. When the Java Module System arrived, those models were already serving developers exceptionally well. The module descriptor consequently became just another description of the project to keep in agreement. We\u2019re excited to announce a preview of ja and its family of composable tools, that build on the capabilities of the Java Module System to provide a modern command line development experience for Java. We take the module descriptor and make it a complete description of a project, with dependency versions sitting naturally beside its requires directives and module metadata provided through documentation tags: /** * @mainClass com.example.application.Main */ module com.example.application { requires com.example.framework; // @1.2.3 } Combined with command line ergonomics you\u2019re used to in other languages, creating and consuming Java modules has never been easier. Composable Tools Java developers have long been exceptionally we",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Beyond Two Towers: Launching the 3-Tower Engagement Co-Train Model (Part 2)",
-      "link": "https://medium.com/pinterest-engineering/beyond-two-towers-launching-the-3-tower-engagement-co-train-model-part-2-0b96167d2c14",
-      "published": "2026-09-17T15:01:05+00:00",
-      "summary": "Authors: Longyu Zhao (Staff Machine Learning Engineer), Gwendolyn Zhao (Staff Machine Learning Engineer), Peng Yan (Senior Machine Learning Engineer), Yuanlu Bai (Senior Machine Learning Engineer), Yuan Wang (Senior Machine Learning Engineer), Yao Cheng (Staff Machine Learning Engineer), Ang Xu (Principal Machine Learning Engineer), Zhaohong Han (Manager II, Ads Lightweight Ranking) Introduction Previously\u00b9, we launched the next-generation serving stack for standard ads, which we call Nexus. Nexus decoupled candidate generation from scoring and moved us beyond the classic two-tower-only world, enabling richer model architectures while still meeting stringent latency and cost constraints. Building on this system, we set out to design the first ads lightweight ranking model that goes beyond two towers. It jointly predicts three probabilities for each candidate ad: pCTR, the probability of a click; pGCTR30, the probability of a good click that lasts at least 30 seconds; and pOCTR, the probability of an outbound click to the advertiser\u2019s destination. To support these objectives efficiently, we partition the query and Pin embeddings into task-specific CTR, gCTR30, and oCTR segments. For the CTR task, the fast two-tower prediction uses the first 64 dimensions of the CTR segment, while the three-tower prediction uses the full CTR segment together with richer cross features. For gCTR30 and oCTR tasks, full embeddings are shared between two-tower and three-tower predictions. This lets",
-      "source": "Pinterest Engineering"
-    },
-    {
-      "title": "AI Changed How Spotify Builds. What We Learned (and Fixed) About Quality at Higher Velocity",
-      "link": "https://engineering.atspotify.com/2026/9/ai-changed-how-spotify-builds-what-we-learned-and-fixed-about-quality-at-higher-velocity/",
-      "published": "2026-09-16T19:13:53+00:00",
-      "summary": "Quality and reliability have always been a point of pride for Spotify. We run an extraordinarily complex... The post AI Changed How Spotify Builds. What We Learned (and Fixed) About Quality at Higher Velocity appeared first on Spotify Engineering .",
-      "source": "Spotify Engineering"
-    },
-    {
-      "title": "Evolving Pinterest\u2019s Embedding Retrieval Platform",
-      "link": "https://medium.com/pinterest-engineering/evolving-pinterests-embedding-retrieval-platform-aede4e831e01",
-      "published": "2026-09-11T15:01:03+00:00",
-      "summary": "Authors: Bowen Zhou | Staff Software Engineer; Shan Gao | Senior Software Engineer; Jingwen Hu | Software Engineer II; Wenjiang Chu | Staff Software Engineer The Billion-Embedding Challenge At Pinterest, the \u201csignal\u201d is our lifeblood. Whether it\u2019s a home decor enthusiast finding the perfect rug or a fashion seeker discovering a new aesthetic, our discovery engine relies on understanding deep semantic relationships to help our users find inspirations. Over the last few years, the explosive growth of embedding-based retrieval has fundamentally transformed how we surface these signals \u2014 and at the heart of that transformation is Manas, Pinterest\u2019s in-house distributed search platform. Embedding Retrieval is one of the core capabilities of Manas, supporting multiple approximate nearest neighbor search algorithms, hybrid queries with both token and embedding clauses, as well as real-time updates to ensure fresh contents become searchable within seconds. Deployed on over 80 clusters and serving billions of embeddings, Manas embedding retrieval powers all major product surfaces at Pinterest including Home Feed, Search, Related Pins, Ads, and Notifications. However, as our corpus scales toward tens of billions of embeddings and our models capture increasingly complex interactions, we face mounting challenges around cost efficiency, scalability, and flexibility. On the infrastructure side, traditional ANN algorithms like HNSW are notoriously memory-hungry \u2014 they require the entire ind",
-      "source": "Pinterest Engineering"
-    },
-    {
-      "title": "Building Pinterest\u2019s VLM Serving Stack on NVIDIA Dynamo",
-      "link": "https://medium.com/pinterest-engineering/building-pinterests-vlm-serving-stack-on-nvidia-dynamo-0dce6e93d0f3",
-      "published": "2026-09-10T23:08:16+00:00",
-      "summary": "Lei Pan | Senior Software Engineer; Salina Wu | Senior Software Engineer; Cristian Lopez | Software Engineer I; Guangtong Bai | Staff Software Engineer; Soam Acharya | Principal Engineer; Saurabh Vishwas Joshi | Principal Engineer; Chia-Wei Chen | Staff Software Engineer; Ambud Sharma | Principal Engineer Why VLM Serving Matters at Pinterest Pinterest is a visual search and discovery platform, so its AI systems must reason over both language and visual content. Vision-language models (VLMs), which can interpret images, compare visual candidates, and respond naturally to user intent, are becoming the foundation for the next generation of Pinterest experiences: Pinterest Assistant, hybrid search, multimodal reranking, content understanding, signal generation, content safety, and more. This direction also reflects Pinterest\u2019s broader strategy to customize open-source models to meet its product & scale needs. Pinterest Assistant is a standout example. This multi-turn conversational experience covers both user language and visual content. Serving it requires low-latency VLM inference over rich multimodal context as well as reworking Qwen3-VL with proprietary multimodal embeddings to cut runtime cost while improving performance. Serving VLMs, however, introduces more challenges compared to text-only LLM workloads. Requests may carry multiple images, require extra vision encoder computation, incur larger and more variable prefill cost, and create higher KV cache pressure. To support",
-      "source": "Pinterest Engineering"
-    },
-    {
-      "title": "Refreshing the Travel-Time Map Behind Lyft\u2019s Marketplace: Rebuilding Neighborhood Reachability\u2026",
-      "link": "https://eng.lyft.com/refreshing-the-travel-time-map-behind-lyfts-marketplace-rebuilding-neighborhood-reachability-5be3efbc82ea",
-      "published": "2026-09-10T16:12:28+00:00",
-      "summary": "Refreshing the Travel-Time Map Behind Lyft\u2019s Marketplace: Rebuilding Neighborhood Reachability Signals Every time Lyft calculates pricing to balance a market, nudges a driver toward an under-served pocket of a city, or paints a heatmap of where demand is building, there is a quiet lookup table doing work in the background. It answers a deceptively simple question: how long does it take to get from here to there? , for millions of pairs of places, across hundreds of regions. That lookup table is the Neighborhood Reachability Signal , and for years large parts of it were frozen in a snapshot of the world from 2018\u20132019. This is the story of how we rebuilt it, why a refresh substantial enough to be worth adopting was what finally moved Pricing to switch, the cleanly positive results that came out of that switch, and where we\u2019re taking it next, from one static file per region to time-aware travel times that change with the rhythm of the day. What is a Neighborhood Reachability Signal? A geohash is a compact way of carving the world into a grid of cells. At geohash-6 resolution, each cell is roughly the size of a few city blocks. Slice a region into geohash-6 cells and you get a clean, discrete coordinate system for \u201cneighborhoods\u201d that downstream systems can reason about. The Forecasting & Real-Time Optimization (FORTOP) team produces the Neighborhood Reachability Signals dataset, which consists of two companion files for each region: Neighborhood Reachability Matrix : the estima",
-      "source": "Lyft Engineering"
-    },
-    {
-      "title": "Migrating Shop app from React Native to native",
-      "link": "https://shopify.engineering/shop-app-migration",
-      "published": "2026-09-10T12:27:06+00:00",
-      "summary": "We migrated the Shop app from React Native to Swift and Kotlin. Assisted by AI, the team was able to go from a proof of concept to a fully rebuilt native app published in the app stores in just 12 weeks.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "Native is now the future of mobile at Shopify",
-      "link": "https://shopify.engineering/back-to-native",
-      "published": "2026-09-10T12:25:28+00:00",
-      "summary": "Coding agents changed what it costs to build mobile apps twice. Here\u2019s why Shopify is moving from React Native back to Swift and Kotlin.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "Why Spotify Is Not Using Bayesian A/B Testing",
-      "link": "https://engineering.atspotify.com/2026/9/why-spotify-is-not-using-bayesian-a-b-testing/",
-      "published": "2026-09-08T13:18:44+00:00",
-      "summary": "Clearing the confusion about what Bayesian A/B testing is. The post Why Spotify Is Not Using Bayesian A/B Testing appeared first on Spotify Engineering .",
-      "source": "Spotify Engineering"
-    },
-    {
-      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
-      "link": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90/",
-      "published": "2026-09-03T16:06:40+00:00",
-      "summary": "Most of what an AI coding agent does for me isn't thinking. It's I/O. The post Portal by Spotify cut my Claude Code token usage by 90% appeared first on Spotify Engineering .",
-      "source": "Spotify Engineering"
-    },
-    {
-      "title": "Agentic Machine Learning Modeling at Instacart",
-      "link": "https://tech.instacart.com/agentic-machine-learning-modeling-at-instacart-fb3ecd295ee7",
-      "published": "2026-09-03T16:05:30+00:00",
-      "summary": "Tilman Drerup, Moe Moazzami, Shih-Ting Lin, Greg Reda (and many more) Introduction At Instacart, artificial intelligence is fundamentally changing the way our machine learning engineers operate. In a prior blog post , we used one of our teams as a case study to illustrate how the emergence of agents has reshaped what machine learning engineers spend their time on. The post below goes a few levels deeper and zooms in on the machine learning modeling process itself, an area where recent developments in AI-assisted research have opened up exciting new frontiers that we are now actively exploring. Based on the combined insights of a small horde of MLEs, we will share some of the big wins, the disappointments, and the surprises we encountered along the way. Let\u2019s jump in. Big Picture Machine learning models permeate Instacart\u2019s marketplace, powering everything from search results to replacement recommendations and expected delivery times. Each of these models is carefully built, maintained, and iterated upon by our crafty MLEs. And while the hours spent on modeling tend to be extremely impactful for the company, the process itself is quite time-consuming and requires an MLE to make a myriad of both small and large decisions. These decisions include, among other things, the right modeling architecture, the appropriate choice for a large number of hyperparameters, the feature set to include, or the most suitable loss functions. All of these decisions are often grounded in a fairly l",
-      "source": "Instacart Tech"
-    },
-    {
-      "title": "How River takes security work from a fix to merge",
-      "link": "https://shopify.engineering/river-vulnerability-remediation",
-      "published": "2026-09-02T16:30:45+00:00",
-      "summary": "River, Shopify\u2019s AI agent in Slack, enables autonomous vulnerability remediation, not just detection.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "Rerouting the Stream: How Lyft Moved to the Apache Flink Operator",
-      "link": "https://eng.lyft.com/rerouting-the-stream-how-lyft-moved-to-the-apache-flink-operator-36f20246d250",
-      "published": "2026-08-31T19:08:16+00:00",
-      "summary": "Written by Maheep Myneni , Arda Kuyumcu , and Prem Santosh Udaya Shankar at Lyft. Why We Migrated : Technical Debt Meets Modern Streaming Demands Over the past several quarters, Lyft\u2019s Streaming Compute team retired our internally developed Flink Kubernetes operator and moved our entire streaming fleet onto the open-source Apache Flink Kubernetes operator. This post is about why we made the switch, how we pulled it off incrementally without disrupting users, and the follow-on work it took to actually get the benefits we were after. Back in 2020, when we first architected the Lyft Flink Kubernetes Operator, it was exactly what we needed. At that time, the open-source community hadn\u2019t yet built a dedicated control plane, so we built our own to manage all streaming applications on Kubernetes. It worked well for our initial workloads, but as our real-time data needs increased and our engineers\u2019 scope of ownership grew in both breadth and complexity, the cracks started to show. First came the maintenance burden. Our operator had become a relic of Lyft\u2019s early Kubernetes days, kept alive by a growing pile of custom code. Every Flink version upgrade meant carefully picking through layers of accumulated technical debt and hoping nothing broke on the way through. Second came the feature gap. Streaming tooling kept moving, and our engineers kept asking for capabilities that had become table stakes elsewhere, such as autoscaling to right-size jobs, automatic rollbacks on failed deploys,",
-      "source": "Lyft Engineering"
-    },
-    {
-      "title": "MAPS: Netflix\u2019s Multimodal Asset Personalization at Scale",
-      "link": "https://netflixtechblog.com/maps-netflixs-multimodal-asset-personalization-at-scale-32f96320785e",
-      "published": "2026-08-28T16:01:02+00:00",
-      "summary": "By Emma Yanyang Kong , Aditya Deshpande , Asad Abbasi , Bowei Yan , David Fagnan , Ashish Rastogi , Dhaval Patel , Ray Zhang Introduction The Netflix experience is a journey of discovery. Every visual cue, from the artwork on a title to the video previews that autoplay while you browse, is there to connect you with a story you will love. We call these visual cues assets , and choosing the right one for each member is a personalization problem of its own. But which image or video preview of Squid Game should we show you? And what do we do right after a title launches, when there\u2019s far too little interaction data to know which asset we should recommend to each member? For years, our models answered the first question well and the second poorly. They learned which assets members interacted with, but treated every asset as an opaque ID, blind to what was actually in the artwork or video preview. Right after a title launched, its assets had no history, so we dialed up exploration on its assets to gather interaction data, and otherwise fell back to popularity heuristics that ignore your taste. Only once enough interactions had piled up could personalization take over. This is the classic cold-start problem. This post shares how multimodal embeddings let our models see and hear the assets they recommend, so personalization can kick in far sooner, close to a title\u2019s launch. Because a new asset arrives with its embedding the model already understands, that embedding carries member tas",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Scaling Conditional Learned Retrieval for Pinterest Home Feed",
-      "link": "https://medium.com/pinterest-engineering/scaling-conditional-learned-retrieval-for-pinterest-home-feed-ecfba7e5a426",
-      "published": "2026-08-26T14:01:05+00:00",
-      "summary": "Devin Kreuzer | Sr. Machine Learning Engineer; Yichi Wang | Machine Learning Engineer I; Sujan Reddy Ale | Machine Learning Engineer I; Zelun Wang | Sr. Machine Learning Engineer; Hongtao Lin | Sr. Machine Learning Engineer; Piyush Maheshwari | Staff Machine Learning Engineer Pinterest home feed candidate generation is a large-scale User-to-Pin retrieval problem. A common approach is a two-tower model: a user tower encodes the user, an item tower encodes candidate Pins, and approximate nearest neighbor search retrieves Pins close to the user embedding. But Pinterest users often have multiple intentions at once \u2014 planning a renovation, saving recipes, exploring fashion, or organizing travel ideas. A single retrieval embedding can struggle to capture this diversity. Conditional Learned Retrieval, or CLR, extends the two-tower setup by conditioning the user tower on an explicit retrieval context. Instead of producing only one user embedding, CLR can generate condition-aware embeddings that reflect different aspects of a user\u2019s interests while still grounding retrieval in the user\u2019s overall behavior. Prior Pinterest work studied this formulation in two settings. The RecSys\u201924 paper: Bootstrapping Conditional Retrieval for User-to-Item Recommendations described how to bootstrap conditional retrieval by constructing training data for (user, condition) -> item retrieval from existing user-item and condition signals, and applied it to interest-based notifications. The KDD\u201925 paper: S",
-      "source": "Pinterest Engineering"
-    },
-    {
-      "title": "A Tale of Two Flink Autoscalers",
-      "link": "https://netflixtechblog.com/a-tale-of-two-flink-autoscalers-e9f6a1b1492b",
-      "published": "2026-08-21T16:01:01+00:00",
-      "summary": "Samuel Yeboah , Francesco Di Chiara and Mingliang Liu Today, Netflix runs two Flink autoscalers. That is exactly one more than we want. We built the first one in-house years ago, when there was no mature option suited to our platform. The second came from the Apache Flink community, and it can scale workloads our homegrown system was never designed for. We now run both in production and are steadily converging on the open-source one. Along the way we learned some hard lessons about metrics, cost, and the real price of maintaining infrastructure you could instead adopt, and we hope they are useful whether you run a handful of Flink jobs or tens of thousands. Why autoscaling is not optional at our scale Netflix has run stream processing on Apache Flink since 2017. As of 2026 we operate more than 30,000 Flink jobs across multiple AWS regions. Most are not deployed by hand; they are generated by our managed platform Data Mesh , so the majority of users never touch a Flink job directly. A smaller but growing set are custom jobs, built and operated by teams across the company for use cases like personalization, Ads, and Live events. They range from single-operator jobs that shuttle records between Kafka topics to stateful pipelines with branches, joins, and terabytes of state, and their load swings with daily cycles, launches, and regional failovers. Provisioning every one of those jobs for its peak is wasteful; provisioning for the average causes lag during surges. And in our plat",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Gisting: Compressing LLM Agent context to \u2191 throughput and \u2193 cost",
-      "link": "https://shopify.engineering/gisting",
-      "published": "2026-08-19T14:32:58+00:00",
-      "summary": "Gisting compresses context into a set of learned tokens, preserving its quality while making the model faster and cheaper.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "When Can LLMs Replace Humans in A/B Tests?",
-      "link": "https://engineering.atspotify.com/2026/8/when-can-llms-replace-humans-in-a-b-tests/",
-      "published": "2026-08-13T18:57:22+00:00",
-      "summary": "TL;DR: LLM predictions can stand in for human outcomes in A/B tests, but only by assumption, not by design.... The post When Can LLMs Replace Humans in A/B Tests? appeared first on Spotify Engineering .",
-      "source": "Spotify Engineering"
-    },
-    {
-      "title": "How we raised mobile end-to-end test stability to 98%",
-      "link": "https://shopify.engineering/mobile-e2e-testing",
-      "published": "2026-08-12T20:02:35+00:00",
-      "summary": "We rebuilt our mobile end-to-end testing framework with a strict API and computer vision, raising test stability drastically.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "Flexible Authentication: Reimagining authentication for millions of users at Airbnb",
-      "link": "https://airbnb.tech/uncategorized/flexible-authentication-reimagining-authentication-for-millions-of-users-at-airbnb/",
-      "published": "2026-08-12T19:03:23+00:00",
-      "summary": "By : Jose Santos , Mike Barry For Airbnb, logins at irregular intervals are normal. A guest books a trip in January and may not open the app again until summer. A host checks back only when a reservation comes in, and may be busy with other activities when it does. For a two-sided marketplace where a failed login means a lost booking, and lost revenue for both the guest and the host, long gaps between sessions are a structural challenge, not an edge case. Our authentication system had grown organically over a decade, adding new login methods like Social Login, Email OTP, and Phone over time. We recognized that our users have diverse needs: many, such as hosts, use Airbnb daily, while others visit less frequently, when they are planning trips or traveling. To provide a seamless experience, we needed to ensure we were doing a great job supporting all of these usage patterns, helping users pick up exactly where they left off, regardless of how much time had passed or which device they were using. In this blog post, we\u2019ll walk through how we rebuilt Airbnb\u2019s authentication flows using a new paradigm we call Flexible Authentication , and how each architectural decision was guided by insights into the user\u2019s experience. Identify first then Challenge The \u2018Identify first then Challenge\u2019 model was the product insight that reframed the project. Our old system treated authentication as a single question: can this person prove who they are? The real question is more nuanced: given the mu",
-      "source": "Airbnb Tech Blog"
-    },
-    {
-      "title": "How we selected the next vector database at Booking.com",
-      "link": "https://booking.ai/how-we-selected-the-next-vector-database-at-booking-com-1e738a5e3bb0",
-      "published": "2026-08-11T10:31:50+00:00",
-      "summary": "This work was done in collaboration with Klaus Schaefers. Over the past few years, embeddings and vector search have become an important capability in many of our machine learning and GenAI systems at Booking.com. We initially started with a handful of use cases and experiments, and later this capability has grown into shared infrastructure that powers similarity search, semantic filtering, and retrieval-augmented generation (RAG). We used to treat vector search as a backend implementation detail, but today it directly drives the user experience. The real win isn\u2019t only speed but also the context. Expanding the variety of domain data we can retrieve efficiently gives our system the depth of context it needs to deliver accurate, and personalized experiences across the platform. This makes selecting the underlying vector database an infrastructure decision similar to choosing a primary datastore or message queue. It has to be predictable and scalable. As more teams started using our vector store, we began seeing highly diverse functional and operational requirements across different use cases. Some teams needed advanced capabilities like hybrid search or multi-vector support, while others demanded larger vector capacities and higher RPS metrics. These architectural needs ultimately brought us to a point where we needed to reassess whether our current setup could support this next phase of growth. Context: how embeddings fit into our stack Embeddings are vectors: fixed-length ar",
-      "source": "Booking.com ML & DS"
-    },
-    {
-      "title": "How and Why Netflix Built a Real-Time Distributed Graph: Part 3 \u2014 Querying the graph with gRPC\u2026",
-      "link": "https://netflixtechblog.com/how-and-why-netflix-built-a-real-time-distributed-graph-part-3-querying-the-graph-with-grpc-0f3468349607",
-      "published": "2026-08-07T16:01:02+00:00",
-      "summary": "How and Why Netflix Built a Real-Time Distributed Graph: Part 3 \u2014 Querying the graph with gRPC execution API Authors: Nilesh Mishra and Ajit Koti This is the third entry of a multi-part blog series describing how we built a Real-Time Distributed Graph (RDG). In Part 1 , we discussed the motivation for creating the RDG and the architecture of the data processing pipeline that populates it. In Part 2 , we discussed how we designed the storage layer to handle billions of nodes and edges while maintaining single-digit-millisecond latency. In Part 3, we will explore how we designed a fast, flexible serving layer to efficiently query the graph. Introduction In Part 1 of this series, we described why Netflix needed a Real-Time Distributed Graph (RDG) and how we used Apache Flink to build an ingestion and processing pipeline that turns streaming events into graph primitives. In Part 2 , we explored how we designed a storage layer capable of handling billions of nodes and edges while still delivering single-digit-millisecond latency. In this post, we focus on the next challenge: querying the graph efficiently to power real-time insights for our internal partners. All of the work on ingestion and storage only matters if we can actually ask complex questions and get answers back quickly . As we optimized for lower latency, we found that the serving layer posed its own set of challenges, distinct from those of ingestion and storage. How do we turn a constantly evolving, billion-edge grap",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Sidekick's continual learning loop",
-      "link": "https://shopify.engineering/sidekicks-continual-learning-loop",
-      "published": "2026-08-05T14:52:54+00:00",
-      "summary": "How we compress production failures into model weights every day, beat frontier-model quality, and cut serving costs 96%.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "GenRec: Towards LLM-Native Recommendation at Netflix",
-      "link": "https://netflixtechblog.com/genrec-towards-llm-native-recommendation-at-netflix-f20be6f643e3",
-      "published": "2026-07-30T20:10:15+00:00",
-      "summary": "Authors: Ying Li , Arjun Rao , Shradha Sehgal Introduction Recommendations sit at the heart of the Netflix experience. Our current production models rely on thousands of hand\u2011crafted features over users, items, and interactions, along with specialized architectures for sequence modeling, feature interactions, and multi\u2011task objectives. This stack has evolved over many years to support diverse content types (movies, series, games, live, podcasts) and product surfaces, but its complexity makes it costly to onboard new use cases: adding a content type or surface can require significant feature engineering, architecture change, infrastructure work, and experimentation. At the same time, large language models (LLMs) are changing how we think about recommendation, as shown by recent work such as PLUM , GLIDE , and OneRec-Think . Their broad world knowledge and strong language understanding make it possible to represent user histories and item metadata directly as text, capture rich relationships in a shared semantic space, and steer recommendations via natural\u2011language prompts. However, off\u2011the\u2011shelf LLMs are still far from production\u2011ready recommenders: they often over\u2011recommend globally popular content, hallucinate out\u2011of\u2011catalog items, ignore business constraints, and provide only limited personalization. To address this, we built GenRec , an LLM\u2011backed recommendation ranker that post\u2011trains an internal foundation LLM on Netflix\u2011specific data and objectives. GenRec shows that an",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Indexing the Data Lake for Online Point Queries",
-      "link": "https://engineering.atspotify.com/2026/7/indexing-the-data-lake-for-online-point-queries/",
-      "published": "2026-07-27T20:34:28+00:00",
-      "summary": "Companies like Spotify need vast quantities of data accessible at low latency for online services and,... The post Indexing the Data Lake for Online Point Queries appeared first on Spotify Engineering .",
-      "source": "Spotify Engineering"
-    },
-    {
-      "title": "Personalizing Airbnb search by learning from the guest journey",
-      "link": "https://airbnb.tech/ai-ml/personalizing-airbnb-search-by-learning-from-the-guest-journey/",
-      "published": "2026-07-27T19:00:17+00:00",
-      "summary": "By: Daochen Zha , Chun How Tan , Xin Liu , Bin Xu , Han Zhao , Xiaowei Liu , Jun Shi , Tracy Yu , Hui Gao , Huiji Gao , Liwei He , Michael Kinoti , Stephanie Moyerman , and Sanjeev Katariya Introduction Planning a trip on Airbnb rarely happens in a single session. A guest searching for a place to stay in San Francisco might browse dozens of listings over several days, leaving behind a trail of views. Typically, over a period of years, that same guest will have accumulated many previous bookings, reviews, and the occasional cancellation. Taken together, these events reveal a great deal about what that guest values in a stay. For years, Airbnb\u2019s search ranking captured this through hand-crafted features: aggregated statistics such as total past bookings or average listing price. These worked well, but as the feature count grew into the hundreds, the approach became harder to scale and increasingly limited in expressiveness. In this blog post, we describe how we built a sequence modeling system that encodes the full guest journey using a Transformer, learning richer representations of guest preferences to deliver more personalized search results. An example of a guest journey, which is typically long, exploratory, and complex. Challenges Event sequences per guest present three core challenges. First, they are dominated by listing views, which account for the vast majority of all events \u2014 some guests accumulate hundreds of thousands of them \u2014 making raw sequences computationally ",
-      "source": "Airbnb Tech Blog"
-    },
-    {
-      "title": "From weeks to a day: how we made LLM evaluation fast enough to iterate on",
-      "link": "https://airbnb.tech/ai-ml/from-weeks-to-a-day-how-we-made-llm-evaluation-fast-enough-to-iterate-on/",
-      "published": "2026-07-27T18:57:46+00:00",
-      "summary": "By : Baharak Saberidokht Introduction Shipping a production LLM system means iterating fast on improvements to something that is, by construction, non-deterministic. Models drift, judges disagree with themselves, references regenerate as different strings, and bugs may persist until the next release, because retraining takes weeks. Most of this friction comes from infrastructure challenges, not model quality, and the fixes come from classical software engineering techniques. At Airbnb, we built reliable LLM infrastructure by addressing four layers. Three correspond to engineering enhancements we\u2019ve made; the fourth is the integration layer that ties the rest together \u2014 the one that is easiest to overlook, because each individual component looks fine in isolation. The approach rests on two observations: the seams are where things break, and finding those breaks requires exercising the full path, not just validating each component in isolation. Figure 1. The four layers of the production LLM stack. Bounded model mutation requires trustworthy measurement, and end-to-end validation requires the eval foundation to be fast enough to run on the combined path. Layer 1: Name it before trying to remove it Layer 1 is diagnostic framing of evaluation noise. This layer addresses two different sources of indeterminacy: data and judging uncertainty. Classical ML metrics are deterministic: F1, BLEU, and accuracy return the same number on the same input. With LLMs in the evaluation loop, that",
-      "source": "Airbnb Tech Blog"
-    },
-    {
-      "title": "Pinner Progression: Better Use-Case Representation Driving Weekly Active User Growth at Pinterest",
-      "link": "https://medium.com/pinterest-engineering/pinner-progression-better-use-case-representation-driving-weekly-active-user-growth-at-pinterest-bd2131ab238a",
-      "published": "2026-07-27T16:01:02+00:00",
-      "summary": "Part 1 of 2 Authors Personalization (Homefeed): Yuke Yan, Chuxi Wang, Andreanne Lemay, Olafur Gudmundsson, Anna Kiyantseva, Krystal Benitez, Jongho Kim, Jiacong He, Rahul Goutam, James Li, Dylan Wang User Understanding: Simin Li, Sufyan Suliman, Yingjian Ding, Hongbo Deng Data Science: Armando Ordorica, Yan Chen, Ellie Zhang, Karim Wahba Introduction Pinterest\u2019s mission is to help people discover the inspiration to create a life they love. Our recommendation system serves hundreds of millions of users, surfacing billions of Pins across interests ranging from home renovation to meal planning to wedding decor. The home feed , where much of that discovery happens, is powered by a multi-stage pipeline spanning retrieval, lightweight scoring, ranking, and re-ranking [1][2][3]. Most of our prior work on this pipeline has been optimized for engagement : clicks, saves, downloads, closeups. These are strong signals of immediate relevance, and optimizing for them has driven significant gains across the system [4][5]. The problem is that engagement and retention are different things. A user can save ten sourdough recipes today and churn next month anyway. All we did was feed them more of what they already liked: we never helped them find something new for next time. This post is one of two that introduces Pinner Progression, a program that reframes the home feed recommendation system around retention as a first-class objective. Our core insight is that by augmenting sequential, action-b",
-      "source": "Pinterest Engineering"
-    },
-    {
-      "title": "Securing Infrastructure at Scale: Introducing Pinterest\u2019s Resource Provisioner Pipeline (RPP)",
-      "link": "https://medium.com/pinterest-engineering/securing-infrastructure-at-scale-introducing-pinterests-resource-provisioner-pipeline-rpp-8283bb12cbe5",
-      "published": "2026-07-22T16:01:02+00:00",
-      "summary": "Ammar Ekbote | Senior Software Engineer Chan Kim | Senior Software Engineer Managing Infrastructure as Code (IaC) across a massive organization comes with a unique set of security and logistical challenges, particularly when operating within a distributed, multi-repository architecture. At Pinterest, we designed the Resource Provisioner Pipeline (RPP) , our specialized, proprietary Terraform execution engine to safely manage both critical and non-critical infrastructure changes. In this post, we will look under the hood of the first iteration of the RPP system. We will explore how it established compliance and provides robust security guardrails for our global AWS operations by utilizing dual controls, centralized GitHub Actions execution, and a secure role-chaining mechanism. If your engineering team is looking to add strict guardrails to a GitHub workflow-driven Terraform setup, our architecture might serve as a helpful blueprint. What is RPP? RPP delivers a secure, standardized CI/CD workflow for deploying and managing Pinterest\u2019s foundational AWS infrastructure. Today, the system manages hundreds of Terraform workspaces that collectively govern tens of thousands of resources . This includes: Security Policies: Managing critical IAM roles and access policies. Networking Infrastructure: Configuring VPCs, Security Groups, Load Balancers, and DNS. Storage & Compute: Provisioning S3 buckets (including access controls) and Kubernetes clusters. The RPP GitHub Workflow The Multi-",
-      "source": "Pinterest Engineering"
-    },
-    {
-      "title": "In-House LLM Serving at Netflix",
-      "link": "https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c",
-      "published": "2026-07-17T21:32:39+00:00",
-      "summary": "By AI Platform\u2019s Model Runtime team and Inference team Introduction Most organizations consume LLMs through hosted APIs. Netflix went further \u2014 we run the full stack ourselves, from model deployment through inference, inside our existing production environment rather than a separate ML silo. Some of those decisions weren\u2019t obvious, and a few revealed their trade-offs only under production load. This post focuses on the choices where alternatives were seriously considered: engine selection, model packaging, API surface design, deployment strategy, and output constraints enforcement. The goal is to share not just what was built, but why \u2014 and what production revealed that the design phase didn\u2019t anticipate. Architecture Overview Member-scale ML at Netflix is fronted by a unified JVM-based serving system that handles the end-to-end flow for downstream consumers: routing and A/B test logic, candidate generation, feature fetching, inference, post-processing, and logging at each stage. Both real-time and cached batch paths are supported. Figure 1 shows the two ways callers reach inference today: the gRPC path through this serving system and a direct HTTP path used by newer LLM-driven applications. Where inference runs depends on the model. Small CPU models run in-process, avoiding remote-call overhead. Larger models need GPUs \u2014 the serving system handles pre- and post-processing locally but delegates inference to a remote service, Model Scoring Service (MSS) . MSS is the shared inf",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Upgrading Checkout Blocks app to Polaris web components",
-      "link": "https://shopify.engineering/upgrading-checkout-blocks-app-to-polaris-web-components",
-      "published": "2026-07-16T17:19:40+00:00",
-      "summary": "We moved five high-traffic checkout extensions to remote-dom and Polaris web components, cutting bundle sizes drastically and making checkout faster.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "Blueberry: Force Multiplier For The On-Call Engineer",
-      "link": "https://tech.instacart.com/blueberry-force-multiplier-for-the-on-call-engineer-98c446dfcc12",
-      "published": "2026-07-14T16:39:20+00:00",
-      "summary": "How we built a Slack-native on-call reasoning harness at Instacart that shortens time to first insight, speeds up theory testing, and turns tribal knowledge into reusable infrastructure. Key Contributors: Karthik Halukurike , Gabe de Oliveira, Hassan Jallad, Alan Wong On-call work is a race to turn noisy signals into shared judgment. The hardest minutes of that race aren\u2019t the ones spent fixing the bug \u2014 they\u2019re the ones spent figuring out what the bug even is, while everyone in the thread is asking the same question from a slightly different angle. Blueberry is the system we built at Instacart for those several minutes. It lives in the Slack thread where the team is already coordinating, picks up each alert as it fires, and lands a grounded explanation back in the thread in about three minutes \u2014 thousands of times a month. On-call is mostly a clarity and speed problem Most on-call pain does not start with a major incident. It starts in the noisy window right after a page fires, when the thread fills with links, dashboards, guesses, and partial context. Someone asks whether a deployment caused it. Someone else asks how broad it is. A third engineer joins and asks what is going on. In that moment, the hardest problem is often not deep root-cause analysis. It is getting to a shared understanding quickly enough that the team can make a good next move. For us, that made two metrics matter most: time to first insight (TTFI) and time to test theories (TTTT). TTFI comes from auto-tr",
-      "source": "Instacart Tech"
-    },
-    {
-      "title": "Inside Shopify Hack Days: Building a prototype for music-playing pages",
-      "link": "https://shopify.engineering/hack-days",
-      "published": "2026-07-14T13:55:57+00:00",
-      "summary": "How a Hack Days team built a music player, custom GLSL visualizers, and an artist toolkit for storefronts, all in three days.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "Building Service Topology at Scale: Architecture, Challenges, and Lessons Learned",
-      "link": "https://netflixtechblog.com/building-service-topology-at-scale-architecture-challenges-and-lessons-learned-f4b792f3f0d8",
-      "published": "2026-07-13T22:44:11+00:00",
-      "summary": "By Parth Jain , Rakesh Sukumar , Yingwu Zhao , Renzo Sanchez-Silva & Nathan Fisher A deep dive into the engineering challenges of building a real-time service dependency map at Netflix scale: from streaming architectures and distributed aggregation pipelines to time-travel queries and the methodology that made it work. Introduction In our first post , we introduced the problem: engineers at Netflix needed a unified, real-time view of service dependencies to troubleshoot faster, understand blast radius, and navigate our distributed architecture. We described our multi-source approach, combining eBPF network flows, IPC metrics, and distributed tracing into physically separate graph layers that can be queried independently or merged into a comprehensive view. That post explained what we built and why . This post is about how , the engineering reality of building this system at Netflix scale. Here\u2019s the truth: the first version worked perfectly\u2026 in our local environment. Production was a different story. Kafka consumers fell behind. Instances ran out of memory. Some nodes received 100x the traffic of others. Garbage collection pauses consumed more CPU than actual business logic. What you\u2019ll learn in this post isn\u2019t a success story, it\u2019s a learning journey. We\u2019ll walk through the architecture decisions that enabled scale, the production challenges that tested those decisions, the optimization methodology that guided us through, and the lessons that apply to any distributed system.",
-      "source": "Netflix TechBlog"
     }
   ]
 }
