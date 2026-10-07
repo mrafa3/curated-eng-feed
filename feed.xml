@@ -6,7 +6,27 @@
     <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 13:03:42 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2026 13:08:17 GMT</lastBuildDate>
+    <item>
+      <title>Metrics Board: Building an Agent-ready Metrics Layer</title>
+      <link>https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756</link>
+      <guid isPermaLink="true">https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756</guid>
+      <pubDate>Wed, 07 Oct 2026 13:08:17 GMT</pubDate>
+      <category>Pinterest Engineering</category>
+      <description>Metric quality and ownership are enforced when a metric is created rather than audited later, which is the thing that makes the same definitions safe for an agent to query instead of letting it loose on raw tables. Worth reading as a design for your own metric layer: the intake checks and the producer-ownership model are the transferable parts, not the petabyte scale.
+
+Source: Pinterest Engineering</description>
+    </item>
+    <item>
+      <title>ShopGym: Realistic, reproducible sandboxes for shopping agents</title>
+      <link>https://shopify.engineering/shopgym</link>
+      <guid isPermaLink="true">https://shopify.engineering/shopgym</guid>
+      <pubDate>Wed, 07 Oct 2026 13:08:17 GMT</pubDate>
+      <category>Shopify Engineering</category>
+      <description>A generated store plus generated tasks gives every agent run the same fixed environment, so a change to the agent can be measured rather than demoed. The same shape applies to your data agents: a frozen snapshot of the warehouse and a generated question set turn text-to-SQL or triage evaluation into a repeatable regression test.
+
+Source: Shopify Engineering</description>
+    </item>
     <item>
       <title>A problem well-defined is half solved: Measuring Hypothesis Quality at Booking.com</title>
       <link>https://booking.ai/a-problem-well-defined-is-half-solved-measuring-hypothesis-quality-at-booking-com-a85e845178a3</link>

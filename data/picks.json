@@ -1,5 +1,21 @@
 [
   {
+    "title": "Metrics Board: Building an Agent-ready Metrics Layer",
+    "link": "https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756",
+    "source": "Pinterest Engineering",
+    "published": "2026-10-06T16:01:02+00:00",
+    "note": "Metric quality and ownership are enforced when a metric is created rather than audited later, which is the thing that makes the same definitions safe for an agent to query instead of letting it loose on raw tables. Worth reading as a design for your own metric layer: the intake checks and the producer-ownership model are the transferable parts, not the petabyte scale.",
+    "curated_at": "2026-10-07T13:08:17.665437+00:00"
+  },
+  {
+    "title": "ShopGym: Realistic, reproducible sandboxes for shopping agents",
+    "link": "https://shopify.engineering/shopgym",
+    "source": "Shopify Engineering",
+    "published": "2026-10-01T16:23:24+00:00",
+    "note": "A generated store plus generated tasks gives every agent run the same fixed environment, so a change to the agent can be measured rather than demoed. The same shape applies to your data agents: a frozen snapshot of the warehouse and a generated question set turn text-to-SQL or triage evaluation into a repeatable regression test.",
+    "curated_at": "2026-10-07T13:08:17.665437+00:00"
+  },
+  {
     "title": "A problem well-defined is half solved: Measuring Hypothesis Quality at Booking.com",
     "link": "https://booking.ai/a-problem-well-defined-is-half-solved-measuring-hypothesis-quality-at-booking-com-a85e845178a3",
     "source": "Booking.com ML & DS",
