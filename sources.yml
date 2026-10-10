@@ -38,13 +38,15 @@ sources:
   #   type: page
   #   pattern: ^/us/en/blog/(?!engineering$|advertising$|earn$|ride$|eat$|merchants$|business$|health$|higher-education$|transit$|community-support$)[^/]+$
 
-  # Task sources: blogs that block the GitHub Actions fetch (403) but load fine for
-  # the Wednesday curator, which fetches them itself and merges the posts in with
-  # scripts/add_candidates.py. The Tuesday fetch skips these.
-  - name: DoorDash Engineering
-    url: https://careersatdoordash.com/engineering-blog/
-    type: task
-    pattern: ^/blog/[^/]+$
+  # Task sources: blogs that block the GitHub Actions fetch but load for the Wednesday
+  # curator, which downloads them with curl and merges the posts in with
+  # scripts/add_candidates.py. The Tuesday fetch skips these. None are active.
+  # Paused 2026-10-10: DoorDash blocks automated requests from every route tried,
+  # GitHub Actions (403) and the curator's session alike.
+  # - name: DoorDash Engineering
+  #   url: https://careersatdoordash.com/engineering-blog/
+  #   type: task
+  #   pattern: ^/blog/[^/]+$
 
 # Not included: vendor blogs that mostly carry product launches and case studies.
 #

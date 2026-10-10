@@ -56,7 +56,7 @@ Every link must already appear in `data/candidates.json`; a link that doesn't is
 |---|---|
 | How the Wednesday curation runs | `CURATOR.md` (the scheduled task reads it each week) |
 | What counts as relevant | `profile.md` |
-| Which blogs are read | `sources.yml` (feeds; `type: page` for blogs with no feed; `type: task` for blogs that block GitHub Actions and are fetched by the curator) |
+| Which blogs are read | `sources.yml` (feeds; `type: page` for blogs with no feed; `type: task` for blogs that block GitHub Actions but load for the curator, which downloads them with curl) |
 | How many links a page source takes | `MAX_PAGE_POSTS` in `scripts/fetch_candidates.py` |
 | How far back the fetch looks | `MAX_AGE_DAYS` in `scripts/fetch_candidates.py` |
 | Feed title or description | `feed_config.json` |
