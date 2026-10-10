@@ -203,6 +203,8 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(days=MAX_AGE_DAYS)
     candidates, failures, stale = [], [], 0
     for src in load_sources():
+        if src.get("type") == "task":
+            continue  # fetched by the Wednesday curator instead; see scripts/add_candidates.py
         try:
             if src.get("type") == "page":
                 posts = parse_page(fetch(src["url"]), src["url"], src.get("pattern", "."), src["name"])
