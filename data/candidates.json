@@ -1,35 +1,84 @@
 {
-  "fetched_at": "2026-10-06T17:05:56.735654+00:00",
+  "fetched_at": "2026-10-10T01:20:36.764218+00:00",
   "max_age_days": 90,
   "failures": [],
   "candidates": [
     {
-      "title": "Metrics Board: Building an Agent-ready Metrics Layer",
-      "link": "https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756",
-      "published": "2026-10-06T16:01:02+00:00",
-      "summary": "Michele Ceccacci; Software Engineer I | Jason Coffman; Sr. Software Engineer | Colm O\u2019Shaughnessy; Software Engineer II | Laura Palmer; Staff Product Manager | Adam Podraza; Manager, Engineering | Surya Karri; Manager, Engineering At Pinterest, reliable and trustworthy metrics are behind every decision: from measuring company-wide business performance to evaluating each feature experiment results. Hundreds of data producers \u2014 analysts, data scientists, and engineers across Pinterest \u2014 create thousands of metrics from our petabyte scale data lake. A metrics ecosystem this size can\u2019t be ad hoc; it has to be organized, scalable, and resilient. So we built Metrics Board : an end-to-end platform that automates metric creation, enforces quality and enables agent-driven analytics. In this post we walk through the product experience, architecture, integrations and explain some of the design choices we made to make metrics work at planet scale. Why Metrics Matter at Pinterest Most organizations rely on a familiar set of metrics \u2014 revenue, growth, engagement \u2014 to steer the business. Metrics are how we understand whether Pinterest is delivering value to users and advertisers. Measures related to areas such as revenue, growth, and engagement turn the complexity of user behavior and Pinterest performance into a shared view of what is working, where we are falling short, and what matters most. These metrics drive the decisions our product, finance, and executive leaders make every day, fro",
+      "title": "From Activity to Intent: Generating User Journeys with LLMs",
+      "link": "https://medium.com/pinterest-engineering/from-activity-to-intent-generating-user-journeys-with-llms-9652b9417626",
+      "published": "2026-10-09T15:01:02+00:00",
+      "summary": "Lin Zhu | Sr. Staff Machine Learning Engineer; Manan Kalra | Machine Learning Engineer II; Byung Eun Jeon | Sr. Machine Learning Engineer; Ye Liu | Staff Machine Learning Engineer; Xiangyi Chen | Sr. Machine Learning Engineer; Jaewon Yang | Principal Machine Learning Engineer; Jinwen Xu | Manager II, Machine Learning Engineering; Tingting Zhu | Sr. Manager, Engineering; Sudarshan Lamkhede | Director, Machine Learning Engineering Pinterest is built to get inspired and then turn the inspiration into realization \u2014 a dinner, a renovation, a wedding, a new skill. That only works if we understand more than the Pin a user just clicked. The useful unit of personalization isn\u2019t the thing someone just clicked, it\u2019s what they\u2019re trying to accomplish. Such goals unfold over weeks and months, across dozens of sessions, through hundreds of saves. We call those goals journeys : the intersection of a user\u2019s interests, intent, and context at a point in time. A journey is a sequence of interactions, often spanning sessions, centered on one interest and a clear intent. For example, \u201cSummer dresses\u201d are an interest. \u201cFiguring out what\u2019s in style for a summer wedding I\u2019m attending in August\u201d is a journey. Someone might be interested in five at once: a kitchen remodel, a vegetable garden, learning sourdough and the mix changes as life does. If we can name those journeys, recommendations and notifications can help someone finish a project instead of bouncing between unrelated interests. This post i",
       "source": "Pinterest Engineering"
     },
     {
-      "title": "Introducing AgentHub: Booking.com Platform for Modular Travel AI Agents",
-      "link": "https://booking.ai/introducing-agenthub-booking-com-platform-for-modular-travel-ai-agents-68bc521a0f50",
-      "published": "2026-10-02T16:12:51+00:00",
-      "summary": "Authors: Moran Beladev , Hadas Harush , Chana Ross At Booking.com we developed AgentHub, a platform to power intelligent, modular, and multi-modal travel experiences through LLM-driven agents. Our platform provides configurable agents capable of performing a wide range of tasks, along with out-of-the-box agent management and monitoring capabilities. With AgentHub, different teams can build and deploy AI agents in a matter of hours, based on configuration and reusable components. Background As AI capabilities continue to advance rapidly, agentic AI is becoming a defining force in the technology landscape. Unlike traditional generative systems, agentic AI extends large language models (LLMs) with iterative planning, autonomous decision-making, and the ability to take action through tools. By enabling direct interaction with internal systems and APIs, these agents can leverage proprietary data and orchestrate workflows end to end \u2014 unlocking deeper contextual understanding and highly personalized user experiences. The Evolution from Generative AI to Agentic AI ( source ) To support a wide range of GenAI use cases at Booking.com, from simple LLM-powered features to fully agentic capabilities, we built the AgentHub platform. AgentHub enables rapid agent creation through configuration-driven setups, backed by robust shared infrastructure. This approach democratizes GenAI across the company, empowering diverse roles such as UX writers, product managers, developers, and more to build",
-      "source": "Booking.com ML & DS"
+      "title": "How we built a personal data scientist for every Notion employee",
+      "link": "https://www.notion.com/blog/how-we-built-a-personal-data-scientist-for-every-notion-employee",
+      "published": "2026-10-08T16:00:00+00:00",
+      "summary": "Data Scout connects governed Snowflake data with company knowledge in Notion to return concrete, useful answers in minutes",
+      "source": "Notion Blog"
     },
     {
-      "title": "ShopGym: Realistic, reproducible sandboxes for shopping agents",
-      "link": "https://shopify.engineering/shopgym",
-      "published": "2026-10-01T16:23:24+00:00",
-      "summary": "ShopGym creates realistic online stores and generates shopping tasks based on each store\u2019s products and features. Developers can then repeatedly test shopping agents under consistent conditions.",
-      "source": "Shopify Engineering"
+      "title": "Introducing: Spotify Technology. Proven at Spotify, now yours.",
+      "link": "https://engineering.atspotify.com/2026/10/introducing-spotify-technology-proven-at-spotify-now-yours/",
+      "published": "2026-10-08T12:30:10+00:00",
+      "summary": "Introducing Spotify Technology. The post Introducing: Spotify Technology. Proven at Spotify, now yours. appeared first on Spotify Engineering .",
+      "source": "Spotify Engineering"
     },
     {
-      "title": "Personalization without user identity",
-      "link": "https://airbnb.tech/infrastructure/personalization-without-user-identity/",
-      "published": "2026-09-29T21:32:38+00:00",
-      "summary": "How Airbnb uses proximity signals to personalize without relying on individual user history. By : Wei Jiang , Bin Xu , Bharathi Thangamani , Weiwei Guo , Sundar Srinivasavaradhan , Tracy Yu , Huiji Gao , Swapnil Ghike , Michael Kinoti Great personalization starts with knowing your user. But what happens when the user is a stranger? A significant share of Airbnb users arrive without a login, without a recent search history, or without any prior booking \u2014 especially those landing from paid advertising or organic search. For these users, the ML models that power search ranking, destination recommendations, and marketing landing pages face the cold-start problem : there is little to no user signal available. In this blog post, we describe Proximity Features \u2014 a new class of ML features that addresses both the cold-start problem and evolving privacy constraints simultaneously. The core hypothesis: aggregate activity patterns within a proximity bucket can provide useful signals for cold-start personalization without relying on individual user identity. By grouping nearby users into buckets and aggregating their collective signals, we can construct rich, location-aware features available immediately for any user whose IP can be geo-located \u2014 no login, no prior history, and no persistent user identifier required. The challenge: serving users without individual signals Personalization at Airbnb has historically relied heavily on a user\u2019s identifier to link together past searches, book",
+      "title": "Beyond synthetic testing: Capturing and replaying real database workloads at Airbnb",
+      "link": "https://airbnb.tech/infrastructure/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb/",
+      "published": "2026-10-06T17:23:49+00:00",
+      "summary": "How we capture real production database traffic at Airbnb and replay it offline to load-test, plan capacity, and de-risk upgrades. By: Zuofei Wang , Erluo Li Introduction At Airbnb, MySQL-compatible databases are a critical backbone of our online database infrastructure: a fleet of hundreds of clusters supporting thousands of use cases at millions of queries per second (QPS). Operating databases at scale brings hard problems, including sizing clusters for future growth, keeping behavior consistent across version upgrades and migrations, and reproducing production incidents well enough to debug them. This post describes the database traffic capture and replay system we built to help us tackle them. Challenges and motivation A complex database operation such as Airbnb\u2019s requires a number of supporting systems, and one of them is a way to capture database queries and replay them. This is needed for error recovery, governance, quality assurance testing and product improvement efforts. Previously, Airbnb\u2019s system for database query capture and replay was fragmented. Each language binding used its own logging framework to emit query traces to Kafka, which were then processed per use case and replayed by a custom replayer. Legacy Query Capture and Replay System This system was borrowed from our observability pipeline. It worked as a fast initial solution, but over time, we found that it fell short of what we needed. Capturing queries client-side and per language carried a heavy main",
       "source": "Airbnb Tech Blog"
+    },
+    {
+      "title": "How Notion built a Custom Agent workflow to keep Academy content current",
+      "link": "https://www.notion.com/blog/how-notion-built-a-custom-agent-workflow-to-keep-academy-content-current",
+      "published": "2026-09-29T18:00:00+00:00",
+      "summary": "Our Customer Education team uses Custom Agents, connected databases, and MCP to spot content gaps, draft fixes, and automatically move approved updates into our learning platform",
+      "source": "Notion Blog"
+    },
+    {
+      "title": "Meet (again) Max Schoening, Notion's new CTO",
+      "link": "https://www.notion.com/blog/meet-max-schoening-notion-cto",
+      "published": "2026-09-24T07:00:00+00:00",
+      "summary": "The org chart of the future will be multidisciplinary, and we\u2019re lucky to have Max lead our technical organization into this future.",
+      "source": "Notion Blog"
+    },
+    {
+      "title": "How Notion handles concurrent editing with CRDTs",
+      "link": "https://www.notion.com/blog/how-notion-handles-concurrent-editing-with-crdts",
+      "published": "2026-09-18T23:00:00+00:00",
+      "summary": "Building a CRDT-based rich-text system that merges concurrent edits across Notion blocks\u2014without losing anyone\u2019s work",
+      "source": "Notion Blog"
+    },
+    {
+      "title": "A skills library for every agent",
+      "link": "https://www.notion.com/blog/a-skills-library-for-every-agent",
+      "published": "2026-09-17T15:30:00+00:00",
+      "summary": "Manage agent skills with Notion\u2019s\u00a0familiar editing experience, collaboration, and governance\u2014then use them everywhere.",
+      "source": "Notion Blog"
+    },
+    {
+      "title": "Building Shared Memory for AI Agents in Notion",
+      "link": "https://www.notion.com/blog/building-shared-memory-for-ai-agents-in-notion",
+      "published": "2026-08-18T12:00:00+00:00",
+      "summary": "Lore turns conversations, decisions, tasks, and durable facts into Notion pages that future agents (and the people they work with) can easily use",
+      "source": "Notion Blog"
+    },
+    {
+      "title": "Rebuilding Notion\u2019s lexical search reindexer",
+      "link": "https://www.notion.com/blog/rebuilding-notions-lexical-search-reindexer",
+      "published": "2026-08-10T14:00:00+00:00",
+      "summary": "How we replaced a manual, multi-week search indexing process with a Spark-native pipeline that\u2019s faster, safer, and easier to run.",
+      "source": "Notion Blog"
+    },
+    {
+      "title": "Security update (July \u201826)",
+      "link": "https://www.notion.com/blog/security-update-july-26",
+      "published": "2026-07-29T07:00:00+00:00",
+      "summary": "A security update from Notion",
+      "source": "Notion Blog"
     }
   ]
 }
