@@ -1,31 +1,37 @@
-# Curation run 2026-10-07
+# Curation run 2026-10-10
 
-- Candidates considered: 4
+- Candidates considered: 19
 - Picked: 2
-- Explicitly skipped: 2
-- Passed over without comment: 0
-- Candidates fetched at: 2026-10-06T17:05:56.735654+00:00
+- Explicitly skipped: 7
+- Passed over without comment: 10
+- Candidates fetched at: 2026-10-10T01:31:30.530092+00:00
 - Recency window: 90 days
+- FEED FAILED: DoorDash Engineering (HTTP Error 403: Forbidden)
 
 ## The week
 
-A thin week - four candidates, all feeds fetched cleanly with no failures. Two cleared the bar on the same theme of making definitions and environments explicit enough for machines to use: Pinterest enforcing metric quality at creation so agents can query the metrics layer, and Shopify's reproducible sandbox for scoring shopping agents.
+Nineteen candidates, mostly Notion and Uber backlog surfacing now that those page sources are live. Two picks, both Notion agents grounded in governed data: the internal analytics assistant and the documentation-upkeep workflow. Two caveats on this run: DoorDash Engineering failed for the second step too (Tuesday's fetch got a 403, and this session's network policy blocks the domain outright), and no post body on any source was reachable, so every judgment rests on titles and feed summaries rather than the posts themselves.
 
 ## Picked
 
-### Metrics Board: Building an Agent-ready Metrics Layer
+### How we built a personal data scientist for every Notion employee
 
-Pinterest Engineering — <https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756>
+Notion Blog — <https://www.notion.com/blog/how-we-built-a-personal-data-scientist-for-every-notion-employee>
 
-Metric quality and ownership are enforced when a metric is created rather than audited later, which is the thing that makes the same definitions safe for an agent to query instead of letting it loose on raw tables. Worth reading as a design for your own metric layer: the intake checks and the producer-ownership model are the transferable parts, not the petabyte scale.
+An internal analytics assistant grounded in governed Snowflake tables plus the company's own written context, rather than in the warehouse alone. The pairing is the transferable part: a data agent needs the curated layer and the docs that define it, or it answers confidently from tables nobody agreed on.
 
-### ShopGym: Realistic, reproducible sandboxes for shopping agents
+### How Notion built a Custom Agent workflow to keep Academy content current
 
-Shopify Engineering — <https://shopify.engineering/shopgym>
+Notion Blog — <https://www.notion.com/blog/how-notion-built-a-custom-agent-workflow-to-keep-academy-content-current>
 
-A generated store plus generated tasks gives every agent run the same fixed environment, so a change to the agent can be measured rather than demoed. The same shape applies to your data agents: a frozen snapshot of the warehouse and a generated question set turn text-to-SQL or triage evaluation into a repeatable regression test.
+An agent spots content gaps, drafts the fix, and only approved drafts get written back to the live platform. That propose-then-approve shape is the one to copy for keeping data model documentation current: the agent does the detection and drafting, a human gate stands between it and anything that ships.
 
 ## Skipped
 
-- **Introducing AgentHub: Booking.com Platform for Modular Travel AI Agents** (Booking.com ML & DS) — A config-driven internal agent platform announcement; the reusable-component and democratization framing leaves no evaluation or operations lesson to adapt, and Booking's earlier agent-evaluation and observability posts already covered the useful ground.
-- **Personalization without user identity** (Airbnb Tech Blog) — Cold-start ranking features and their serving path - recommender architecture on the skip list, and the lesson is not about evaluation or experimentation.
+- **From Activity to Intent: Generating User Journeys with LLMs** (Pinterest Engineering) — Using an LLM to name intent across long event histories is a real idea, but the payoff here is personalization and notification ranking, which the skip list covers, and the lesson is not about evaluation or experimentation.
+- **Building Shared Memory for AI Agents in Notion** (Notion Blog) — Durable facts and decisions written down for later agents is close to the memory an operational triage agent needs, but it is framed as a product feature rather than a design or evaluation account to adapt.
+- **A skills library for every agent** (Notion Blog) — Governing reusable agent instructions is in scope, but this reads as a product announcement rather than a lesson from operating it.
+- **Designing MCP Gateway Uber's MCP Management Platform** (Uber Engineering) — A central registry and governance layer for agent tools touches harness design, but it is platform plumbing sized for Uber's service mesh rather than something a single data team could lift.
+- **Scaling AI in Legal: Building Uber’s Redlining Agent** (Uber Engineering) — An agent rollout outside data work; it would clear the bar if it taught evaluation or adoption, but the listing shows neither and the post body was unreachable this week.
+- **Taming the ML Firehose: Scaling Feature Consistency** (Uber Engineering) — Offline and online feature consistency rhymes with data contracts, but the post is ML-platform plumbing rather than a modeling or governance idea.
+- **Rebuilding Notion’s lexical search reindexer** (Notion Blog) — Replacing a manual multi-week process with a proper pipeline is sound hygiene, but this is search-index infrastructure, not curated-model or metric work.

@@ -1,5 +1,21 @@
 [
   {
+    "title": "How we built a personal data scientist for every Notion employee",
+    "link": "https://www.notion.com/blog/how-we-built-a-personal-data-scientist-for-every-notion-employee",
+    "source": "Notion Blog",
+    "published": "2026-10-08T16:00:00+00:00",
+    "note": "An internal analytics assistant grounded in governed Snowflake tables plus the company's own written context, rather than in the warehouse alone. The pairing is the transferable part: a data agent needs the curated layer and the docs that define it, or it answers confidently from tables nobody agreed on.",
+    "curated_at": "2026-10-10T02:06:33.290693+00:00"
+  },
+  {
+    "title": "How Notion built a Custom Agent workflow to keep Academy content current",
+    "link": "https://www.notion.com/blog/how-notion-built-a-custom-agent-workflow-to-keep-academy-content-current",
+    "source": "Notion Blog",
+    "published": "2026-09-29T18:00:00+00:00",
+    "note": "An agent spots content gaps, drafts the fix, and only approved drafts get written back to the live platform. That propose-then-approve shape is the one to copy for keeping data model documentation current: the agent does the detection and drafting, a human gate stands between it and anything that ships.",
+    "curated_at": "2026-10-10T02:06:33.290693+00:00"
+  },
+  {
     "title": "Metrics Board: Building an Agent-ready Metrics Layer",
     "link": "https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756",
     "source": "Pinterest Engineering",

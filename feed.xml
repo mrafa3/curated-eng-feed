@@ -6,7 +6,27 @@
     <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Oct 2026 13:08:17 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 02:06:33 GMT</lastBuildDate>
+    <item>
+      <title>How we built a personal data scientist for every Notion employee</title>
+      <link>https://www.notion.com/blog/how-we-built-a-personal-data-scientist-for-every-notion-employee</link>
+      <guid isPermaLink="true">https://www.notion.com/blog/how-we-built-a-personal-data-scientist-for-every-notion-employee</guid>
+      <pubDate>Sat, 10 Oct 2026 02:06:33 GMT</pubDate>
+      <category>Notion Blog</category>
+      <description>An internal analytics assistant grounded in governed Snowflake tables plus the company's own written context, rather than in the warehouse alone. The pairing is the transferable part: a data agent needs the curated layer and the docs that define it, or it answers confidently from tables nobody agreed on.
+
+Source: Notion Blog</description>
+    </item>
+    <item>
+      <title>How Notion built a Custom Agent workflow to keep Academy content current</title>
+      <link>https://www.notion.com/blog/how-notion-built-a-custom-agent-workflow-to-keep-academy-content-current</link>
+      <guid isPermaLink="true">https://www.notion.com/blog/how-notion-built-a-custom-agent-workflow-to-keep-academy-content-current</guid>
+      <pubDate>Sat, 10 Oct 2026 02:06:33 GMT</pubDate>
+      <category>Notion Blog</category>
+      <description>An agent spots content gaps, drafts the fix, and only approved drafts get written back to the live platform. That propose-then-approve shape is the one to copy for keeping data model documentation current: the agent does the detection and drafting, a human gate stands between it and anything that ships.
+
+Source: Notion Blog</description>
+    </item>
     <item>
       <title>Metrics Board: Building an Agent-ready Metrics Layer</title>
       <link>https://medium.com/pinterest-engineering/metrics-board-building-an-agent-ready-metrics-layer-2c8fefe68756</link>
