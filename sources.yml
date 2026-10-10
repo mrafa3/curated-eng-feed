@@ -31,10 +31,12 @@ sources:
     url: https://www.notion.com/blog
     type: page
     pattern: ^/blog/(?!topic/|page/)[^/]+$
-  - name: Uber Engineering
-    url: https://www.uber.com/us/en/blog/engineering/
-    type: page
-    pattern: ^/us/en/blog/(?!engineering$|advertising$|earn$|ride$|eat$|merchants$|business$|health$|higher-education$|transit$|community-support$)[^/]+$
+  # Paused 2026-10-10: post pages return 406 to the fetch and carry no publish date, and the
+  # posts were mostly low-level infrastructure.
+  # - name: Uber Engineering
+  #   url: https://www.uber.com/us/en/blog/engineering/
+  #   type: page
+  #   pattern: ^/us/en/blog/(?!engineering$|advertising$|earn$|ride$|eat$|merchants$|business$|health$|higher-education$|transit$|community-support$)[^/]+$
 
   # Task sources: blogs that block the GitHub Actions fetch (403) but load fine for
   # the Wednesday curator, which fetches them itself and merges the posts in with
