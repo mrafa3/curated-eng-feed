@@ -1,6 +1,6 @@
 # Blogs the weekly fetch pulls from. One entry per feed.
 # To add a blog: copy an entry, change name and url. To pause one: comment it out.
-# All active entries below were confirmed working on 2026-09-26.
+# Feed entries below were confirmed working on 2026-09-26; page entries added 2026-10-09.
 
 sources:
   - name: Netflix TechBlog
@@ -19,6 +19,18 @@ sources:
     url: https://engineering.atspotify.com/feed/
   - name: Shopify Engineering
     url: https://shopify.engineering/blog.atom     # full archive, not just recent posts
+
+  # Page sources: blogs with no RSS feed. The fetch reads the index page, takes the
+  # newest post links whose path matches `pattern`, and reads each post for its
+  # description and date. If a redesign breaks one, it shows up under "failures".
+  - name: Anthropic Engineering
+    url: https://www.anthropic.com/engineering
+    type: page
+    pattern: ^/engineering/[^/]+$
+  - name: Notion Blog
+    url: https://www.notion.com/blog
+    type: page
+    pattern: ^/blog/(?!topic/|page/)[^/]+$
 
 # Not included: vendor blogs that mostly carry product launches and case studies.
 #
