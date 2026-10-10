@@ -1,7 +1,13 @@
 {
-  "fetched_at": "2026-10-10T01:20:36.764218+00:00",
+  "fetched_at": "2026-10-10T01:31:30.530092+00:00",
   "max_age_days": 90,
-  "failures": [],
+  "failures": [
+    {
+      "source": "DoorDash Engineering",
+      "url": "https://careersatdoordash.com/engineering-blog/",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
   "candidates": [
     {
       "title": "From Activity to Intent: Generating User Journeys with LLMs",
@@ -79,6 +85,62 @@
       "published": "2026-07-29T07:00:00+00:00",
       "summary": "A security update from Notion",
       "source": "Notion Blog"
+    },
+    {
+      "title": "Scaling AI in Legal: Building Uber\u2019s Redlining Agent",
+      "link": "https://www.uber.com/us/en/blog/building-ubers-redlining-agent",
+      "published": null,
+      "summary": "",
+      "source": "Uber Engineering"
+    },
+    {
+      "title": "Designing MCP Gateway Uber's MCP Management Platform",
+      "link": "https://www.uber.com/us/en/blog/designing-mcp-gateway",
+      "published": null,
+      "summary": "",
+      "source": "Uber Engineering"
+    },
+    {
+      "title": "Taming the ML Firehose: Scaling Feature Consistency",
+      "link": "https://www.uber.com/us/en/blog/taming-ml-firehose",
+      "published": null,
+      "summary": "",
+      "source": "Uber Engineering"
+    },
+    {
+      "title": "How Uber Protects Against Retry Storms",
+      "link": "https://www.uber.com/us/en/blog/protecting-against-retry-storms",
+      "published": null,
+      "summary": "",
+      "source": "Uber Engineering"
+    },
+    {
+      "title": "Large-Scale Automated Dependency Analysis Across Uber's Service Mesh",
+      "link": "https://www.uber.com/us/en/blog/automated-dependency-analysis",
+      "published": null,
+      "summary": "",
+      "source": "Uber Engineering"
+    },
+    {
+      "title": "Halving the Time: How Uber Eats Rebuilt Its Search Pipeline",
+      "link": "https://www.uber.com/us/en/blog/uber-eats-search-pipeline",
+      "published": null,
+      "summary": "",
+      "source": "Uber Engineering"
+    },
+    {
+      "title": "From One Horizontal Scaling Controller to Many: Evolving Uber's Compute Platform",
+      "link": "https://www.uber.com/us/en/blog/evolving-ubers-compute-platform",
+      "published": null,
+      "summary": "",
+      "source": "Uber Engineering"
+    },
+    {
+      "title": "From Chaos to Control: Addressing Shard Distribution Challenges in M3DB with Subclusters",
+      "link": "https://www.uber.com/us/en/blog/from-chaos-to-control",
+      "published": null,
+      "summary": "",
+      "source": "Uber Engineering"
     }
   ]
 }
