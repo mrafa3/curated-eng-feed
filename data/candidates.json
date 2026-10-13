@@ -1,146 +1,28 @@
 {
-  "fetched_at": "2026-10-10T01:31:30.530092+00:00",
+  "fetched_at": "2026-10-13T18:03:50.494469+00:00",
   "max_age_days": 90,
-  "failures": [
-    {
-      "source": "DoorDash Engineering",
-      "url": "https://careersatdoordash.com/engineering-blog/",
-      "error": "HTTP Error 403: Forbidden"
-    }
-  ],
+  "failures": [],
   "candidates": [
     {
-      "title": "From Activity to Intent: Generating User Journeys with LLMs",
-      "link": "https://medium.com/pinterest-engineering/from-activity-to-intent-generating-user-journeys-with-llms-9652b9417626",
-      "published": "2026-10-09T15:01:02+00:00",
-      "summary": "Lin Zhu | Sr. Staff Machine Learning Engineer; Manan Kalra | Machine Learning Engineer II; Byung Eun Jeon | Sr. Machine Learning Engineer; Ye Liu | Staff Machine Learning Engineer; Xiangyi Chen | Sr. Machine Learning Engineer; Jaewon Yang | Principal Machine Learning Engineer; Jinwen Xu | Manager II, Machine Learning Engineering; Tingting Zhu | Sr. Manager, Engineering; Sudarshan Lamkhede | Director, Machine Learning Engineering Pinterest is built to get inspired and then turn the inspiration into realization \u2014 a dinner, a renovation, a wedding, a new skill. That only works if we understand more than the Pin a user just clicked. The useful unit of personalization isn\u2019t the thing someone just clicked, it\u2019s what they\u2019re trying to accomplish. Such goals unfold over weeks and months, across dozens of sessions, through hundreds of saves. We call those goals journeys : the intersection of a user\u2019s interests, intent, and context at a point in time. A journey is a sequence of interactions, often spanning sessions, centered on one interest and a clear intent. For example, \u201cSummer dresses\u201d are an interest. \u201cFiguring out what\u2019s in style for a summer wedding I\u2019m attending in August\u201d is a journey. Someone might be interested in five at once: a kitchen remodel, a vegetable garden, learning sourdough and the mix changes as life does. If we can name those journeys, recommendations and notifications can help someone finish a project instead of bouncing between unrelated interests. This post i",
-      "source": "Pinterest Engineering"
-    },
-    {
-      "title": "How we built a personal data scientist for every Notion employee",
-      "link": "https://www.notion.com/blog/how-we-built-a-personal-data-scientist-for-every-notion-employee",
-      "published": "2026-10-08T16:00:00+00:00",
-      "summary": "Data Scout connects governed Snowflake data with company knowledge in Notion to return concrete, useful answers in minutes",
-      "source": "Notion Blog"
-    },
-    {
-      "title": "Introducing: Spotify Technology. Proven at Spotify, now yours.",
-      "link": "https://engineering.atspotify.com/2026/10/introducing-spotify-technology-proven-at-spotify-now-yours/",
-      "published": "2026-10-08T12:30:10+00:00",
-      "summary": "Introducing Spotify Technology. The post Introducing: Spotify Technology. Proven at Spotify, now yours. appeared first on Spotify Engineering .",
-      "source": "Spotify Engineering"
-    },
-    {
-      "title": "Beyond synthetic testing: Capturing and replaying real database workloads at Airbnb",
-      "link": "https://airbnb.tech/infrastructure/beyond-synthetic-testing-capturing-and-replaying-real-database-workloads-at-airbnb/",
-      "published": "2026-10-06T17:23:49+00:00",
-      "summary": "How we capture real production database traffic at Airbnb and replay it offline to load-test, plan capacity, and de-risk upgrades. By: Zuofei Wang , Erluo Li Introduction At Airbnb, MySQL-compatible databases are a critical backbone of our online database infrastructure: a fleet of hundreds of clusters supporting thousands of use cases at millions of queries per second (QPS). Operating databases at scale brings hard problems, including sizing clusters for future growth, keeping behavior consistent across version upgrades and migrations, and reproducing production incidents well enough to debug them. This post describes the database traffic capture and replay system we built to help us tackle them. Challenges and motivation A complex database operation such as Airbnb\u2019s requires a number of supporting systems, and one of them is a way to capture database queries and replay them. This is needed for error recovery, governance, quality assurance testing and product improvement efforts. Previously, Airbnb\u2019s system for database query capture and replay was fragmented. Each language binding used its own logging framework to emit query traces to Kafka, which were then processed per use case and replayed by a custom replayer. Legacy Query Capture and Replay System This system was borrowed from our observability pipeline. It worked as a fast initial solution, but over time, we found that it fell short of what we needed. Capturing queries client-side and per language carried a heavy main",
+      "title": "CASTLE: training natural language search before the first real query",
+      "link": "https://airbnb.tech/ai-ml/castle-training-natural-language-search-before-the-first-real-query/",
+      "published": "2026-10-13T17:36:30+00:00",
+      "summary": "How we addressed the cold-start problem for Airbnb\u2019s natural language search by jointly generating synthetic training data \u2014 queries and relevance labels \u2014 from de-identified booking and search signals. By : Wendy Ran Wei , Hao Li , Weiwei Guo , Xiaowei Liu , Xueyin Chen , Chun How Tan , Malay Haldar , Soumyadip Banerjee , Kedar Bellare , Huiji Gao , Sanjeev Katariya , and Stephanie Moyerman Introduction Natural language search lets guests express intent in their own words, such as \u201cromantic cabin near skiing\u201d or \u201cpet-friendly beach house that sleeps eight,\u201d rather than navigating filters and categories. We needed to introduce this kind of search for Airbnb, and to have it work well from the start. However, this required training the model before we had actual user queries to train the model on, and a reasonable set of relevance labels (inferred from the queries) to map queries to matching listings. Without prior traffic, both must be synthesized from scratch. This is the cold-start problem for natural-language search. Other organizations have faced similar challenges and have created methods to address them. However, prior approaches address the need for a body of queries and the need for relevance labels separately. Passage-based methods such as InPars [1] prompt a large language model (LLM) to generate queries conditioned on a single document, then rely on additional LLM judgments to assign relevance labels, introducing a second source of error. Promptagator [2] improves q",
       "source": "Airbnb Tech Blog"
     },
     {
-      "title": "How Notion built a Custom Agent workflow to keep Academy content current",
-      "link": "https://www.notion.com/blog/how-notion-built-a-custom-agent-workflow-to-keep-academy-content-current",
-      "published": "2026-09-29T18:00:00+00:00",
-      "summary": "Our Customer Education team uses Custom Agents, connected databases, and MCP to spot content gaps, draft fixes, and automatically move approved updates into our learning platform",
+      "title": "Making password login safer on Notion",
+      "link": "https://www.notion.com/blog/making-password-login-safer-on-notion",
+      "published": "2026-10-13T16:00:00+00:00",
+      "summary": "We\u2019re adding a second step to password login at Notion. Here\u2019s what\u2019s changing, who may need to act, and how to get ready.",
       "source": "Notion Blog"
     },
     {
-      "title": "Meet (again) Max Schoening, Notion's new CTO",
-      "link": "https://www.notion.com/blog/meet-max-schoening-notion-cto",
-      "published": "2026-09-24T07:00:00+00:00",
-      "summary": "The org chart of the future will be multidisciplinary, and we\u2019re lucky to have Max lead our technical organization into this future.",
-      "source": "Notion Blog"
-    },
-    {
-      "title": "How Notion handles concurrent editing with CRDTs",
-      "link": "https://www.notion.com/blog/how-notion-handles-concurrent-editing-with-crdts",
-      "published": "2026-09-18T23:00:00+00:00",
-      "summary": "Building a CRDT-based rich-text system that merges concurrent edits across Notion blocks\u2014without losing anyone\u2019s work",
-      "source": "Notion Blog"
-    },
-    {
-      "title": "A skills library for every agent",
-      "link": "https://www.notion.com/blog/a-skills-library-for-every-agent",
-      "published": "2026-09-17T15:30:00+00:00",
-      "summary": "Manage agent skills with Notion\u2019s\u00a0familiar editing experience, collaboration, and governance\u2014then use them everywhere.",
-      "source": "Notion Blog"
-    },
-    {
-      "title": "Building Shared Memory for AI Agents in Notion",
-      "link": "https://www.notion.com/blog/building-shared-memory-for-ai-agents-in-notion",
-      "published": "2026-08-18T12:00:00+00:00",
-      "summary": "Lore turns conversations, decisions, tasks, and durable facts into Notion pages that future agents (and the people they work with) can easily use",
-      "source": "Notion Blog"
-    },
-    {
-      "title": "Rebuilding Notion\u2019s lexical search reindexer",
-      "link": "https://www.notion.com/blog/rebuilding-notions-lexical-search-reindexer",
-      "published": "2026-08-10T14:00:00+00:00",
-      "summary": "How we replaced a manual, multi-week search indexing process with a Spark-native pipeline that\u2019s faster, safer, and easier to run.",
-      "source": "Notion Blog"
-    },
-    {
-      "title": "Security update (July \u201826)",
-      "link": "https://www.notion.com/blog/security-update-july-26",
-      "published": "2026-07-29T07:00:00+00:00",
-      "summary": "A security update from Notion",
-      "source": "Notion Blog"
-    },
-    {
-      "title": "Scaling AI in Legal: Building Uber\u2019s Redlining Agent",
-      "link": "https://www.uber.com/us/en/blog/building-ubers-redlining-agent",
-      "published": null,
-      "summary": "",
-      "source": "Uber Engineering"
-    },
-    {
-      "title": "Designing MCP Gateway Uber's MCP Management Platform",
-      "link": "https://www.uber.com/us/en/blog/designing-mcp-gateway",
-      "published": null,
-      "summary": "",
-      "source": "Uber Engineering"
-    },
-    {
-      "title": "Taming the ML Firehose: Scaling Feature Consistency",
-      "link": "https://www.uber.com/us/en/blog/taming-ml-firehose",
-      "published": null,
-      "summary": "",
-      "source": "Uber Engineering"
-    },
-    {
-      "title": "How Uber Protects Against Retry Storms",
-      "link": "https://www.uber.com/us/en/blog/protecting-against-retry-storms",
-      "published": null,
-      "summary": "",
-      "source": "Uber Engineering"
-    },
-    {
-      "title": "Large-Scale Automated Dependency Analysis Across Uber's Service Mesh",
-      "link": "https://www.uber.com/us/en/blog/automated-dependency-analysis",
-      "published": null,
-      "summary": "",
-      "source": "Uber Engineering"
-    },
-    {
-      "title": "Halving the Time: How Uber Eats Rebuilt Its Search Pipeline",
-      "link": "https://www.uber.com/us/en/blog/uber-eats-search-pipeline",
-      "published": null,
-      "summary": "",
-      "source": "Uber Engineering"
-    },
-    {
-      "title": "From One Horizontal Scaling Controller to Many: Evolving Uber's Compute Platform",
-      "link": "https://www.uber.com/us/en/blog/evolving-ubers-compute-platform",
-      "published": null,
-      "summary": "",
-      "source": "Uber Engineering"
-    },
-    {
-      "title": "From Chaos to Control: Addressing Shard Distribution Challenges in M3DB with Subclusters",
-      "link": "https://www.uber.com/us/en/blog/from-chaos-to-control",
-      "published": null,
-      "summary": "",
-      "source": "Uber Engineering"
+      "title": "Redesigning source control at Anthropic",
+      "link": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "published": "2026-10-13T00:00:00+00:00",
+      "summary": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
+      "source": "Anthropic Engineering"
     }
   ]
 }
