@@ -19,6 +19,8 @@ sources:
     url: https://engineering.atspotify.com/feed/
   - name: Shopify Engineering
     url: https://shopify.engineering/blog.atom     # full archive, not just recent posts
+  - name: Faire Engineering (The Craft)
+    url: https://craft.faire.com/feed
 
   # Page sources: blogs with no RSS feed. The fetch reads the index page, takes the
   # newest post links whose path matches `pattern`, and reads each post for its
