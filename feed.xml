@@ -6,7 +6,47 @@
     <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2026 02:06:33 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 13:09:47 GMT</lastBuildDate>
+    <item>
+      <title>Autoscience: How we built agent-driven ML exploration at Faire</title>
+      <link>https://craft.faire.com/autoscience-how-we-built-agent-driven-ml-exploration-at-faire-f3183e7deb29</link>
+      <guid isPermaLink="true">https://craft.faire.com/autoscience-how-we-built-agent-driven-ml-exploration-at-faire-f3183e7deb29</guid>
+      <pubDate>Wed, 14 Oct 2026 13:09:47 GMT</pubDate>
+      <category>Faire Engineering (The Craft)</category>
+      <description>An agent runs the whole propose-train-score-keep-or-revert loop, so the number of modeling ideas tried stops being bounded by how much engineer attention is free to review each one. The precondition worth noting is that the accept/reject criterion has to be automated and trusted before the loop is worth anything, which is the same gate to clear before letting an agent iterate on forecast specifications.
+
+Source: Faire Engineering (The Craft)</description>
+    </item>
+    <item>
+      <title>Faire’s agentic development culture</title>
+      <link>https://craft.faire.com/faires-agentic-development-culture-7aeb03f04bcb</link>
+      <guid isPermaLink="true">https://craft.faire.com/faires-agentic-development-culture-7aeb03f04bcb</guid>
+      <pubDate>Wed, 14 Oct 2026 13:09:47 GMT</pubDate>
+      <category>Faire Engineering (The Craft)</category>
+      <description>Faire's stance is to build the agent harness in-house rather than wait for vendors, on the premise that the harness is what converts raw model capability into reliability. A useful frame for deciding which parts of a data-agent setup are worth owning and which are safe to buy.
+
+Source: Faire Engineering (The Craft)</description>
+    </item>
+    <item>
+      <title>Redesigning source control at Anthropic</title>
+      <link>https://www.anthropic.com/engineering/redesigning-source-control</link>
+      <guid isPermaLink="true">https://www.anthropic.com/engineering/redesigning-source-control</guid>
+      <pubDate>Wed, 14 Oct 2026 13:09:47 GMT</pubDate>
+      <category>Anthropic Engineering</category>
+      <description>Skip the version control internals; the liftable pattern is the "superfan" - a per-component agent with access to telemetry and logs, parked in its own Slack channel, which catches subtle anomalies that threshold alerts miss. Also a candid account of the review shift: engineers now check a change's intent rather than every line, and much of the job becomes telling the agent no when it violates a constraint to satisfy a pattern.
+
+Source: Anthropic Engineering</description>
+    </item>
+    <item>
+      <title>CASTLE: training natural language search before the first real query</title>
+      <link>https://airbnb.tech/ai-ml/castle-training-natural-language-search-before-the-first-real-query/</link>
+      <guid isPermaLink="true">https://airbnb.tech/ai-ml/castle-training-natural-language-search-before-the-first-real-query/</guid>
+      <pubDate>Wed, 14 Oct 2026 13:09:47 GMT</pubDate>
+      <category>Airbnb Tech Blog</category>
+      <description>Relevance labels come out correct by construction - booked-over-viewed pairs decide positive and negative, and the LLM only writes the query - which keeps LLM-as-judge error out of the training set entirely. They also check the synthetic query distribution against real queries with KL divergence rather than assuming realism, both worth copying when building a golden set for an analytics assistant that has no query history yet.
+
+Source: Airbnb Tech Blog</description>
+    </item>
     <item>
       <title>How we built a personal data scientist for every Notion employee</title>
       <link>https://www.notion.com/blog/how-we-built-a-personal-data-scientist-for-every-notion-employee</link>

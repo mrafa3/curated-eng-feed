@@ -1,37 +1,44 @@
-# Curation run 2026-10-10
+# Curation run 2026-10-14
 
-- Candidates considered: 19
-- Picked: 2
-- Explicitly skipped: 7
-- Passed over without comment: 10
-- Candidates fetched at: 2026-10-10T01:31:30.530092+00:00
+- Candidates considered: 8
+- Picked: 4
+- Explicitly skipped: 3
+- Passed over without comment: 1
+- Candidates fetched at: 2026-10-14T00:41:51.339740+00:00
 - Recency window: 90 days
-- FEED FAILED: DoorDash Engineering (HTTP Error 403: Forbidden)
 
 ## The week
 
-Nineteen candidates, mostly Notion and Uber backlog surfacing now that those page sources are live. Two picks, both Notion agents grounded in governed data: the internal analytics assistant and the documentation-upkeep workflow. Two caveats on this run: DoorDash Engineering failed for the second step too (Tuesday's fetch got a 403, and this session's network policy blocks the domain outright), and no post body on any source was reachable, so every judgment rests on titles and feed summaries rather than the posts themselves.
+Eight candidates, five of them a Faire backlog surfacing now that The Craft feed is live, and the set was unusually well aimed at AI adoption and agent harness design. Four picks: Faire's agent-driven ML exploration loop and its build-the-harness stance, Anthropic's account of what changed organizationally at 30,000 merges a day, and Airbnb's method for getting relevance labels without an LLM judge. Two caveats: craft.faire.com returns 403 at this environment's network proxy, so all five Faire posts were judged on feed summaries rather than their bodies, and no source failed Tuesday's fetch.
 
 ## Picked
 
-### How we built a personal data scientist for every Notion employee
+### Autoscience: How we built agent-driven ML exploration at Faire
 
-Notion Blog — <https://www.notion.com/blog/how-we-built-a-personal-data-scientist-for-every-notion-employee>
+Faire Engineering (The Craft) — <https://craft.faire.com/autoscience-how-we-built-agent-driven-ml-exploration-at-faire-f3183e7deb29>
 
-An internal analytics assistant grounded in governed Snowflake tables plus the company's own written context, rather than in the warehouse alone. The pairing is the transferable part: a data agent needs the curated layer and the docs that define it, or it answers confidently from tables nobody agreed on.
+An agent runs the whole propose-train-score-keep-or-revert loop, so the number of modeling ideas tried stops being bounded by how much engineer attention is free to review each one. The precondition worth noting is that the accept/reject criterion has to be automated and trusted before the loop is worth anything, which is the same gate to clear before letting an agent iterate on forecast specifications.
 
-### How Notion built a Custom Agent workflow to keep Academy content current
+### Faire’s agentic development culture
 
-Notion Blog — <https://www.notion.com/blog/how-notion-built-a-custom-agent-workflow-to-keep-academy-content-current>
+Faire Engineering (The Craft) — <https://craft.faire.com/faires-agentic-development-culture-7aeb03f04bcb>
 
-An agent spots content gaps, drafts the fix, and only approved drafts get written back to the live platform. That propose-then-approve shape is the one to copy for keeping data model documentation current: the agent does the detection and drafting, a human gate stands between it and anything that ships.
+Faire's stance is to build the agent harness in-house rather than wait for vendors, on the premise that the harness is what converts raw model capability into reliability. A useful frame for deciding which parts of a data-agent setup are worth owning and which are safe to buy.
+
+### Redesigning source control at Anthropic
+
+Anthropic Engineering — <https://www.anthropic.com/engineering/redesigning-source-control>
+
+Skip the version control internals; the liftable pattern is the "superfan" - a per-component agent with access to telemetry and logs, parked in its own Slack channel, which catches subtle anomalies that threshold alerts miss. Also a candid account of the review shift: engineers now check a change's intent rather than every line, and much of the job becomes telling the agent no when it violates a constraint to satisfy a pattern.
+
+### CASTLE: training natural language search before the first real query
+
+Airbnb Tech Blog — <https://airbnb.tech/ai-ml/castle-training-natural-language-search-before-the-first-real-query/>
+
+Relevance labels come out correct by construction - booked-over-viewed pairs decide positive and negative, and the LLM only writes the query - which keeps LLM-as-judge error out of the training set entirely. They also check the synthetic query distribution against real queries with KL divergence rather than assuming realism, both worth copying when building a golden set for an analytics assistant that has no query history yet.
 
 ## Skipped
 
-- **From Activity to Intent: Generating User Journeys with LLMs** (Pinterest Engineering) — Using an LLM to name intent across long event histories is a real idea, but the payoff here is personalization and notification ranking, which the skip list covers, and the lesson is not about evaluation or experimentation.
-- **Building Shared Memory for AI Agents in Notion** (Notion Blog) — Durable facts and decisions written down for later agents is close to the memory an operational triage agent needs, but it is framed as a product feature rather than a design or evaluation account to adapt.
-- **A skills library for every agent** (Notion Blog) — Governing reusable agent instructions is in scope, but this reads as a product announcement rather than a lesson from operating it.
-- **Designing MCP Gateway Uber's MCP Management Platform** (Uber Engineering) — A central registry and governance layer for agent tools touches harness design, but it is platform plumbing sized for Uber's service mesh rather than something a single data team could lift.
-- **Scaling AI in Legal: Building Uber’s Redlining Agent** (Uber Engineering) — An agent rollout outside data work; it would clear the bar if it taught evaluation or adoption, but the listing shows neither and the post body was unreachable this week.
-- **Taming the ML Firehose: Scaling Feature Consistency** (Uber Engineering) — Offline and online feature consistency rhymes with data contracts, but the post is ML-platform plumbing rather than a modeling or governance idea.
-- **Rebuilding Notion’s lexical search reindexer** (Notion Blog) — Replacing a manual multi-week process with a proper pipeline is sound hygiene, but this is search-index infrastructure, not curated-model or metric work.
+- **Virtual Packer: How Faire estimates shipping costs at checkout** (Faire Engineering (The Craft)) — Replacing a fit on each brand's shipping history with a simulation of the packing priced against live carrier rates is a genuine structural-versus-historical forecasting reframe, but craft.faire.com was unreachable this week and what the listing shows is specific to shipping logistics.
+- **Spec, review, ship: How AI is changing the way Faire builds software** (Faire Engineering (The Craft)) — A recap of four conference talks rather than an account of operating the practice, and the agentic development culture post from the same blog covers the same ground with more depth.
+- **Staying close to the craft in a rapidly shifting industry** (Faire Engineering (The Craft)) — A candid reflection on moving between IC and manager roles, but it is personal design-career advice rather than how a team is structured, staffed, or sets priorities.
