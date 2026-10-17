@@ -1,63 +1,147 @@
 {
-  "fetched_at": "2026-10-14T00:41:51.339740+00:00",
+  "fetched_at": "2026-10-17T02:27:02.991587+00:00",
   "max_age_days": 90,
   "failures": [],
   "candidates": [
     {
-      "title": "CASTLE: training natural language search before the first real query",
-      "link": "https://airbnb.tech/ai-ml/castle-training-natural-language-search-before-the-first-real-query/",
-      "published": "2026-10-13T17:36:30+00:00",
-      "summary": "How we addressed the cold-start problem for Airbnb\u2019s natural language search by jointly generating synthetic training data \u2014 queries and relevance labels \u2014 from de-identified booking and search signals. By : Wendy Ran Wei , Hao Li , Weiwei Guo , Xiaowei Liu , Xueyin Chen , Chun How Tan , Malay Haldar , Soumyadip Banerjee , Kedar Bellare , Huiji Gao , Sanjeev Katariya , and Stephanie Moyerman Introduction Natural language search lets guests express intent in their own words, such as \u201cromantic cabin near skiing\u201d or \u201cpet-friendly beach house that sleeps eight,\u201d rather than navigating filters and categories. We needed to introduce this kind of search for Airbnb, and to have it work well from the start. However, this required training the model before we had actual user queries to train the model on, and a reasonable set of relevance labels (inferred from the queries) to map queries to matching listings. Without prior traffic, both must be synthesized from scratch. This is the cold-start problem for natural-language search. Other organizations have faced similar challenges and have created methods to address them. However, prior approaches address the need for a body of queries and the need for relevance labels separately. Passage-based methods such as InPars [1] prompt a large language model (LLM) to generate queries conditioned on a single document, then rely on additional LLM judgments to assign relevance labels, introducing a second source of error. Promptagator [2] improves q",
-      "source": "Airbnb Tech Blog"
-    },
-    {
-      "title": "Making password login safer on Notion",
-      "link": "https://www.notion.com/blog/making-password-login-safer-on-notion",
-      "published": "2026-10-13T16:00:00+00:00",
-      "summary": "We\u2019re adding a second step to password login at Notion. Here\u2019s what\u2019s changing, who may need to act, and how to get ready.",
+      "title": "How we connected Notion AI to 160 new apps in three weeks",
+      "link": "https://www.notion.com/blog/how-we-connected-notion-ai-to-160-new-apps-in-three-weeks",
+      "published": "2026-10-16T16:40:00+00:00",
+      "summary": "The secret was a Notion agent\u2014follow it through the Figma setup, connection, and testing process.",
       "source": "Notion Blog"
     },
     {
-      "title": "Redesigning source control at Anthropic",
-      "link": "https://www.anthropic.com/engineering/redesigning-source-control",
-      "published": "2026-10-13T00:00:00+00:00",
-      "summary": "As our merges per day grew more than tenfold, source control became our biggest development bottleneck. Here, we share how we migrated to an in-house version control system in five months.",
-      "source": "Anthropic Engineering"
+      "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
+      "link": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf",
+      "published": "2026-10-16T16:01:02+00:00",
+      "summary": "Prasanna Vijayanathan , Renzo Sanchez-Silva When Jake Paul and Mike Tyson stepped into the ring in November 2024, we delivered the fight to roughly 65 million concurrent streams. On an ordinary day our infrastructure takes in more than 2 billion requests and handles upwards of 38 million real-time logging events every second. At that scale, the whole picture doesn\u2019t fit into a single engineering team\u2019s head or onto a single dashboard. With more Live content, Podcasts and real-time streams, our need to understand and update our systems as quickly as possible becomes imperative to provide a good user experience. Understanding the system at this scale and within the time constraints we have, often becomes a daunting exercise in finding a needle in a haystack, in a dark jungle, blindfolded. This post is about that search for the needle. The Four hours before a fix Consider a regression of the kind we see in a given week. The home screen where you see the list of lists of movies, starts taking about 1.5 seconds longer to render. An alert fires. And then we go looking for what caused this issue and how do we fix it? As it so happens, a regression on the application could be related to anywhere in the system \u2014 a client app regression from a new version deployment or A/B test rollout, a load shedding in the infrastructure, a GraphQL query responding with bad data because of a service rollout 6 hops downstream, are all suspects at this point. So, answering \u201cwhat caused the issue?\u201d nee",
+      "source": "Netflix TechBlog"
     },
     {
-      "title": "Staying close to the craft in a rapidly shifting industry",
-      "link": "https://craft.faire.com/staying-close-to-the-craft-in-a-rapidly-shifting-industry-cf7a108f524e",
-      "published": "2026-09-03T18:44:10+00:00",
-      "summary": "What I\u2019ve learned from moving between IC and manager roles and why staying hands-on matters, especially in this new AI-obsessed world Photo by Kelly Boitano It was really only a few years ago when the general concept of \u201cgrowth\u201d was straightforward for a designer navigating their career path: keep climbing the ladder until you become a manager, then let go of the hands-on work for good \u2014 and keep on climbing. That model is breaking down right in front of us. More and more designers are choosing to stay close to the craft; driving impact, leading others, and executing at a high level without ever moving into a traditional management role. But I think we\u2019re already past that being the most interesting shift. With AI tools accelerating what a single designer can build, and with companies rethinking what they need from their teams, the line between making and managing is getting blurrier by the day. The question isn\u2019t \u201cWhich track do I pick?\u201d anymore. It\u2019s \u201cWhat kind of builder do I want to be right now?\u201d I\u2019ve been navigating this question for most of my career, but framed up as \u201cmanagement vs. IC\u201d well before it became a broader industry conversation. I\u2019d like to share what I\u2019ve learned, as one designer\u2019s story of figuring it out in real time. Bouncing between making and managing I\u2019ve bounced around in title a lot. Today I\u2019m a Principal Product Designer at Faire , but over the last ten years I\u2019ve crossed the career ladder tracks multiple times as a manager, then a manager managi",
-      "source": "Faire Engineering (The Craft)"
+      "title": "Advancing Generative Recommendation Inference: our collaboration with NVIDIA on TensorRT LLM",
+      "link": "https://engineering.atspotify.com/2026/10/advancing-generative-recommendation-inference-our-collaboration-with-nvidia-on-tensorrt-llm/",
+      "published": "2026-10-16T14:29:18+00:00",
+      "summary": "At Spotify, every surface and interaction is personalized to you as a user: the content on the Home page, the... The post Advancing Generative Recommendation Inference: our collaboration with NVIDIA on TensorRT LLM appeared first on Spotify Engineering .",
+      "source": "Spotify Engineering"
     },
     {
-      "title": "Faire\u2019s agentic development culture",
-      "link": "https://craft.faire.com/faires-agentic-development-culture-7aeb03f04bcb",
-      "published": "2026-08-18T15:01:02+00:00",
-      "summary": "How we\u2019re working towards our long-term vision of a lights-out codebase In early 2025, it was already clear that the incremental capability of models would be accelerating, eventually crossing a threshold for autonomous code delivery. With each big frontier model launch, more and more engineers were changing their day-to-day execution from autocomplete assistance to prompt engineering. At Faire , we didn\u2019t want to wait for the frontier model vendors to eventually cross the efficacy threshold, or come out with the generic tooling, before we drove adoption. We wanted to squeeze the most out of existing capability, while starting the long-term work of hardening the prerequisites for an agent harness that upgrades capability into reliability . This article describes our adoption journey so far, and the principles behind it. Principles Let\u2019s start with the principles. Over the course of our journey, we\u2019ve developed two key principles that have guided our approach to Faire\u2019s agentic culture so far, and will continue to do so in the future: Just build it. Every engineering org will have the same continuous debate: build or buy. When a new capability emerges, do you wait for a vendor to package it up and sell it to you, or do you build a thin version yourself and start learning today? Our answer has consistently been: just build it! This is not because we think we can out-engineer the frontier labs. We can\u2019t, and don\u2019t try to. The strategy is more disciplined than that. We build in a",
-      "source": "Faire Engineering (The Craft)"
+      "title": "Walmart Connect on Cross-Sell and Intent",
+      "link": "https://www.growthbook.io/blog/from-cross-sell-to-shopper-intent-what-experimentation-taught-us-edge",
+      "published": "2026-10-15T00:00:00+00:00",
+      "summary": "Arv Ramchandani of Walmart Connect on the cross-sell ad test that failed, and how rebuilding it around shopper intent changed what the team tested next.",
+      "source": "GrowthBook Blog"
     },
     {
-      "title": "Spec, review, ship: How AI is changing the way Faire builds software",
-      "link": "https://craft.faire.com/spec-review-ship-how-ai-is-changing-the-way-faire-builds-software-79f475b60908",
-      "published": "2026-08-04T22:27:25+00:00",
-      "summary": "Highlights from our July 2026 Kitchener-Waterloo Tech Talk Written with Hyma Acharya , Zach Radford , Quinn Budan , and Vaibhav Singh Faire Tech Talk speakers: Vaibhav Singh , Hyma Acharya , Mark Widish , Zach Radford , Quinn Budan . Earlier this month, we welcomed Kitchener-Waterloo\u2019s tech community into our office for a Tech Talk dedicated to how Faire engineers build. Across four talks, our speakers shared how AI is changing the way Faire builds software, from spec-driven development to AI code review and AI testing, all with the goal of delivering real value for the brands and retailers we serve. You can watch a video recording of the event . Here are some of the highlights! https://medium.com/media/8a8162d5f4b66c9d3912bfda4d393679/href Turning product intent into shippable code with AI Vaibhav Singh , a senior engineer on Faire\u2019s Brand team, discussed Faire\u2019s approach to spec-driven development, which helps engineers turn product ideas into production software with AI. AI coding tools can move quickly, but they need clear context. Consider this prompt: \u201cAdd image paste to the product editor.\u201d This doesn\u2019t explain the user problem, technical constraints, validation plan, or possible risks related to the ask. Without this context, AI must fill in the gaps. This context often already exists but it\u2019s spread across product documents, Slack, Jira, and GitHub. Faire\u2019s workflow brings it into one shared specification, which covers product goals, requirements, architecture, trade",
-      "source": "Faire Engineering (The Craft)"
+      "title": "Integrating Netflix\u2019s Foundation Model into Personalization applications",
+      "link": "https://netflixtechblog.com/integrating-netflixs-foundation-model-into-personalization-applications-cf176b5860eb",
+      "published": "2026-10-14T20:02:22+00:00",
+      "summary": "Authors: Divya Gadde , Ko-Jen Hsiao , Dhaval Patel and Moumita Bhattacharya The motivation for building the Netflix Foundation Model for personalization was laid out in this previous blog post. The Netflix homepage is powered by several specialized models and it requires significant time and resources to maintain and continue innovating on these individual models. Therefore, we decided to centralize member preference learning and have one powerful model learned from comprehensive user interaction histories and content data at a large scale and have this model distribute its learnings to other models. The previous two blog posts( 1 , 2 ) focus on the development of the Foundation Model and here we talk about how we integrate the Foundation Model into various applications. We found that there is extensive literature focused on the training and inference of large-scale transformer-based models. However, there remains a significant gap in practical guidance and research on how to effectively and efficiently integrate large models into existing production systems. At Netflix, we experimented with 3 distinct integration approaches \u2014 embeddings, subgraph and fine-tuning. The motivation for trying different approaches stems from varying application needs. Specifically, different teams have different latency requirements, tech stack constraints and different appetites for leveraging the full power of a large foundation model. In this blog, we go over the 3 approaches we experimented w",
+      "source": "Netflix TechBlog"
     },
     {
-      "title": "Virtual Packer: How Faire estimates shipping costs at checkout",
-      "link": "https://craft.faire.com/virtual-packer-how-faire-estimates-shipping-costs-at-checkout-a17509fac73d",
-      "published": "2026-07-29T16:01:03+00:00",
-      "summary": "Combining multimodal machine learning and live carrier rates to estimate shipping costs before an order is packed Picture a boutique owner in Austin browsing Faire , our online wholesale marketplace. They have filled a cart with brands that match the boutique\u2019s character \u2014 candles, ceramic mugs, and a few sets of greeting cards \u2014 and they\u2019re about to check out. Before they place the order, one cost is still unknown: shipping \u2014 and it comes straight off their margin. How much will it cost to ship? It\u2019s an easy question to ask and a deceptively hard one to answer. At the moment of checkout, we don\u2019t yet know \u2014 brands ship directly to retailers from their own warehouses. We don\u2019t know which carrier the brand will use, whether they\u2019ll ship ground or overnight, or how they\u2019ll pack the order. The real cost won\u2019t be known for days. Yet the retailer needs a number they can trust right now, since it factors directly into whether the order is worth placing at all. For a long time, our Applied Science team answered with a natural starting point: a model built on each brand\u2019s past shipping behavior. It was fast and stable, but wrong often enough to matter. So we started from a different question. Rather than look up what similar orders cost in the past, we simulate the order as a physical shipment, predicting what it will weigh and how many packages it will need, then price those virtual packages using live carrier rates. We call it the Virtual Packer . Today it runs on 80% of eligible o",
-      "source": "Faire Engineering (The Craft)"
+      "title": "DataJunction as Netflix\u2019s answer to the missing piece of the modern data stack",
+      "link": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5",
+      "published": "2026-10-14T19:59:08+00:00",
+      "summary": "by Olek Gorajek , Samuel Redai , Yian Shang Intro Our Netflix journey from data to dashboards, particularly within the space of the experimentation platform, always presented a unique set of challenges. This blog post aims to illuminate these hurdles and explain how an innovative open-source metric platform became instrumental in overcoming some of them. We\u2019ll showcase the critical role that DataJunction played in streamlining our data workflows and enhancing our ability to derive meaningful insights from our vast datasets. Metrics are the foundation of data-driven decision-making, but at many organizations, they are scattered, inconsistently defined, and difficult to discover or trust. At Netflix, this challenge first became apparent in our experimentation platform, where reliable metrics are essential for interpreting test results. But the complexity of the original tooling made it very difficult to understand and introspect these metrics both in terms of their definitions as well as their values. Initial Problem Scattered metric definitions, redundant datasets, and pipelines are often a natural effect of a fast-moving company with a large and powerful analytical workforce. This is a common problem in big data-driven firms, and it is not easy to solve across multiple departments, which are often governed by somewhat different rules and regulations. An easy-to-use, well-governed, and centralized semantic layer can help with these issues. Our initial problem was most evident ",
+      "source": "Netflix TechBlog"
     },
     {
-      "title": "Autoscience: How we built agent-driven ML exploration at Faire",
-      "link": "https://craft.faire.com/autoscience-how-we-built-agent-driven-ml-exploration-at-faire-f3183e7deb29",
-      "published": "2026-07-22T15:01:04+00:00",
-      "summary": "Faire is an online wholesale marketplace connecting independent retailers with brands worldwide. Many of those connections are made possible with machine learning: ranking which products a retailer sees first, deciding which ads are relevant, improving listing quality , and estimating shipping costs. The models underlying these activities share a common problem: there are far more things worth trying (features, architectures, hyperparameters) than any team can reasonably explore. Each iteration demands attention: deciding what to try, reviewing results, and deciding what\u2019s next. Teams end up running a fraction of the ML experiments the problem warrants to be truly optimized. Andrej Karpathy\u2019s Autoresearch offered a promising approach: an agent that iterates on improving a model by proposing a change, training, scoring, keeping the change or reverting, and repeating far more times than a team could in the same span of weeks. However, applying that pattern directly to Faire\u2019s ML systems surfaced practical challenges. To address this, we built Autoscience, named after our AI Applied Science team, to turn agent-driven ML exploration from a promising prototype into a production system used across teams. That required solving three problems in sequence: Making it work with a harness that keeps multi-hour agent sessions reliable and on track Making it broadly usable with tooling that lets teams apply it to their own ML systems without deep agent expertise Making it efficient by givi",
-      "source": "Faire Engineering (The Craft)"
+      "title": "Measuring the Impact of Personalized Recommendations",
+      "link": "https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96",
+      "published": "2026-10-14T19:57:43+00:00",
+      "summary": "By Kevin Zielnicki, Guy Aridor, Aur\u00e9lien Bibaut, Allen Tran, Winston Chou, and Nathan Kallus Introduction Personalization is everywhere on the internet. It shapes the products we discover, the stories we read, the music we hear, and the movies and TV shows we watch. At Netflix, personalization has been central to the member experience for decades \u2014 from the Netflix Prize to our modern recommender system that helps members navigate a large and constantly changing catalog. But personalization is not only an algorithmic problem, it is also a measurement problem. How do we know how much value personalization creates? More precisely, how do we separate the appeal of a title from the value created by recommending that title to the right member at the right time? In a new article in the International Journal of Industrial Organization \u2014 which we are also presenting at this year\u2019s ACM Conference on Economics & Computation (EC \u201826) \u2014 we develop a model of member behavior, title choice, and personalized recommendations. The model lets us estimate how recommendations affect both whether members choose to watch and, if so, which titles they choose. In this post, we summarize our approach and main findings. The Measurement Challenge A natural first attempt at valuing recommendations is to ask: what share of viewing comes from titles that were recommended? This is an intuitive metric, but it fails to answer the causal question at hand. The problem is that recommendations are not randomly a",
+      "source": "Netflix TechBlog"
+    },
+    {
+      "title": "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads",
+      "link": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60",
+      "published": "2026-10-14T19:56:08+00:00",
+      "summary": "By Oleksii Tkachuk , Rajiv Shringi , Chris Lohfink , Abe Ratnofsky , Kartik Sathyanarayanan Introduction In an earlier post , we introduced the TimeSeries Abstraction, our high-throughput, low-latency platform designed to store and query temporal event data at scale. It has since become the operational backbone for Netflix\u2019s largest datasets, which now span multiple petabytes. However, managing such large datasets in hot storage, tuned for low-millisecond latency access , is not cheap. At Netflix, cost-efficiency is a continuous discipline rather than a temporary initiative. This post shares two solutions that significantly reduce storage costs by continuously moving older, less frequently accessed data into cheaper object storage: Solution 1 : Uses Apache Kafka and Flink to stream data directly to S3 Solution 2 : Leverages Cassandra backups in S3 and pluggable Memtables to read data directly from S3 We\u2019ll start with the Kafka/Flink-based design, then describe how we evolved to a native Cassandra-based cold tier. Challenges As Netflix\u2019s TimeSeries datasets have expanded, we\u2019ve encountered several compounding challenges: Growing retention demands : Users often push for increasing data retention to serve a broader range of use cases, which in turn increases the storage costs. Escalating costs : Maintaining massive, dense clusters for infrequently accessed historical data is prohibitively expensive. Sparse historical access: Most queries target recent events, but older data must",
+      "source": "Netflix TechBlog"
+    },
+    {
+      "title": "Behind the Scenes: Evolving Netflix\u2019s Ads Event Pipeline for Live \u2014 Part II",
+      "link": "https://netflixtechblog.com/behind-the-scenes-evolving-netflixs-ads-event-pipeline-for-live-part-ii-826ebf9ad9fb",
+      "published": "2026-10-14T19:51:35+00:00",
+      "summary": "By Yogesh Nagarur Introduction In Part 1 of this series , we shared how Netflix built the Ads Event pipeline and approached it as a system design problem: replacing fragmented pipelines with a centralized collection, enrichment, and a standard data contract. The result was Ads Event Publisher, the system that collects ad telemetry from client devices, enriches it with the context of the ad that was actually served, and publishes a single, unified stream of ad events to every downstream consumer: frequency capping, metrics, billing, measurement partners, and reporting. Any member viewing or account details that move through this pipeline end-to-end are encrypted and handled in accordance with Netflix\u2019s strict privacy and security practices to safeguard member PII. If ad serving is the \u201cbrain\u201d and ad events are the \u201cheartbeats\u201d that feed it, then enrichment is what gives each heartbeat its meaning, turning a bare \u201c[Somebody] watched an ad to completion\u201d signal into \u201c this campaign, this creative, at this price, for this break.\u201d Part 1 described that enrichment step as a single box in the architecture. This post is about what was inside that box, and why we rebuilt it. Part 1 ended with a look at what was on the horizon: ads on live streams, de-duplication, and richer data signals. A single project delivered all three by rebuilding the Ads Event Publisher around stateful stream processing. We replaced a database lookup with a real-time streaming join in Apache Flink, which let t",
+      "source": "Netflix TechBlog"
+    },
+    {
+      "title": "Netflix Conductor: The Next Chapter",
+      "link": "https://netflixtechblog.com/netflix-conductor-the-next-chapter-41ad21067649",
+      "published": "2026-10-14T19:50:17+00:00",
+      "summary": "Netflix Conductor : The Next Chapter by Aravindan Ramkumar on behalf of the Conductor team Conductor is the workflow orchestration engine Netflix uses to stitch micro-services into reliable, observable business processes. If you\u2019ve followed Conductor from the outside, the last thing you heard was probably the note on its GitHub repository : Netflix discontinued maintenance of Conductor OSS to refocus its resources on the internal fork. That announcement marked the end of the open-source chapter, and from the outside it may have looked like the end of the story. It wasn\u2019t. Internally, Conductor never slowed down. If anything, it grew faster, and the demands of that growth pushed us to rebuild it from the ground up. This post is the answer to the natural question that announcement leaves open: what happened to Conductor after that? A lot, it turns out. The clearest way to put it is in terms of growth. Not long ago, Conductor crossing a billion workflow executions in a single year felt like a milestone. Today it clears that bar roughly every quarter , and the monthly volume is still climbing. Sustaining that kind of growth meant rethinking nearly every layer of the system. The data plane it runs on was modernized piece by piece. The evaluation engine was rewritten. The way it allocates work, controls concurrency, and runs compute all changes. The through-line is simple: scale forced a rethink of the evaluation engine and the layers beneath it, and everything else followed. The r",
+      "source": "Netflix TechBlog"
+    },
+    {
+      "title": "Running Apache Spark experiments in my sleep (and on a plane)",
+      "link": "https://netflixtechblog.com/running-apache-spark-experiments-in-my-sleep-and-on-a-plane-588816b6b5f8",
+      "published": "2026-10-14T19:49:11+00:00",
+      "summary": "By Prashanth Gedde Narayanaswamy As one of Netflix\u2019s largest and critical data pipelines, member-sessionizer consolidates tens of billions of hourly client events, encompassing user taps, playbacks, and engagement signals, into individual viewing sessions per profile. A quick two-week tuning effort spiraled into two months when standard approaches hit a wall. Because the failures only happened at full production scale, each test took hours, limiting me to just three or four attempts daily. The turning point was changing the goal: instead of trying to speed up a single run, I built a way to run and monitor multiple tests at once and track every result. That mindset led to an unconventional setup: kicking off five Spark jobs at once and monitoring them over spotty inflight Wi-Fi during a day-long trip home, while cloud servers handled the actual heavy lifting. This post covers how I set up that loop, along with the Spark bottlenecks and memory quirks I uncovered along the way. The Scale Dilemma: Small Samples Don\u2019t Catch Scale Bugs Standard engineering wisdom says that you should isolate bugs on small datasets to iterate quickly. That works for standard software bugs, but it fails completely for big data performance bottlenecks. While upgrading our sessionization pipeline from a legacy logging architecture to a modern platform, the new job hit critical failures, including executor Out-Of-Memory (OOM) errors, severe shuffle spillage, and thousands of stage retries. None of these",
+      "source": "Netflix TechBlog"
+    },
+    {
+      "title": "The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale",
+      "link": "https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508",
+      "published": "2026-10-14T19:48:49+00:00",
+      "summary": "By Emma Yanyang Kong , JJ Tan , Ishan Gupta , Lars Olds , Claire Campbell , David Fagnan , Ratna Kavuri , Rohan Gosain , Veli Balin , Minsu Jang , Louis Garcia Introduction Any team generating text with an LLM at scale hits the same problem. You cannot evaluate everything manually. You don't know which outputs are great, which are mediocre, and which are harmful, because you simply cannot read them all. The standard solution is LLM-as-a-Judge , a second model that scores the first model\u2019s output as a proxy for human raters. It is fast, cheap, and easy to deploy. However, it introduces a new and critical question: Who evaluates the evaluator? Furthermore, if the judge drifts, quietly degrading and starting to approve bad output, nothing downstream will flag it. This post is about how we solve that problem, by building, aligning, and continuously monitoring LLM judges so they stay trustworthy over time. Our core principle is simple: An LLM judge must never operate alone. It has to be anchored in human judgment. We keep a human-in-the-loop (HITL) at every phase of the lifecycle. Humans define what \u201cgood\u201d means, create the labeled benchmark datasets to train and validate the judge, monitor its behavior while it runs in the system, and review and approve any updates before they\u2019re rolled out. We believe: A reliable LLM judge is not a static artifact. It has a lifecycle. It needs to be built against trusted human labels, aligned with human preference and reasoning, run under human-",
+      "source": "Netflix TechBlog"
+    },
+    {
+      "title": "Netflix Stratum Media Processing: Automated Container Right-Sizing",
+      "link": "https://netflixtechblog.com/netflix-stratum-media-processing-automated-container-right-sizing-ddf9aa68a801",
+      "published": "2026-10-14T19:48:20+00:00",
+      "summary": "By Violetta Pidvolotska and Naveen Mareddy Stratum is Netflix\u2019s internal serverless media processing platform, shaped by over a decade of experience developing large-scale distributed systems. It powers a wide range of media workloads \u2014 including encoding, packaging, inspection, and quality scoring \u2014 behind playback, advertising, studio workflows, AI embeddings, and more. Engineers develop Stratum functions by packaging application code and OS dependencies into OCI images. Stratum then schedules these containers as batch jobs on Netflix\u2019s Titus compute platform, with upstream services triggering function executions. Every day, Stratum manages hundreds of thousands of containers across bursty, high-throughput, and latency-sensitive workloads. As Netflix\u2019s core media processing platform, this load needs to scale as new content formats enter the catalog, such as podcasts , live events , sports , ads , or regional ingests like TF1 in France . To request resources for these functions, owners specify their CPU, memory, disk, and network limits as YAML configuration, as shown below: functionName: VideoEncoder.encodeV1 resources: numCpus: 8 memoryInMB: 18000 diskSizeInMB: 50000 networkInMbps: 1000 Maintaining optimal values manually is challenging amidst evolving Netflix infrastructure, EC2 instance upgrades, and application-level changes. Consequently, configs are often over-provisioned upfront or slowly drift away from their ideal values over time. Mis-sized configurations are a un",
+      "source": "Netflix TechBlog"
+    },
+    {
+      "title": "VidaXL's 40% Account Creation Lift",
+      "link": "https://www.growthbook.io/blog/why-more-info-lifted-vidaxl-s-account-creation-nearly-40-edge",
+      "published": "2026-10-14T00:00:00+00:00",
+      "summary": "Sapna Kashyap of VidaXL on why adding information to a B2B registration page lifted account creation nearly 40%, and how a drop-off survey found the fix.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "Introducing the official GrowthBook Slack app",
+      "link": "https://www.growthbook.io/blog/introducing-the-official-growthbook-slack-app",
+      "published": "2026-10-14T00:00:00+00:00",
+      "summary": "How to build a culture of experimentation with the GrowthBook Slack app",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits",
+      "link": "https://www.growthbook.io/blog/growthbook-version-5-1",
+      "published": "2026-09-22T00:00:00+00:00",
+      "summary": "GrowthBook 5.1 is here: a new MCP server, Slack app, and contextual bandits",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "How To Build a Culture of Experimentation: 7 Best Practices",
+      "link": "https://www.growthbook.io/blog/how-build-culture-experimentation",
+      "published": "2026-09-18T00:00:00+00:00",
+      "summary": "A company with a strong experimentation culture improves faster and learns more from every test. Here are 7 practices that build it, with real company examples",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "GrowthBook Learnings turn experiments into knowledge",
+      "link": "https://www.growthbook.io/blog/introducing-learnings",
+      "published": "2026-08-27T00:00:00+00:00",
+      "summary": "Winners compound your metrics. Learnings compound your program. GrowthBook Learnings capture what your experiments taught you, for your team and your agents.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "Why migrate from Statsig to GrowthBook",
+      "link": "https://www.growthbook.io/blog/how-to-migrate-from-statsig-to-growthbook",
+      "published": "2026-08-11T00:00:00+00:00",
+      "summary": "Migrate from Statsig to an open-source platform where your data never leaves your warehouse. Auditable results, per-seat pricing, and a free AI-powered migration kit.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "Product Analytics: GA with GrowthBook 5.0",
+      "link": "https://www.growthbook.io/blog/growthbook-5-0-product-analytics-is-now-generally-available",
+      "published": "2026-07-22T00:00:00+00:00",
+      "summary": "Product Analytics is GA with GrowthBook 5.0: metric explorer, funnel analysis, AI assistant, dashboards, and more, all querying your own data warehouse.",
+      "source": "GrowthBook Blog"
     }
   ]
 }
