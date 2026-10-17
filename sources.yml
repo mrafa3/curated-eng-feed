@@ -33,6 +33,12 @@ sources:
     url: https://www.notion.com/blog
     type: page
     pattern: ^/blog/(?!topic/|page/)[^/]+$
+  # A vendor blog, added deliberately: mostly product launches and podcast case studies,
+  # with occasional experimentation-method posts. The curator filters the launches.
+  - name: GrowthBook Blog
+    url: https://www.growthbook.io/blog
+    type: page
+    pattern: ^/blog/(?!category/|tag/|tags/|page/|author/|authors/)[^/]+$
   # Paused 2026-10-10: post pages return 406 to the fetch and carry no publish date, and the
   # posts were mostly low-level infrastructure.
   # - name: Uber Engineering
