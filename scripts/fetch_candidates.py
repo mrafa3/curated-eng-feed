@@ -26,7 +26,7 @@ ATOM = "{http://www.w3.org/2005/Atom}"
 CONTENT = "{http://purl.org/rss/1.0/modules/content/}encoded"
 SUMMARY_CHARS = 1500
 MAX_AGE_DAYS = 90  # some feeds serve a full archive; only recent posts are worth curating
-MAX_PAGE_POSTS = 8  # page sources list the archive undated, so only the newest links are taken
+MAX_PAGE_POSTS = 20  # how far down an index page to look; featured posts can push new ones down, and the recency window filters old ones
 
 
 def load_sources():
