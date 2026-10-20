@@ -1,8 +1,50 @@
 {
-  "fetched_at": "2026-10-17T02:29:10.370516+00:00",
+  "fetched_at": "2026-10-20T15:35:51.542668+00:00",
   "max_age_days": 90,
   "failures": [],
   "candidates": [
+    {
+      "title": "Cross-store product clustering across millions of stores",
+      "link": "https://shopify.engineering/catalog-clustering-part-ii",
+      "published": "2026-10-20T13:48:59+00:00",
+      "summary": "How we group product listings across millions of stores using tiered matching models, graph partitioning, and learned cluster merge decisions.",
+      "source": "Shopify Engineering"
+    },
+    {
+      "title": "Headspace's Guardrails for AI Tests",
+      "link": "https://www.growthbook.io/blog/engagement-with-safety-headspace-s-guardrails-for-ai-tests-edge",
+      "published": "2026-10-20T00:00:00+00:00",
+      "summary": "Mary Alfheim of Headspace on why more engagement is not always better for a mental health app, and the guardrails her team puts on AI experiments.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "Building Overexposed: understanding application exposure",
+      "link": "https://shopify.engineering/overexposed",
+      "published": "2026-10-19T21:54:14+00:00",
+      "summary": "Our first scanner read config files and missed what was running. We rebuilt it with the cloud inventory, a careful probe, and honest results.",
+      "source": "Shopify Engineering"
+    },
+    {
+      "title": "Agents, rebuilt to do more for less",
+      "link": "https://www.notion.com/blog/notion-ai-more-for-less",
+      "published": "2026-10-19T17:00:00+00:00",
+      "summary": "Discover a faster, more efficient Notion AI with smarter model routing, long-running agents, bring-your-own-AI options, and a new credit system.",
+      "source": "Notion Blog"
+    },
+    {
+      "title": "Introducing ModuleLens: Zooming into PyTorch Modules for Human and Agentic Engineering",
+      "link": "https://medium.com/pinterest-engineering/introducing-modulelens-zooming-into-pytorch-modules-for-human-and-agentic-engineering-b7e9be9d29f8",
+      "published": "2026-10-19T15:01:04+00:00",
+      "summary": "Lida Li, Sr. Staff Software Engineer, Product ML Infra Introduction Modern recommendation systems, including those used for ads ranking and content discovery, have grown substantially in scale and complexity. This growth stems from both increasingly large model architectures. The resulting memory footprint often exceeds the capacity of a single GPU, making it necessary to shard production models across multiple GPUs using distributed training techniques such as Distributed Model Parallelism (DMP). This evolution brings challenges to the everyday engineer work on testing and debugging the model code. The bottleneck includes: Local Machine Hardware Limits : Because production models require multi-GPU setups, initializing a full model locally on a single-gpu workstation is virtually impossible. Input Data Dependencies : When an engineer modifies code inside a specific downstream module, getting realistic input data is a major hurdle. Traditionally, obtaining that input requires initializing the entire multi-GPU pipeline from scratch and executing every preceding module in the network \u2014 wasting immense amounts of time and computation resources. Slow Iteration Feedback Loops : Engineers face prolonged iteration loops when attempting to verify sub-module changes, as every code edit requires re-executing or re-initializing heavy distributed trainer setups. To eliminate these bottlenecks, we build ModuleLens , which pivots from a legacy \u201cModel-First\u201d paradigm to an isolated \u201cModule-F",
+      "source": "Pinterest Engineering"
+    },
+    {
+      "title": "From Static Help Content to a RAG-Based Onboarding Agent for Partners",
+      "link": "https://booking.ai/from-static-help-content-to-a-rag-based-onboarding-agent-for-partners-f7d5a789c4f7",
+      "published": "2026-10-19T09:35:24+00:00",
+      "summary": "Authors: Anastasiia Barchukova , Antonio Castelli , Artem Alimov, Kate Rasskazimova, Niels Ranzijn, Susanna Agababyan Every property on Booking.com is listed by a partner \u2014 the person or business that owns or manages the place to stay. Some partners are self-managed: they sign up, list their property, and run it entirely on their own, without a dedicated account manager. For them, the registration process \u2014 a multi-step flow where they create an account and describe their property \u2014 is often where they get stuck, due to its length, unfamiliar terminology, and business-critical decisions they must make before they\u2019ve learned how the platform works. To help self-managed partners get through registration on their own, we built a chatbot that answers their questions as they come up, without needing a human account manager. Our chatbot should therefore be deeply grounded in the context of the registration funnel, while also being capable of managing partner expectations by answering broader questions about the platform and what comes after registration. That is the problem this article is about. It describes the approach behind the next iteration of the solution: an agent embedded directly in the registration flow. By design, the assistant is scoped to answering partners\u2019 questions in context, grounded strictly in the partner help center content \u2014 it does not generate free-form responses outside that knowledge base. The system at a glance At a high level, the chatbot sits inside t",
+      "source": "Booking.com ML & DS"
+    },
     {
       "title": "How we connected Notion AI to 160 new apps in three weeks",
       "link": "https://www.notion.com/blog/how-we-connected-notion-ai-to-160-new-apps-in-three-weeks",
@@ -176,13 +218,6 @@
       "link": "https://www.growthbook.io/blog/sample-ratio-mismatch",
       "published": "2026-08-07T00:00:00+00:00",
       "summary": "A sample ratio mismatch signals data quality issues that mean your experiment results can't be trusted. Learn how to diagnose an SRM and address the root cause.",
-      "source": "GrowthBook Blog"
-    },
-    {
-      "title": "Product Analytics: GA with GrowthBook 5.0",
-      "link": "https://www.growthbook.io/blog/growthbook-5-0-product-analytics-is-now-generally-available",
-      "published": "2026-07-22T00:00:00+00:00",
-      "summary": "Product Analytics is GA with GrowthBook 5.0: metric explorer, funnel analysis, AI assistant, dashboards, and more, all querying your own data warehouse.",
       "source": "GrowthBook Blog"
     }
   ]
