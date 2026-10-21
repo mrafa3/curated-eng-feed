@@ -1,5 +1,29 @@
 [
   {
+    "title": "DataJunction as Netflix\u2019s answer to the missing piece of the modern data stack",
+    "link": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5",
+    "source": "Netflix TechBlog",
+    "published": "2026-10-14T19:59:08+00:00",
+    "note": "An open-source metric layer sitting between the warehouse and both the dashboards and the experimentation platform, so an experiment metric and the same metric on a dashboard resolve to one definition instead of drifting apart. Worth comparing against how the gold layer and the experiment metrics are defined today, and it is installable rather than an internal-only system.",
+    "curated_at": "2026-10-21T13:13:32.574567+00:00"
+  },
+  {
+    "title": "The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale",
+    "link": "https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508",
+    "source": "Netflix TechBlog",
+    "published": "2026-10-14T19:48:49+00:00",
+    "note": "Treats a judge as a model with a lifecycle: align it to human ratings before trusting it, then keep monitoring that agreement, because a judge shipped once silently drifts away from what the raters meant. The directly usable part is the discipline of measuring judge-to-human agreement as an ongoing metric for any documentation or triage agent scored by an LLM.",
+    "curated_at": "2026-10-21T13:13:32.574567+00:00"
+  },
+  {
+    "title": "Measuring the Impact of Personalized Recommendations",
+    "link": "https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96",
+    "source": "Netflix TechBlog",
+    "published": "2026-10-14T19:57:43+00:00",
+    "note": "Frames the value of a personalization system as a measurement problem in its own right - what it adds over a non-personalized baseline - rather than something read off the online metrics of individual model changes. The same framing applies when asked what a production forecast or a curated model is worth, where incremental tests on single changes never add up to the system-level number.",
+    "curated_at": "2026-10-21T13:13:32.574567+00:00"
+  },
+  {
     "title": "Autoscience: How we built agent-driven ML exploration at Faire",
     "link": "https://craft.faire.com/autoscience-how-we-built-agent-driven-ml-exploration-at-faire-f3183e7deb29",
     "source": "Faire Engineering (The Craft)",

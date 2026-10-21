@@ -6,7 +6,37 @@
     <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 14 Oct 2026 13:09:47 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 13:13:32 GMT</lastBuildDate>
+    <item>
+      <title>DataJunction as Netflix’s answer to the missing piece of the modern data stack</title>
+      <link>https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5</link>
+      <guid isPermaLink="true">https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5</guid>
+      <pubDate>Wed, 21 Oct 2026 13:13:32 GMT</pubDate>
+      <category>Netflix TechBlog</category>
+      <description>An open-source metric layer sitting between the warehouse and both the dashboards and the experimentation platform, so an experiment metric and the same metric on a dashboard resolve to one definition instead of drifting apart. Worth comparing against how the gold layer and the experiment metrics are defined today, and it is installable rather than an internal-only system.
+
+Source: Netflix TechBlog</description>
+    </item>
+    <item>
+      <title>The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale</title>
+      <link>https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508</link>
+      <guid isPermaLink="true">https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508</guid>
+      <pubDate>Wed, 21 Oct 2026 13:13:32 GMT</pubDate>
+      <category>Netflix TechBlog</category>
+      <description>Treats a judge as a model with a lifecycle: align it to human ratings before trusting it, then keep monitoring that agreement, because a judge shipped once silently drifts away from what the raters meant. The directly usable part is the discipline of measuring judge-to-human agreement as an ongoing metric for any documentation or triage agent scored by an LLM.
+
+Source: Netflix TechBlog</description>
+    </item>
+    <item>
+      <title>Measuring the Impact of Personalized Recommendations</title>
+      <link>https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96</link>
+      <guid isPermaLink="true">https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96</guid>
+      <pubDate>Wed, 21 Oct 2026 13:13:32 GMT</pubDate>
+      <category>Netflix TechBlog</category>
+      <description>Frames the value of a personalization system as a measurement problem in its own right - what it adds over a non-personalized baseline - rather than something read off the online metrics of individual model changes. The same framing applies when asked what a production forecast or a curated model is worth, where incremental tests on single changes never add up to the system-level number.
+
+Source: Netflix TechBlog</description>
+    </item>
     <item>
       <title>Autoscience: How we built agent-driven ML exploration at Faire</title>
       <link>https://craft.faire.com/autoscience-how-we-built-agent-driven-ml-exploration-at-faire-f3183e7deb29</link>
