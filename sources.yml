@@ -25,10 +25,12 @@ sources:
   # Page sources: blogs with no RSS feed. The fetch reads the index page, takes the
   # newest post links whose path matches `pattern`, and reads each post for its
   # description and date. If a redesign breaks one, it shows up under "failures".
+  # Since late Oct 2026 the engineering page links its posts under /research/<slug>
+  # rather than /engineering/<slug>, so both prefixes are accepted.
   - name: Anthropic Engineering
     url: https://www.anthropic.com/engineering
     type: page
-    pattern: ^/engineering/[^/]+$
+    pattern: ^/(?:engineering|research)/[^/]+$
   - name: Notion Blog
     url: https://www.notion.com/blog
     type: page
