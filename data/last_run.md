@@ -1,43 +1,42 @@
-# Curation run 2026-10-21
+# Curation run 2026-10-28
 
-- Candidates considered: 31
+- Candidates considered: 13
 - Picked: 3
-- Explicitly skipped: 8
-- Passed over without comment: 20
-- Candidates fetched at: 2026-10-20T15:35:51.542668+00:00
+- Explicitly skipped: 6
+- Passed over without comment: 4
+- Candidates fetched at: 2026-10-27T16:18:17.993952+00:00
 - Recency window: 90 days
+- FEED FAILED: Anthropic Engineering (no post links matched the pattern; the page layout may have changed)
 
 ## The week
 
-A large Netflix backlog landed alongside thirteen GrowthBook posts, and three Netflix pieces cleared the bar: DataJunction as a shared metric layer for dashboards and experiments, the lifecycle of an LLM judge, and measuring the value of personalization as its own problem. Two fetch caveats: Medium-hosted blogs (Netflix, Booking) return a Cloudflare block to curl and growthbook.io is refused at this environment's proxy with a 403, so every candidate this week was judged on its title and feed summary rather than its body; no source failed Tuesday's fetch.
+Three picks, all on evaluating and operating LLM agents: Netflix routing only unknown job failures to a model while rules keep the known ones, Notion calibrating a pointwise judge against pairwise Elo rankings, and Shopify setting a judge's bar at human inter-annotator agreement and recycling failed conversations into training data. Fetch caveats repeat from last week - Medium-hosted Netflix posts return 403 to curl and growthbook.io is refused at this environment's proxy, so the Netflix pick and every GrowthBook near-miss were judged on feed text alone - and Tuesday's fetch reported one source failure, Anthropic Engineering, where no links matched the pattern.
 
 ## Picked
 
-### DataJunction as Netflix’s answer to the missing piece of the modern data stack
+### Making Failure Diagnosis Reliable with Pensive AI
 
-Netflix TechBlog — <https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5>
+Netflix TechBlog — <https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015>
 
-An open-source metric layer sitting between the warehouse and both the dashboards and the experimentation platform, so an experiment metric and the same metric on a dashboard resolve to one definition instead of drifting apart. Worth comparing against how the gold layer and the experiment metrics are defined today, and it is installable rather than an internal-only system.
+Netflix kept its deterministic regex-and-rules classifier for known Spark/Trino/Druid failures and aimed the LLM only at the unknown bucket, which was about half of seven million job-failure classifications in three months. That split - rules stay the trusted path, the model expands coverage where no rule exists - is the design to copy for a pipeline triage agent, along with the framing that the useful output is a decision (my code or the platform, retry, reconfigure, or escalate) rather than a summary of the logs.
 
-### The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale
+### Inside Notion’s upgraded model router, Auto
 
-Netflix TechBlog — <https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508>
+Notion Blog — <https://www.notion.com/blog/inside-notions-upgraded-model-router-auto>
 
-Treats a judge as a model with a lifecycle: align it to human ratings before trusting it, then keep monitoring that agreement, because a judge shipped once silently drifts away from what the raters meant. The directly usable part is the discipline of measuring judge-to-human agreement as an ongoing metric for any documentation or triage agent scored by an LLM.
+Notion found a single LLM judge too noisy even with a detailed rubric, so they ran pairwise comparisons by an ensemble of judges, turned those into Elo rankings, and then tuned a cheap pointwise judge until its scores reproduced the Elo order - agreeing over 80% of the time, and checked against customer thumbs up/down. A pairwise-calibrate-then-score pattern worth borrowing when a pointwise judge on documentation or triage output drifts, and their sandbox approach of replaying real tasks against a saved copy of a workspace is a good model for evaluating an agent on real data work.
 
-### Measuring the Impact of Personalized Recommendations
+### How Shopify turns open models into task experts
 
-Netflix TechBlog — <https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96>
+Shopify Engineering — <https://shopify.engineering/open-model-task-experts>
 
-Frames the value of a personalization system as a measurement problem in its own right - what it adds over a non-personalized baseline - rather than something read off the online metrics of individual model changes. The same framing applies when asked what a production forecast or a curated model is worth, where incremental tests on single changes never add up to the system-level number.
+Two ideas transfer from Shopify's text-to-GraphQL subagent: set the LLM judge's accuracy bar at how well two human experts agree on the same conversations rather than at an absolute score, and turn failed production conversations into training and eval data by having a critic write a hint, rerunning the task, then dropping the hint if the judge passes it. Skim past the NVIDIA hardware benchmarks, which are the vendor half of the post.
 
 ## Skipped
 
-- **Headspace's Guardrails for AI Tests** (GrowthBook Blog) — Guardrails for AI experiments where more engagement is not the goal is a genuinely useful angle, but growthbook.io is blocked at this environment's proxy and the one-line teaser does not say what the guardrails actually are.
-- **How Grubhub Tests Big Product Bets** (GrowthBook Blog) — De-risking big bets when classic A/B tests do not fit a three-sided marketplace is on target, but the post was unreachable and the teaser alone gives no method.
-- **Walmart Connect on Cross-Sell and Intent** (GrowthBook Blog) — A failed test that redirected what the team tested next is the right shape of story, but unreachable this week and the visible text is an interview blurb about ad cross-sell.
-- **Designing Experiments That Produce Trustworthy Results: A Pre-Launch Guide to Validity Threats** (GrowthBook Blog) — A pre-launch validity checklist would be usable with a team, but it is vendor explainer content and the page could not be fetched to check whether it goes past the familiar list.
-- **Beyond evals: A/B test AI features with LLM traces** (GrowthBook Blog) — Wiring Langfuse and Arize trace data into experiment metrics is a real idea for testing prompts against cost and quality, but this is a product launch announcement.
-- **Running Apache Spark experiments in my sleep (and on a plane)** (Netflix TechBlog) — The reframe from speeding up one Spark run to running many tuning runs unattended is a nice workflow idea, but the post is pipeline performance tuning rather than anything about how curated models get built or trusted.
-- **From Static Help Content to a RAG-Based Onboarding Agent for Partners** (Booking.com ML & DS) — A RAG agent for partner onboarding support, not for data work, and the body was unreachable to check whether the evaluation setup transfers.
-- **Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale** (Netflix TechBlog) — An ontology over services and signals sounds adjacent to semantic modeling, but it is infrastructure observability at a scale where the problem is a different one.
+- **How to Run Multiple Experiments at Once and Keep Results Trustworthy** (GrowthBook Blog) — Interaction effects, mutual exclusion, and conflict health checks are squarely on topic, but growthbook.io is refused at this environment's proxy and the teaser does not say whether it goes beyond the standard advice.
+- **The Bottlenecks Slowing Down Your Experimentation Velocity** (GrowthBook Blog) — Where experimentation programs plateau is a useful lens for a team ramping up testing, but the page was unreachable and the teaser reads like a generic vendor funnel piece.
+- **Testing culture is a relationship problem** (GrowthBook Blog) — Experimentation buy-in across sales, support, and product is the right subject, but this is an unreachable interview blurb with no method behind the claim.
+- **New York Red Bulls on testing fan value** (GrowthBook Blog) — Measuring total engagement instead of the obvious conversion metric is a real metric-definition lesson, but the post could not be fetched and the summary is a podcast teaser.
+- **Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes** (Netflix TechBlog) — Measuring who actually depends on the symbols you are about to change rhymes with impact analysis before a gold-layer schema change, but the post is Java library release tooling and the body was blocked to curl.
+- **We gave AI agents a mobile dev environment** (Shopify Engineering) — Giving agents their own environments so they can work in parallel is an interesting constraint on agent workflows, but the post is about mobile app build environments, which the profile skips.

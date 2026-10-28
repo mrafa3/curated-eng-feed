@@ -1,5 +1,29 @@
 [
   {
+    "title": "Making Failure Diagnosis Reliable with Pensive AI",
+    "link": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015",
+    "source": "Netflix TechBlog",
+    "published": "2026-10-26T17:04:57+00:00",
+    "note": "Netflix kept its deterministic regex-and-rules classifier for known Spark/Trino/Druid failures and aimed the LLM only at the unknown bucket, which was about half of seven million job-failure classifications in three months. That split - rules stay the trusted path, the model expands coverage where no rule exists - is the design to copy for a pipeline triage agent, along with the framing that the useful output is a decision (my code or the platform, retry, reconfigure, or escalate) rather than a summary of the logs.",
+    "curated_at": "2026-10-28T13:19:02.454691+00:00"
+  },
+  {
+    "title": "Inside Notion\u2019s upgraded model router, Auto",
+    "link": "https://www.notion.com/blog/inside-notions-upgraded-model-router-auto",
+    "source": "Notion Blog",
+    "published": "2026-10-20T07:00:00+00:00",
+    "note": "Notion found a single LLM judge too noisy even with a detailed rubric, so they ran pairwise comparisons by an ensemble of judges, turned those into Elo rankings, and then tuned a cheap pointwise judge until its scores reproduced the Elo order - agreeing over 80% of the time, and checked against customer thumbs up/down. A pairwise-calibrate-then-score pattern worth borrowing when a pointwise judge on documentation or triage output drifts, and their sandbox approach of replaying real tasks against a saved copy of a workspace is a good model for evaluating an agent on real data work.",
+    "curated_at": "2026-10-28T13:19:02.454691+00:00"
+  },
+  {
+    "title": "How Shopify turns open models into task experts",
+    "link": "https://shopify.engineering/open-model-task-experts",
+    "source": "Shopify Engineering",
+    "published": "2026-10-21T02:12:40+00:00",
+    "note": "Two ideas transfer from Shopify's text-to-GraphQL subagent: set the LLM judge's accuracy bar at how well two human experts agree on the same conversations rather than at an absolute score, and turn failed production conversations into training and eval data by having a critic write a hint, rerunning the task, then dropping the hint if the judge passes it. Skim past the NVIDIA hardware benchmarks, which are the vendor half of the post.",
+    "curated_at": "2026-10-28T13:19:02.454691+00:00"
+  },
+  {
     "title": "DataJunction as Netflix\u2019s answer to the missing piece of the modern data stack",
     "link": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5",
     "source": "Netflix TechBlog",
