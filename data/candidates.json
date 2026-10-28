@@ -1,104 +1,12 @@
 {
-  "fetched_at": "2026-10-27T16:18:17.993952+00:00",
+  "fetched_at": "2026-10-28T13:23:59.206551+00:00",
   "max_age_days": 90,
   "failures": [
     {
       "source": "Anthropic Engineering",
       "url": "https://www.anthropic.com/engineering",
-      "error": "no post links matched the pattern; the page layout may have changed"
+      "error": "no post links matched the pattern: page https://www.anthropic.com/engineering returned 383013 bytes, 60 links (34 on-site; sample: /, /engineering, /news, /research/AI-resistant-technical-evaluations, /research/a-postmortem-of-three-recent-issues, /research/advanced-tool-use); 0 matching paths appear in the page outside links (sample: none)"
     }
   ],
-  "candidates": [
-    {
-      "title": "New York Red Bulls on testing fan value",
-      "link": "https://www.growthbook.io/blog/how-new-york-red-bulls-drives-innovation-through-experimentation-edge",
-      "published": "2026-10-29T00:00:00+00:00",
-      "summary": "Vamsi Krishna Kunapuli explains how New York Red Bulls tests total matchday engagement, not just ticket sales, and why losing tests are valuable data.",
-      "source": "GrowthBook Blog"
-    },
-    {
-      "title": "Testing culture is a relationship problem",
-      "link": "https://www.growthbook.io/blog/a-culture-of-experimentation-is-a-relationship-problem-not-a-statistics-problem-edge",
-      "published": "2026-10-27T00:00:00+00:00",
-      "summary": "Motive's Shiva Manjunath explains why experimentation programs die on relationships, not statistics, and how to win buy-in from sales, support and product.",
-      "source": "GrowthBook Blog"
-    },
-    {
-      "title": "Making Failure Diagnosis Reliable with Pensive AI",
-      "link": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015",
-      "published": "2026-10-26T17:04:57+00:00",
-      "summary": "By Praneeth Yenugutala , Victor Dusa , Anastasia Samoilova , Megan Ren , Justin Wei , Marcelo Mayworm At Netflix, data and machine learning practitioners run millions of workloads each day across orchestration systems and compute engines such as Titus, Spark, Trino, and Druid. On peak days, roughly 100,000 workloads fail. When workloads fail, the failure itself is only the beginning. Someone still needs to find the useful signal in several logs, decide whether the cause sits in their code or the platform, and determine whether to retry, reconfigure, or escalate. Even a small share of difficult failures can consume engineering time, waste compute, and interrupt critical data pipelines. Our first answer to that problem was Pensive , an auto-diagnosis and remediation system in Netflix\u2019s data platform. Pensive collected logs from failed workloads, used regular expressions and hand-authored Java rules to extract and classify errors, then passed retry or remediation guidance to products such as Maestro . It made ~ 50% of failures self-service and, in some cases, automatic. Rules work well for known patterns, but their coverage grows only when someone recognizes a new failure mode, understands the logs, writes a rule, and keeps it current as engines and log formats change. Over one three-month period, Pensive processed roughly seven million job-failure classifications, yet about half fell into the unknown bucket. We needed a way to expand coverage without giving up the deterministic",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Multi\u2011Ratio Video Resizing for Mobile Feed and Marketing",
-      "link": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49",
-      "published": "2026-10-26T16:01:02+00:00",
-      "summary": "Serdar Cellat , Yuchen Xie , Bernadette Marcu , Blaid Burgess , Cody Jarrett , Carlos Pereira , Qing Shi , Samuel Carvajal , Manuel Pamplona , Dorothy Jung , Feiko Ritsema , Benjamin Klein , Alex Woo , Eugene Lok , Anna Pulido , Rebecka Swe , Sanford Holsapple , Ranjith Kumar Shetty Introduction Clips in the Netflix mobile app. At Netflix, a crucial part of our mission is ensuring our content looks stunning on any device. Vertical formats are increasingly important for Netflix, as we have 1.2B followers across our social media accounts, and have recently rolled out Clips , our vertical video feed in the Netflix mobile app. Traditionally, creating vertical assets meant editors and producers manually reframed horizontal videos in editing tools, a process that doesn\u2019t scale as our catalog and use cases grow. To support both our in\u2011app feed and external marketing campaigns at scale, we built an automated multi\u2011ratio video cropping system, tightly integrated into our internal production tools, that can generate high\u2011quality vertical and other aspect\u2011ratio variants with minimal manual effort. Our Video Resizing Approach Converting cinematic 16:9 footage into mobile\u2011friendly aspect ratios takes more than a simple center crop. Filmmaking often involves dynamic character blocking and complex camera movement. We need an intelligent \u201cvirtual camera\u201d that can follow the key action, respond to how each scene is composed, and produce crops that feel as intentional as the original shot. We ",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
-      "link": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90",
-      "published": "2026-10-23T18:32:51+00:00",
-      "summary": "By Roberto Perez Alcolea , Java Platform Team Quasar connects a proposed API change with observed references in consumer repositories, giving the producer evidence for a release decision At Netflix, shared Java libraries support applications developed across a large, independently evolving repository ecosystem. A library change begins in one repository, but its impact can reach many others. Producers can see the API diff in front of them. What they often cannot see is who still depends on the symbols that changed. The need for that visibility grows as coding agents take on more of the software development lifecycle. An agent can accelerate a local edit, but without cross-repository context it cannot judge downstream risk or help plan consumer migrations. The evidence a producer uses to assess a change can also guide the agent working on it. Consider a common case: removing a deprecated API. Deprecated entry points expand the surface producers must test, document, and support, and they can constrain how a library evolves. Suppose a replacement has been available for several releases and the old method cannot express options required by new behavior. The library\u2019s tests pass, and a compatibility checker flags the removal. The producer still cannot answer the questions that determine what to do next: Does any consumer still call this method? Are consumers concentrated on one version or spread across several generations? Does another library implement or wrap the API, multiplying",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Protecting Your Company From The Future",
-      "link": "https://www.growthbook.io/blog/protecting-your-company-from-the-future",
-      "published": "2026-10-23T00:00:00+00:00",
-      "summary": "Your customer data can be compromised without anyone breaking into your systems: Every vendor holding a copy gives an attacker another place to look.",
-      "source": "GrowthBook Blog"
-    },
-    {
-      "title": "The Bottlenecks Slowing Down Your Experimentation Velocity",
-      "link": "https://www.growthbook.io/blog/experimentation-bottlenecks",
-      "published": "2026-10-23T00:00:00+00:00",
-      "summary": "Experimentation programs plateau at every scale. Find the bottlenecks slowing your experimentation velocity, from generating test ideas to analyzing results.",
-      "source": "GrowthBook Blog"
-    },
-    {
-      "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
-      "link": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163",
-      "published": "2026-10-22T22:19:12+00:00",
-      "summary": "Samartha Chandrashekar & Nick Parker You click play on a Friday night, and in the second that follows, dozens of services answer in milliseconds. Most of them run on Titus, our internal container platform. Titus is, in essence, a Kubernetes-based container hosting platform: we keep both the control plane and the data plane (the container hosts that actually run containers) patched and up to date, so application teams get a consistent and reliable container experience. They hand us a container, and we run it, with no host, cluster, or kernel to own. Titus launches millions of containers every week across tens of thousands of EC2 instances in multiple AWS regions. It is multi-tenant by default: many containers from many teams share each host. That density is what makes container compute efficient, and it is why Titus has been the default home for so much of Netflix\u2019s compute for years. For most workloads, sharing a host works well. For a few, it does not, and those few include some of the most demanding real-time systems we run. This post is about them, and about single-tenant Titus, a mode that gives a task its own virtual machine while keeping everything else about Titus the same: the API, the deployment path, and the managed experience where the Compute/Platform team, not the application team, owns the host. We will walk through why shared-kernel isolation runs out of road for certain workloads, how we measure isolation rather than asserting it, the options we weighed (micro",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "We gave AI agents a mobile dev environment",
-      "link": "https://shopify.engineering/remote-dev",
-      "published": "2026-10-22T12:56:38+00:00",
-      "summary": "We built Remote Dev so AI agents can build and test apps in parallel, without maxing out developers\u2019 laptops.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "How Shopify turns open models into task experts",
-      "link": "https://shopify.engineering/open-model-task-experts",
-      "published": "2026-10-21T02:12:40+00:00",
-      "summary": "Sidekick\u2019s frontier model hands its most token-heavy work to open models that Shopify post-trains and serves itself. Here\u2019s the loop we use to build them, and where NVIDIA\u2019s models, software, and GPUs make each turn faster and cheaper.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "HIPAA Compliance: How to Secure PHI While Using Feature Flags",
-      "link": "https://www.growthbook.io/blog/hipaa-compliance-feature-flags",
-      "published": "2026-10-21T00:00:00+00:00",
-      "summary": "Using feature flags with patient data? See how HIPAA compliance applies to your feature flagging platform and what you need to prove compliance.",
-      "source": "GrowthBook Blog"
-    },
-    {
-      "title": "Inside Notion\u2019s upgraded model router, Auto",
-      "link": "https://www.notion.com/blog/inside-notions-upgraded-model-router-auto",
-      "published": "2026-10-20T07:00:00+00:00",
-      "summary": "How pairwise comparisons and calibrated judging let Notion measure model quality at scale",
-      "source": "Notion Blog"
-    },
-    {
-      "title": "How to Run Multiple Experiments at Once and Keep Results Trustworthy",
-      "link": "https://www.growthbook.io/blog/run-multiple-experiments-trustworthy-results",
-      "published": "2026-10-01T00:00:00+00:00",
-      "summary": "A practical guide to running multiple experiments at once: interaction effects, mutual exclusion, and the health checks that catch real conflicts early.",
-      "source": "GrowthBook Blog"
-    }
-  ]
+  "candidates": []
 }
