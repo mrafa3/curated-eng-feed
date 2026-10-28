@@ -105,6 +105,25 @@ ANCHOR = re.compile(r"<a\b[^>]*?\bhref\s*=\s*[\"']([^\"']+)[\"'][^>]*>(.*?)</a>"
 HEADING = re.compile(r"<h[1-6]\b[^>]*>(.*?)</h[1-6]>", re.I | re.S)
 
 
+def bare_host(url):
+    """Host without a leading www., so www.example.com and example.com match."""
+    host = urlparse(url).netloc.lower()
+    return host[4:] if host.startswith("www.") else host
+
+
+def describe_page(html_bytes, page_url, pattern):
+    """Explain why a page source matched no links, for the failures report."""
+    html = html_bytes.decode("utf-8", errors="replace")
+    hrefs = [urljoin(page_url, unescape(h)) for h, _ in ANCHOR.findall(html)]
+    same_site = sorted({urlparse(h).path for h in hrefs if bare_host(h) == bare_host(page_url)})
+    in_text = sorted(set(re.findall(r"/[a-z0-9-]+/[a-z0-9-]{8,}", html)))
+    near = [x for x in in_text if re.search(pattern, x)]
+    return (f"page {page_url} returned {len(html_bytes)} bytes, {len(hrefs)} links "
+            f"({len(same_site)} on-site; sample: {', '.join(same_site[:6]) or 'none'}); "
+            f"{len(near)} matching paths appear in the page outside links "
+            f"(sample: {', '.join(near[:3]) or 'none'})")
+
+
 def parse_page(html_bytes, page_url, pattern, source_name):
     """Pull post links from a blog index page, newest first as the page lists them.
 
@@ -113,12 +132,12 @@ def parse_page(html_bytes, page_url, pattern, source_name):
     and the most title-like text wins: a heading inside the anchor, else its text.
     """
     html = html_bytes.decode("utf-8", errors="replace")
-    host = urlparse(page_url).netloc
+    host = bare_host(page_url)
     order, titles, from_heading = [], {}, set()
     for href, inner in ANCHOR.findall(html):
         url = urljoin(page_url, unescape(href))
         parsed = urlparse(url)
-        if parsed.netloc != host or not re.search(pattern, parsed.path.rstrip("/")):
+        if bare_host(url) != host or not re.search(pattern, parsed.path.rstrip("/")):
             continue
         link = clean_link(url.split("#")[0]).rstrip("/")
         if link not in titles:
@@ -192,10 +211,11 @@ def is_recent(post, cutoff):
         return True
 
 
-def fetch(url):
+def fetch(url, with_final_url=False):
     req = urllib.request.Request(url, headers={"User-Agent": "curated-eng-feed/1.0 (personal RSS curator)"})
     with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read()
+        body = resp.read()
+        return (body, resp.geturl()) if with_final_url else body
 
 
 def main():
@@ -207,13 +227,15 @@ def main():
             continue  # fetched by the Wednesday curator instead; see scripts/add_candidates.py
         try:
             if src.get("type") == "page":
-                posts = parse_page(fetch(src["url"]), src["url"], src.get("pattern", "."), src["name"])
+                body, final_url = fetch(src["url"], with_final_url=True)
+                posts = parse_page(body, final_url, src.get("pattern", "."), src["name"])
                 if not posts:
-                    raise ValueError("no post links matched the pattern; the page layout may have changed")
+                    raise ValueError("no post links matched the pattern: "
+                                     + describe_page(body, final_url, src.get("pattern", ".")))
             else:
                 posts = parse_feed(fetch(src["url"]), src["name"])
         except Exception as exc:  # one bad source shouldn't stop the rest
-            failures.append({"source": src["name"], "url": src["url"], "error": str(exc)[:200]})
+            failures.append({"source": src["name"], "url": src["url"], "error": str(exc)[:600]})
             continue
         unseen = [p for p in posts if p["link"] not in seen]
         if src.get("type") == "page":
