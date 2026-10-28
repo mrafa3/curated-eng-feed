@@ -1,12 +1,6 @@
 {
-  "fetched_at": "2026-10-28T13:23:59.206551+00:00",
+  "fetched_at": "2026-10-28T13:26:33.452720+00:00",
   "max_age_days": 90,
-  "failures": [
-    {
-      "source": "Anthropic Engineering",
-      "url": "https://www.anthropic.com/engineering",
-      "error": "no post links matched the pattern: page https://www.anthropic.com/engineering returned 383013 bytes, 60 links (34 on-site; sample: /, /engineering, /news, /research/AI-resistant-technical-evaluations, /research/a-postmortem-of-three-recent-issues, /research/advanced-tool-use); 0 matching paths appear in the page outside links (sample: none)"
-    }
-  ],
+  "failures": [],
   "candidates": []
 }
