@@ -1,6 +1,49 @@
 {
-  "fetched_at": "2026-10-28T13:26:33.452720+00:00",
+  "fetched_at": "2026-11-03T18:18:36.116279+00:00",
   "max_age_days": 90,
   "failures": [],
-  "candidates": []
+  "candidates": [
+    {
+      "title": "GrowthBook 5.2: Interleaving experiments and Human in the Loop for agents",
+      "link": "https://www.growthbook.io/blog/growthbook-version-5-2",
+      "published": "2026-11-03T00:00:00+00:00",
+      "summary": "GrowthBook 5.2 adds interleaving experiments, Human in the Loop for agents, remote saved groups, and redesigned experiment and metric flows.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "Interleaving Experiments: How to Test Rankers Faster",
+      "link": "https://www.growthbook.io/blog/interleaving-experiments-test-new-rankers",
+      "published": "2026-11-03T00:00:00+00:00",
+      "summary": "Learn how interleaving experiments compare ranking algorithms with a fraction of the traffic an A/B test needs, with examples from Netflix, Airbnb and DoorDash.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "How Preply runs 1,000 tests a year",
+      "link": "https://www.growthbook.io/blog/how-preply-runs-close-to-1-000-experiments-a-year-edge",
+      "published": "2026-11-03T00:00:00+00:00",
+      "summary": "Sebastien Polis explains how Preply runs close to 1,000 experiments a year, why losing tests are expected, and how a two-sided marketplace changes the stats.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "Why Product and Marketing Should Experiment Together to Protect the User Experience",
+      "link": "https://www.growthbook.io/blog/product-marketing-experimentation-user-experience",
+      "published": "2026-11-02T00:00:00+00:00",
+      "summary": "Product and marketing experimentation works best on one platform. See how shared metrics, guardrails, and holdouts protect the user experience.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "Should You Cap Outliers? Winsorization in A/B Testing",
+      "link": "https://www.growthbook.io/blog/cap-outliers-winsorization-ab-testing",
+      "published": "2026-10-29T00:00:00+00:00",
+      "summary": "Learn how Winsorization affects bias, variance, and statistical power in A/B tests\u2014and when capping outliers can lead to better experiment decisions.",
+      "source": "GrowthBook Blog"
+    },
+    {
+      "title": "Why migrate from LaunchDarkly to GrowthBook",
+      "link": "https://www.growthbook.io/blog/why-migrate-from-launchdarkly-to-growthbook",
+      "published": "2026-10-28T00:00:00+00:00",
+      "summary": "We interviewed teams that migrated from LaunchDarkly to GrowthBook to learn why they switched, what they gained, and lessons for making the most of migration. Discover their insights.",
+      "source": "GrowthBook Blog"
+    }
+  ]
 }
