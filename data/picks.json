@@ -1,5 +1,13 @@
 [
   {
+    "title": "Should You Cap Outliers? Winsorization in A/B Testing",
+    "link": "https://www.growthbook.io/blog/cap-outliers-winsorization-ab-testing",
+    "source": "GrowthBook Blog",
+    "published": "2026-10-29T00:00:00+00:00",
+    "note": "Winsorizing a heavy-tailed metric buys lower variance and more power at the cost of some bias, so the decision to cap belongs to whether it improves the experiment decision rather than to a house rule. Relevant whenever revenue or usage metrics with a few extreme accounts drive an experiment readout.",
+    "curated_at": "2026-11-04T13:09:05.547584+00:00"
+  },
+  {
     "title": "Making Failure Diagnosis Reliable with Pensive AI",
     "link": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015",
     "source": "Netflix TechBlog",
