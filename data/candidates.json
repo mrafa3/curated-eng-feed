@@ -1,49 +1,105 @@
 {
-  "fetched_at": "2026-11-03T18:18:36.116279+00:00",
+  "fetched_at": "2026-11-10T18:32:13.650635+00:00",
   "max_age_days": 90,
   "failures": [],
   "candidates": [
     {
-      "title": "GrowthBook 5.2: Interleaving experiments and Human in the Loop for agents",
-      "link": "https://www.growthbook.io/blog/growthbook-version-5-2",
-      "published": "2026-11-03T00:00:00+00:00",
-      "summary": "GrowthBook 5.2 adds interleaving experiments, Human in the Loop for agents, remote saved groups, and redesigned experiment and metric flows.",
-      "source": "GrowthBook Blog"
+      "title": "Skipper, Airbnb\u2019s embedded workflow engine, is now open source",
+      "link": "https://airbnb.tech/open-source/skipper-airbnbs-embedded-workflow-engine-is-now-open-source/",
+      "published": "2026-11-10T18:08:34+00:00",
+      "summary": "Durable workflows, running inside your service with no separate orchestration cluster. By : Ricardo Gamba , Andriy Sergiyenko Skipper , an embedded workflow engine used in production by teams all across Airbnb, is now available to the open source community. Skipper lets you express multi-step business processes as Java or Kotlin classes, persist their progress, and recover from crashes and transient failures. It runs inside your service and reuses its existing dependencies. Skipper is available under the Apache 2.0 license. The code is on GitHub , alongside documentation and runnable examples. Our earlier engineering deep dive explains how we built it. Here, we\u2019ll focus on the architecture of Skipper and where it fits in the ecosystem of options for development around workflows. Why we developed Skipper A process that spans multiple services, waits for human input, or involves a mix of synchronous and asynchronous steps, needs persistent storage for recording its progress. When a server restarts, it must know what has already happened, what (if anything) should be retried, and what is still awaiting processing. Implementing this separately for each process would mean repeatedly solving the same problems around partial failure, timers, and recovery, with associated testing and debugging; using a proven library is likely to improve quality and reduce toil. Existing workflow engines meet these challenges. A common approach relies on a central orchestration service, whether self-",
+      "source": "Airbnb Tech Blog"
     },
     {
-      "title": "Interleaving Experiments: How to Test Rankers Faster",
-      "link": "https://www.growthbook.io/blog/interleaving-experiments-test-new-rankers",
-      "published": "2026-11-03T00:00:00+00:00",
-      "summary": "Learn how interleaving experiments compare ranking algorithms with a fraction of the traffic an A/B test needs, with examples from Netflix, Airbnb and DoorDash.",
-      "source": "GrowthBook Blog"
+      "title": "How we integrated Liquid Glass without sacrificing Faire\u2019s brand",
+      "link": "https://craft.faire.com/how-we-integrated-liquid-glass-without-sacrificing-faires-brand-9bff93143c97",
+      "published": "2026-11-10T17:56:36+00:00",
+      "summary": "Insights from the month-long sprint both led and implemented by designers Faire\u2019s components pre-Liquid Glass. An unexpected roommate How do you merge two fundamentally different design systems, with a short deadline that has major ramifications for your business if not met? Apple recently moved into Faire\u2019s apps without much of an invitation. We had to adapt our two native apps, the Retailer app and the Brand app , to use the Apple design language Liquid Glass or face getting booted from the App Store. Faire did this as a design-led initiative touching every surface of both apps \u2014 all in only a month. Our goal was to adopt Liquid Glass in a way that felt native to iOS but still looked and felt like Faire. We wanted to build on the familiarity Apple users already have with Liquid Glass without losing what Faire users expect from us. To tackle this, we formed a cross-functional team, armed with AI, to deliver a thoughtful solution. Problems at different altitudes Integrating an external design language was a daunting task. If not done thoughtfully, we\u2019d end up with Frankensteined apps that confused users and potentially broke workflows. We thought through the problem at a few different altitudes: Scope: This change touches every screen in the app \u2014 a huge scale. How do we approach it systematically rather than rush a one-off solution? Styling: Liquid Glass doesn\u2019t exactly look like our Faire design language. How can we integrate it cleanly and be intentional about where we use",
+      "source": "Faire Engineering (The Craft)"
     },
     {
-      "title": "How Preply runs 1,000 tests a year",
-      "link": "https://www.growthbook.io/blog/how-preply-runs-close-to-1-000-experiments-a-year-edge",
-      "published": "2026-11-03T00:00:00+00:00",
-      "summary": "Sebastien Polis explains how Preply runs close to 1,000 experiments a year, why losing tests are expected, and how a two-sided marketplace changes the stats.",
-      "source": "GrowthBook Blog"
+      "title": "Hiring Junior Engineers",
+      "link": "https://eng.lyft.com/hiring-junior-engineers-1edc53e0fd5f",
+      "published": "2026-11-10T17:08:06+00:00",
+      "summary": "Several people have asked me what the qualifications are for junior software engineers to be hired these days. This level is often referred to as \u201cnew grad,\u201d but people with lots of different backgrounds, not just recent university graduates, can use the entry-level software engineering role as their first job in big tech. For example, in my early career I worked as a generalist in nonprofit after studying environmental economics. Then, using experience managing a website as part of my job, coding personal projects, and going through a software bootcamp, I moved into a junior SWE role as the foundation of my career in engineering. Once you\u2019re in the SWE field, your background is not an overwhelming predictor of success in your job. So what is? The #1 qualifier I look for in hiring junior software engineers is mindset and soft skills . Curiosity, humility, and eagerness to learn is one critical area for successful engineers, and strong ownership, collaboration, and drive to create impact is another. The differentiator is self-management to find the right balance between the two, so that you\u2019re continuously both growing your skills and shipping real work. Transparently, although this is the top thing I\u2019d like to see, it\u2019s really hard to demonstrate in interviews. If you have stories that show how you employ these skills, share them with your interviewers. For hard skills , in years past candidates have studied search algorithms, practiced using data structures, and considered o",
+      "source": "Lyft Engineering"
     },
     {
-      "title": "Why Product and Marketing Should Experiment Together to Protect the User Experience",
-      "link": "https://www.growthbook.io/blog/product-marketing-experimentation-user-experience",
-      "published": "2026-11-02T00:00:00+00:00",
-      "summary": "Product and marketing experimentation works best on one platform. See how shared metrics, guardrails, and holdouts protect the user experience.",
-      "source": "GrowthBook Blog"
+      "title": "How we rebuilt the Shopify app in 12 weeks",
+      "link": "https://shopify.engineering/shopify-app-rebuild",
+      "published": "2026-11-10T14:36:23+00:00",
+      "summary": "What changed when agents started writing our mobile code, and how we redesigned our architecture, tooling, and workflow around validation.",
+      "source": "Shopify Engineering"
     },
     {
-      "title": "Should You Cap Outliers? Winsorization in A/B Testing",
-      "link": "https://www.growthbook.io/blog/cap-outliers-winsorization-ab-testing",
-      "published": "2026-10-29T00:00:00+00:00",
-      "summary": "Learn how Winsorization affects bias, variance, and statistical power in A/B tests\u2014and when capping outliers can lead to better experiment decisions.",
-      "source": "GrowthBook Blog"
+      "title": "Accelerating product development in the AI age: How Faire developed product builders",
+      "link": "https://craft.faire.com/accelerating-product-development-in-the-ai-age-how-faire-developed-product-builders-fe70044854b5",
+      "published": "2026-11-09T17:58:12+00:00",
+      "summary": "By Thuan Pham, Jorjena Dankha, Matt Bolohan For decades, coding was so expensive and time-consuming that even the best software teams invested heavily up front to derisk feature development. Before building anything, they spent significant time on product requirements, workflow design, and prototyping to make sure the specs were airtight. Now AI has made coding much faster and far less laborious. With AI automating more and more of the coding work, our engineers\u2019 output shot up. Over the past year, the typical engineer roughly tripled their complexity-weighted PR throughput, and much higher for our top performers. But the heavyweight product design process that used to keep pace with coding became the new bottleneck. For 214 engineers who were on the team in both periods, throughput is weighted by complexity using an AI scoring service, so smaller PRs don\u2019t inflate the numbers, and both periods were scored by the same model. Each engineer is compared with their own baseline across two equal 12-week windows: Oct 24, 2025\u2013Jan 15, 2026 vs. Jul 31\u2013Oct 22, 2026. A simplistic solution would have been to hire a lot more PMs and designers to clear the backlog. But more people means more handoffs, and handoffs were already slowing us down. Instead, we took a different approach: developing our engineers into well-rounded \u201cproduct builders\u201d by growing their capabilities in product and design thinking on top of their already excellent engineering skills. This summer, we kicked off the pr",
+      "source": "Faire Engineering (The Craft)"
     },
     {
-      "title": "Why migrate from LaunchDarkly to GrowthBook",
-      "link": "https://www.growthbook.io/blog/why-migrate-from-launchdarkly-to-growthbook",
-      "published": "2026-10-28T00:00:00+00:00",
-      "summary": "We interviewed teams that migrated from LaunchDarkly to GrowthBook to learn why they switched, what they gained, and lessons for making the most of migration. Discover their insights.",
-      "source": "GrowthBook Blog"
+      "title": "AI Product Management at Spotify: A View From Three Angles",
+      "link": "https://engineering.atspotify.com/2026/11/ai-product-management-at-spotify-a-view-from-three-angles/",
+      "published": "2026-11-09T17:53:35+00:00",
+      "summary": "Almost every article or podcast about product management and AI refers to \"the AI PM\" as one job. But what... The post AI Product Management at Spotify: A View From Three Angles appeared first on Spotify Engineering .",
+      "source": "Spotify Engineering"
+    },
+    {
+      "title": "Fact-Checking at Scale: Building a More Accurate and Efficient Synopsis Factuality System",
+      "link": "https://netflixtechblog.com/fact-checking-at-scale-building-a-more-accurate-and-efficient-synopsis-factuality-system-d7d85859d808",
+      "published": "2026-11-09T17:01:02+00:00",
+      "summary": "By Shreya S Ramanujam , Yongce Li , Afshine Amidi , Sina Ghiassian , Benjamin Klein . Introduction Picture this \u2014 you\u2019re home after a long day at work and can\u2019t wait to catch up on Bridgerton. You log on to Netflix, search for \u201cBridgerton\u201d and land on this screen: If this sounds familiar, you already know what a synopsis is \u2014 it\u2019s a short glimpse into what a viewer can expect to see in a show. We see two types of synopses here: a series-level synopsis describing the overarching plot, and multiple episode-level synopses describing each episode. A synopsis plays a very important role for us \u2014 it helps viewers decide whether a title is worth watching or not. Every synopsis needs to strike a balance: sharing just enough to give viewers a sense of what to expect, while leaving enough intrigue to draw them in. But of course, we can\u2019t just write anything . \u201cIn the fog-drenched streets of Victorian London, Detective Daphne Bridgerton races to unmask a serial killer known only as the elusive Lady Whistledown.\u201d Intriguing? Definitely. But it is most certainly not the premise of Bridgerton. Which leads us to the first (and most important) rule of writing a good synopsis: it must be factual . At Netflix\u2019s scale, with thousands of titles, multiple episodes per season and multiple languages, fact-checking all of these by hand simply doesn\u2019t scale. This is where our factuality service comes in: an automated way to judge whether a synopsis is factual or not. Our current factuality checker fe",
+      "source": "Netflix TechBlog"
+    },
+    {
+      "title": "Safe and Efficient Multi-Epoch Embedding Training",
+      "link": "https://medium.com/pinterest-engineering/safe-and-efficient-multi-epoch-embedding-training-103bec2abc83",
+      "published": "2026-11-06T16:01:03+00:00",
+      "summary": "Authors: Shruthi Hariharan | Machine Learning Engineer II; Konish Dutta | Machine Learning Engineer II; Abhinav Naikawadi | Sr. Machine Learning Engineer; Zhihua Zhang | Machine Learning Engineer II; Rakshita Nagalla | Sr. Machine Learning Engineer; Kousik Rajesh* | Machine Learning Engineer II; Matt Lawhon | Staff Machine Learning Engineer Tags: Machine Learning, Infrastructure, Recommendation Systems Content Track: Technical Discussion / Architecture of big components * == work done while at Pinterest Introduction Large ID embedding tables underpin some of the largest modeling advances at Pinterest, including teacher-model scaling and cross-domain pretraining for ranking and retrieval. These tables are first pre-trained to learn broadly useful Pin representations and then fine-tuned as part of the downstream surface-specific ranking model. Here, we\u2019ll focus on the Homefeed ranking model. The strength of the embedding tables comes from their enormous capacity to absorb information about billions of Pins and learn rich representations. That power, however, is coupled with fragile training dynamics that have historically constrained fine-tuning to one epoch. That compromise has become increasingly dissatisfactory; single-epoch fine-tuning prevents us from effectively optimizing our models over small, fresh datasets in retraining, and disproportionately harms effective representation learning of certain components of our ranking model which benefit from longer training, like Vi",
+      "source": "Pinterest Engineering"
+    },
+    {
+      "title": "The components of agent memory",
+      "link": "https://www.anthropic.com/research/components-of-agent-memory",
+      "published": "2026-11-06T00:00:00+00:00",
+      "summary": "For Claude to learn from experience, it has to decide what\u2019s worth remembering before it knows what\u2019s next. Here\u2019s how \u201cdreaming\u201d helps it organize memory and correct mistakes.",
+      "source": "Anthropic Engineering"
+    },
+    {
+      "title": "Reflex: an architecture for building mobile apps with agents",
+      "link": "https://shopify.engineering/reflex",
+      "published": "2026-11-05T15:41:40+00:00",
+      "summary": "Our architecture lets agents test mobile app behavior without an emulator and use one test suite to keep iOS and Android in sync.",
+      "source": "Shopify Engineering"
+    },
+    {
+      "title": "Notion as the context system for humans and agents",
+      "link": "https://www.notion.com/blog/the-next-era-of-notion",
+      "published": "2026-11-05T08:00:00+00:00",
+      "summary": "Notion is the best context system for every agent on the planet, and our own agents keep that context up to date for people and other agents.",
+      "source": "Notion Blog"
+    },
+    {
+      "title": "Scaling Model Evaluation at Pinterest with Ray (Part 4)",
+      "link": "https://medium.com/pinterest-engineering/scaling-model-evaluation-at-pinterest-with-ray-part-4-4a96cd12cc11",
+      "published": "2026-11-04T16:01:04+00:00",
+      "summary": "Vishnu Arun | Tech Lead, Feature Importance Platform; Anderson Lam | Sr Software Engineer; Andrew Qiu | Machine Learning Engineer I; Helena Xu | Data Scientist I; Tianyou Wang | Data Scientist II Introduction In our multi-part blog series, we have discussed why we chose Ray as a last mile data processing framework, how we integrated Ray into our existing ML Training Infrastructure, and how we enabled efficient Batch Inference at scale. In this blog post, we will discuss how we were able to apply Ray to another critical part of our ML Infrastructure stack: Model Evaluation . In the Ray Batch Inference Blog Post , we ended on a section on accumulators (counters that would allow us to calculate metrics like ROC-AUC and cross entropy). This post is where those accumulators pay off: a model evaluation platform that combines the strengths of Ray and Apache Spark to compute metrics efficiently at scale. Model evaluation may appear to be a relatively straightforward step after inference or training. But as ML workflows scale, evaluation quickly becomes an infrastructure challenge. Systems that run many experiments in parallel, such as feature importance, must efficiently compute and aggregate metrics over large volumes of inference data, as shown in Diagram 1. Later in this post, we\u2019ll show how we amortize the metrics compute step, overlapping it with inference for minimal added runtime cost, cutting end-to-end evaluation time by up to 32% while scaling linearly as we run more experi",
+      "source": "Pinterest Engineering"
+    },
+    {
+      "title": "Frontier quality at 1% of the cost: a production benchmark of LLM classifiers",
+      "link": "https://airbnb.tech/ai-ml/frontier-quality-at-1-of-the-cost-a-production-benchmark-of-llm-classifiers/",
+      "published": "2026-11-03T22:31:31+00:00",
+      "summary": "We benchmarked a fine-tuned E2B model against frontier APIs on a real production classification task. It matched their quality in under 100ms, at about a hundredth of the cost. By: Clay Gibson , Adel Elmalaha At Airbnb, we use AI models for classification tasks, such as detecting risky user-generated content, identifying why customers contact support, and recognizing topics in reviews. These tasks require subtle language understanding and the common sense to interpret what people leave unsaid. Frontier models, with hundreds of billions of parameters and internet-scale pretraining, are often good at these tasks. But for interactive products and high-volume workloads, accuracy is only part of the requirement. We also need low latency, manageable serving costs, and control over the tradeoff between false positives and false negatives. Smaller open-weight models are faster and cheaper to run at scale. By extracting logprobs, we\u2019re able to produce a score for thresholding. But these small models are trained to handle a vast range of conversations and our tasks occupy just a tiny corner of that training distribution. Out of the box, they often miss subtle distinctions that matter immensely for our product. Better prompting has limits. (I\u2019m often reminded of an assignment from elementary school: write instructions for how to make a PB&J. \u201cPut the knife in the peanut butter,\u201d you\u2019d write, only to have the teacher stab through the jar or insert the handle instead of the blade. There s",
+      "source": "Airbnb Tech Blog"
+    },
+    {
+      "title": "Five stories of teams getting more done with Notion MCP",
+      "link": "https://www.notion.com/blog/mcp-use-cases",
+      "published": "2026-11-03T20:00:00+00:00",
+      "summary": "Teams connect Notion to Claude, ChatGPT, and other agents to keep the work where the team can find it and the context where agents can use it.",
+      "source": "Notion Blog"
     }
   ]
 }
