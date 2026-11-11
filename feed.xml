@@ -6,7 +6,37 @@
     <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Nov 2026 13:09:05 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 13:12:06 GMT</lastBuildDate>
+    <item>
+      <title>Frontier quality at 1% of the cost: a production benchmark of LLM classifiers</title>
+      <link>https://airbnb.tech/ai-ml/frontier-quality-at-1-of-the-cost-a-production-benchmark-of-llm-classifiers/</link>
+      <guid isPermaLink="true">https://airbnb.tech/ai-ml/frontier-quality-at-1-of-the-cost-a-production-benchmark-of-llm-classifiers/</guid>
+      <pubDate>Wed, 11 Nov 2026 13:12:06 GMT</pubDate>
+      <category>Airbnb Tech Blog</category>
+      <description>A fine-tuned 2B classifier matched frontier-API quality on a real production task at 35ms median latency and roughly 1% of the cost, and the post states the four conditions that made fine-tuning pay: high volume (above about 30 requests per minute), a tight latency budget, needing a thresholdable score rather than a fixed true/false verdict, and having labeled in-domain examples. The score-versus-verdict point is the one to carry into operational triage classifiers, where moving the precision/recall trade-off should not require rewriting a prompt.
+
+Source: Airbnb Tech Blog</description>
+    </item>
+    <item>
+      <title>The components of agent memory</title>
+      <link>https://www.anthropic.com/research/components-of-agent-memory</link>
+      <guid isPermaLink="true">https://www.anthropic.com/research/components-of-agent-memory</guid>
+      <pubDate>Wed, 11 Nov 2026 13:12:06 GMT</pubDate>
+      <category>Anthropic Engineering</category>
+      <description>Notes an agent writes mid-session go stale or start wrong, so memory gets a separate offline pass that re-checks each note against the original transcript and keeps the always-injected top layer small. The useful experiment is the wiki over a 350k-file internal corpus: an agent-maintained linked knowledge map beat raw search on questions spanning several documents, and missing facts were fixed by giving one agent per document a page of its own quoting terms verbatim instead of several agents summarizing into one shared table — a concrete pattern for agent-written documentation over curated tables.
+
+Source: Anthropic Engineering</description>
+    </item>
+    <item>
+      <title>Accelerating product development in the AI age: How Faire developed product builders</title>
+      <link>https://craft.faire.com/accelerating-product-development-in-the-ai-age-how-faire-developed-product-builders-fe70044854b5</link>
+      <guid isPermaLink="true">https://craft.faire.com/accelerating-product-development-in-the-ai-age-how-faire-developed-product-builders-fe70044854b5</guid>
+      <pubDate>Wed, 11 Nov 2026 13:12:06 GMT</pubDate>
+      <category>Faire Engineering (The Craft)</category>
+      <description>Faire reports per-engineer complexity-weighted PR throughput roughly tripling with AI coding, which left the heavyweight up-front spec and prototyping process as the constraint, and their answer was to grow engineers into "product builders" who carry product definition alongside the code. The question to borrow is which parts of your own intake and spec process exist only because building used to be the expensive step.
+
+Source: Faire Engineering (The Craft)</description>
+    </item>
     <item>
       <title>Should You Cap Outliers? Winsorization in A/B Testing</title>
       <link>https://www.growthbook.io/blog/cap-outliers-winsorization-ab-testing</link>

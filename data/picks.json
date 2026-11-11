@@ -1,5 +1,29 @@
 [
   {
+    "title": "Frontier quality at 1% of the cost: a production benchmark of LLM classifiers",
+    "link": "https://airbnb.tech/ai-ml/frontier-quality-at-1-of-the-cost-a-production-benchmark-of-llm-classifiers/",
+    "source": "Airbnb Tech Blog",
+    "published": "2026-11-03T22:31:31+00:00",
+    "note": "A fine-tuned 2B classifier matched frontier-API quality on a real production task at 35ms median latency and roughly 1% of the cost, and the post states the four conditions that made fine-tuning pay: high volume (above about 30 requests per minute), a tight latency budget, needing a thresholdable score rather than a fixed true/false verdict, and having labeled in-domain examples. The score-versus-verdict point is the one to carry into operational triage classifiers, where moving the precision/recall trade-off should not require rewriting a prompt.",
+    "curated_at": "2026-11-11T13:12:06.421226+00:00"
+  },
+  {
+    "title": "The components of agent memory",
+    "link": "https://www.anthropic.com/research/components-of-agent-memory",
+    "source": "Anthropic Engineering",
+    "published": "2026-11-06T00:00:00+00:00",
+    "note": "Notes an agent writes mid-session go stale or start wrong, so memory gets a separate offline pass that re-checks each note against the original transcript and keeps the always-injected top layer small. The useful experiment is the wiki over a 350k-file internal corpus: an agent-maintained linked knowledge map beat raw search on questions spanning several documents, and missing facts were fixed by giving one agent per document a page of its own quoting terms verbatim instead of several agents summarizing into one shared table \u2014 a concrete pattern for agent-written documentation over curated tables.",
+    "curated_at": "2026-11-11T13:12:06.421226+00:00"
+  },
+  {
+    "title": "Accelerating product development in the AI age: How Faire developed product builders",
+    "link": "https://craft.faire.com/accelerating-product-development-in-the-ai-age-how-faire-developed-product-builders-fe70044854b5",
+    "source": "Faire Engineering (The Craft)",
+    "published": "2026-11-09T17:58:12+00:00",
+    "note": "Faire reports per-engineer complexity-weighted PR throughput roughly tripling with AI coding, which left the heavyweight up-front spec and prototyping process as the constraint, and their answer was to grow engineers into \"product builders\" who carry product definition alongside the code. The question to borrow is which parts of your own intake and spec process exist only because building used to be the expensive step.",
+    "curated_at": "2026-11-11T13:12:06.421226+00:00"
+  },
+  {
     "title": "Should You Cap Outliers? Winsorization in A/B Testing",
     "link": "https://www.growthbook.io/blog/cap-outliers-winsorization-ab-testing",
     "source": "GrowthBook Blog",
