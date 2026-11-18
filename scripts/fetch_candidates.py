@@ -162,15 +162,26 @@ def parse_page(html_bytes, page_url, pattern, source_name):
     return posts
 
 
+META_TAG = re.compile(r"<meta\b[^>]*>", re.I | re.S)
+META_ATTR = re.compile(r"""([a-zA-Z:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)')""", re.S)
+
+
 def meta_content(html, *names):
+    """Content of the first <meta> tag whose name or property is one of `names`.
+
+    Attribute values are read up to their own closing quote, so an apostrophe
+    inside a double-quoted value ("ChatGPT's agent") is kept.
+    """
+    tags = []
+    for tag in META_TAG.findall(html):
+        attrs = {k.lower(): (dq if dq is not None and dq != "" else sq) for k, dq, sq in META_ATTR.findall(tag)}
+        tags.append(attrs)
     for name in names:
-        for pat in (
-            rf"<meta\b[^>]*?(?:name|property)\s*=\s*[\"']{re.escape(name)}[\"'][^>]*?content\s*=\s*[\"']([^\"']*)[\"']",
-            rf"<meta\b[^>]*?content\s*=\s*[\"']([^\"']*)[\"'][^>]*?(?:name|property)\s*=\s*[\"']{re.escape(name)}[\"']",
-        ):
-            m = re.search(pat, html, re.I | re.S)
-            if m and m.group(1).strip():
-                return unescape(m.group(1)).strip()
+        for attrs in tags:
+            if name.lower() in (attrs.get("name", "").lower(), attrs.get("property", "").lower()):
+                value = unescape(attrs.get("content") or "").strip()
+                if value:
+                    return value
     return None
 
 
@@ -185,8 +196,11 @@ def enrich_from_post(post):
     title = meta_content(html, "og:title", "twitter:title")
     if title:
         # Drop a trailing site-name suffix ("Title | Notion", "Title \ Anthropic") but nothing else.
-        site = urlparse(post["link"]).netloc.split(".")[-2]
-        title = re.sub(rf"\s*[|\\–—-]\s*[^|\\–—-]*{re.escape(site)}[^|\\–—-]*$", "", title, flags=re.I)
+        # The suffix may spell the site with spaces ("| AI Analyst Lab" on aianalystlab.ai).
+        site = urlparse(post["link"]).netloc.split(".")[-2].lower()
+        m = re.search(r"\s*[|\\–—-]\s*([^|\\–—-]+)$", title)
+        if m and site in re.sub(r"[^a-z0-9]", "", m.group(1).lower()):
+            title = title[:m.start()]
         post["title"] = title.strip() or post["title"]
     date = meta_content(html, "article:published_time", "datePublished", "date")
     if not date:
