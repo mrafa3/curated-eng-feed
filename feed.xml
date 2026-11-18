@@ -6,7 +6,37 @@
     <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 13:12:06 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 14:12:05 GMT</lastBuildDate>
+    <item>
+      <title>How Pinterest Improved Analytics Agent Compliance with Loop Engineering</title>
+      <link>https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2</link>
+      <guid isPermaLink="true">https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2</guid>
+      <pubDate>Wed, 18 Nov 2026 14:12:05 GMT</pubDate>
+      <category>Pinterest Engineering</category>
+      <description>Every compliance rule gets a paired test suite — chats where the rule should fire and chats where it should not — so a prompt change that makes the agent always inspect table metadata or always search dashboards registers as a regression instead of a win, and each tuning iteration starts from a fresh context plus a structured handoff (best change so far, what not to repeat, which suites may not regress). Before trusting any of it they measured their own eval's noise: 10.3% of cases flipped verdict between identical runs, which is the reason a one- or two-case score move is not evidence that a change to a text-to-SQL or triage agent worked.
+
+Source: Pinterest Engineering</description>
+    </item>
+    <item>
+      <title>Building strong safety evaluations</title>
+      <link>https://www.anthropic.com/research/building-strong-safety-evaluations</link>
+      <guid isPermaLink="true">https://www.anthropic.com/research/building-strong-safety-evaluations</guid>
+      <pubDate>Wed, 18 Nov 2026 14:12:05 GMT</pubDate>
+      <category>Anthropic Engineering</category>
+      <description>The grader section is the part that transfers to any LLM-as-judge setup: validate the judge against human labels and benchmark that agreement against how often the humans agree with each other, break a rubric into atomic yes/no criteria instead of one overall score, keep design metadata out of the judge's view, and re-grade a sample with a different model to check the conclusion is about the system and not the grader. The statistics advice is the familiar experimentation toolkit pointed at evals — report confidence intervals, and detect small differences between two versions with paired comparisons on the same items rather than comparing aggregate scores.
+
+Source: Anthropic Engineering</description>
+    </item>
+    <item>
+      <title>Engineering AI Discover</title>
+      <link>https://netflixtechblog.com/engineering-ai-discover-e244944cdc38</link>
+      <guid isPermaLink="true">https://netflixtechblog.com/engineering-ai-discover-e244944cdc38</guid>
+      <pubDate>Wed, 18 Nov 2026 14:12:05 GMT</pubDate>
+      <category>Netflix TechBlog</category>
+      <description>Rather than a free-running reason-call-reason loop, each request produces a plan that code validates before anything executes: capabilities declare their inputs, outputs and failure behavior, and the controller checks that every step is approved, every input has a producer, nothing loops, and the graph terminates — an LLM may propose the path, but code decides whether it runs. Each request also leaves a structured record of plan, step outcomes and rules applied, so a bad answer can be attributed to the plan, the data, a rule or the model, and old requests can be replayed against a new prompt or model; that is the trace layer you need before you can tell an agent regression from noise.
+
+Source: Netflix TechBlog</description>
+    </item>
     <item>
       <title>Frontier quality at 1% of the cost: a production benchmark of LLM classifiers</title>
       <link>https://airbnb.tech/ai-ml/frontier-quality-at-1-of-the-cost-a-production-benchmark-of-llm-classifiers/</link>

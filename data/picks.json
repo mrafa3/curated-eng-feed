@@ -1,5 +1,29 @@
 [
   {
+    "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
+    "link": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2",
+    "source": "Pinterest Engineering",
+    "published": "2026-11-12T16:01:06+00:00",
+    "note": "Every compliance rule gets a paired test suite \u2014 chats where the rule should fire and chats where it should not \u2014 so a prompt change that makes the agent always inspect table metadata or always search dashboards registers as a regression instead of a win, and each tuning iteration starts from a fresh context plus a structured handoff (best change so far, what not to repeat, which suites may not regress). Before trusting any of it they measured their own eval's noise: 10.3% of cases flipped verdict between identical runs, which is the reason a one- or two-case score move is not evidence that a change to a text-to-SQL or triage agent worked.",
+    "curated_at": "2026-11-18T14:12:05.993109+00:00"
+  },
+  {
+    "title": "Building strong safety evaluations",
+    "link": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+    "source": "Anthropic Engineering",
+    "published": "2026-11-13T00:00:00+00:00",
+    "note": "The grader section is the part that transfers to any LLM-as-judge setup: validate the judge against human labels and benchmark that agreement against how often the humans agree with each other, break a rubric into atomic yes/no criteria instead of one overall score, keep design metadata out of the judge's view, and re-grade a sample with a different model to check the conclusion is about the system and not the grader. The statistics advice is the familiar experimentation toolkit pointed at evals \u2014 report confidence intervals, and detect small differences between two versions with paired comparisons on the same items rather than comparing aggregate scores.",
+    "curated_at": "2026-11-18T14:12:05.993109+00:00"
+  },
+  {
+    "title": "Engineering AI Discover",
+    "link": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38",
+    "source": "Netflix TechBlog",
+    "published": "2026-11-17T17:01:02+00:00",
+    "note": "Rather than a free-running reason-call-reason loop, each request produces a plan that code validates before anything executes: capabilities declare their inputs, outputs and failure behavior, and the controller checks that every step is approved, every input has a producer, nothing loops, and the graph terminates \u2014 an LLM may propose the path, but code decides whether it runs. Each request also leaves a structured record of plan, step outcomes and rules applied, so a bad answer can be attributed to the plan, the data, a rule or the model, and old requests can be replayed against a new prompt or model; that is the trace layer you need before you can tell an agent regression from noise.",
+    "curated_at": "2026-11-18T14:12:05.993109+00:00"
+  },
+  {
     "title": "Frontier quality at 1% of the cost: a production benchmark of LLM classifiers",
     "link": "https://airbnb.tech/ai-ml/frontier-quality-at-1-of-the-cost-a-production-benchmark-of-llm-classifiers/",
     "source": "Airbnb Tech Blog",
