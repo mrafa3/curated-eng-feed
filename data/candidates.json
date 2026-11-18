@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-17T19:41:29.557786+00:00",
+  "fetched_at": "2026-11-18T05:32:52.783928+00:00",
   "max_age_days": 90,
   "failures": [],
   "candidates": [
@@ -16,6 +16,13 @@
       "published": "2026-11-17T14:27:11+00:00",
       "summary": "At Lyft, we want to ensure everyone on the Lyft platform is supported by smart, fair tools to improve their experience. This is the guiding principle behind Smooth Cruiser, our feature that provides Drivers with insights into their driving behavior. For a tool like this to truly help Drivers make informed decisions for themselves, it must excel in two areas: real-world scoring and increased transparency into how that score is determined. Safety scoring often relies on fixed thresholds \u2014 a single cutoff applied to every Driver, on every road, in every market. This method fails to account for the dynamic reality of driving. A harsh brake on a quiet local road is fundamentally different from a sudden stop in city traffic. Drivers need a system that recognizes these nuances. Smooth Cruiser recognizes these nuances and is built on two principles: a) score that reflects real world conditions, and b) transparency. In Part 1, we break down how the scoring works \u2014 how every signal is measured relative to local conditions, how Drivers are benchmarked against peers in structurally similar markets, and how a rolling window captures typical behavior rather than isolated moments. In Part 2, we walk through how we brought that methodology to the surface \u2014 giving Drivers direct visibility into the data behind their score, ride by ride, so they can understand it, act on it, and provide top-notch service to Riders. To understand how we built it, start with the foundation: how we measure for re",
       "source": "Lyft Engineering"
+    },
+    {
+      "title": "The Weekly Query: How do you think critically when AI does the analysis?",
+      "link": "https://aianalystlab.ai/blog/weekly-query-005-critical-thinking-when-ai-does-the-analysis",
+      "published": "2026-11-17T00:00:00+00:00",
+      "summary": "Critical thinking, AI analytics news, impact, data jobs, and upcoming sessions.",
+      "source": "AI Analyst Lab"
     },
     {
       "title": "Rebuilding Guardian: How Pinterest Upgraded Its Real-Time Abuse Platform to Modern Infrastructure\u2026",
@@ -58,6 +65,97 @@
       "published": "2026-11-10T20:55:40+00:00",
       "summary": "Image generated with Google Gemini, 2026 Written by Savelii Kolesnikov , Jay Patel , and Ivanna Sivak Background Lyft processes billions in payments annually, and that volume continues to grow. Agentic coding has drastically accelerated feature development, but it raises the stakes for the one phase that cannot be rushed: ensuring the highest standards of reliability and correctness in critical payment systems. Every payment platform eventually hits the same wall. Unit tests cover business rules, integration tests validate boundaries, and load tests push upstream limits, but standard testing stops the moment a request reaches a third-party processor. Processor test cards are built for simple flows: a card either passes every payment action, from authorization to capture to refund, or fails them all. Real payment flows often have one step fail while the others succeed. In this post, we\u2019ll explain why test cards break down and how we built our own fake payment provider to simulate any processor behavior on demand. Unlike a typical mock, it runs safely in production, so we can load test our payment stack and trial new workflows on simulated riders before real ones. Test cards don\u2019t get you there with rideshare Unlike paying for a product on an e-commerce website or your favorite streaming platform, Lyft, as a rideshare company, has a unique set of challenges with payments. While we can put a hold on the card on a ride request, the final charge does not always match the original ",
       "source": "Lyft Engineering"
+    },
+    {
+      "title": "The Weekly Query: How do you build and maintain the context your AI analyst needs to scale to the rest of the company?",
+      "link": "https://aianalystlab.ai/blog/weekly-query-004-context-engineering-and-management-for-ai-analytics",
+      "published": "2026-11-10T00:00:00+00:00",
+      "summary": "Company context, domain guides, semantic models, open data jobs and Saturday\u2019s $25 Hex workshop.",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "The Weekly Query: What is the new job of a data leader?",
+      "link": "https://aianalystlab.ai/blog/weekly-query-003-the-new-job-of-a-data-leader",
+      "published": "2026-11-03T00:00:00+00:00",
+      "summary": "What",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "The Weekly Query: Why is AI analytics harder than AI coding?",
+      "link": "https://aianalystlab.ai/blog/weekly-query-002-why-ai-analytics-is-harder-than-ai-coding",
+      "published": "2026-10-27T00:00:00+00:00",
+      "summary": "What",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "The Weekly Query: What should data teams actually learn about AI right now?",
+      "link": "https://aianalystlab.ai/blog/weekly-query-001-what-data-teams-should-learn-about-ai",
+      "published": "2026-10-20T00:00:00+00:00",
+      "summary": "What",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "Onboarding a New Analyst Is Building an AI Analyst",
+      "link": "https://aianalystlab.ai/blog/onboarding-a-new-analyst-is-building-an-ai-analyst",
+      "published": "2026-09-23T00:00:00+00:00",
+      "summary": "How to build a reliable AI analyst is the same list I would use to train a person. Six things, and what each one becomes in the system.",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "ChatGPT",
+      "link": "https://aianalystlab.ai/blog/chatgpt-data-agent-70-tests",
+      "published": "2026-09-20T00:00:00+00:00",
+      "summary": "We ran 70 tests on OpenAI",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "I Quit Three Jobs Over Fake Data Work. Now I Ask Two Questions First.",
+      "link": "https://aianalystlab.ai/blog/two-questions-before-you-pull-a-number",
+      "published": "2026-09-14T00:00:00+00:00",
+      "summary": "Metrics that measure nothing and change nothing burn the reason senior ICs chose the work. The two questions that stop it, and the three kinds of work that\u2026",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "What 8,000 Job Postings Say About AI in Data Roles",
+      "link": "https://aianalystlab.ai/blog/ai-in-data-job-postings-2026",
+      "published": "2026-09-12T00:00:00+00:00",
+      "summary": "We read more than 8,000 live US postings across data roles and industries. Where AI is already table stakes, where it is barely asked for, and what to learn\u2026",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "Ten Ways an AI Analyst Breaks | AI Analyst Lab",
+      "link": "https://aianalystlab.ai/blog/ten-ways-an-ai-analyst-breaks",
+      "published": "2026-09-10T00:00:00+00:00",
+      "summary": "The failures we keep hitting while building AI analysts for real companies. Not the demo failures, the ones that show up in week two.",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "When the Domain Expert Writes the Exam, the Answer Key, and the Grade",
+      "link": "https://aianalystlab.ai/blog/when-the-expert-writes-the-exam",
+      "published": "2026-09-09T00:00:00+00:00",
+      "summary": "SMEs are building AI products that pass their own evals and fail the users they were built for. Five things that keep an eval honest.",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "What People Still Own When the Analysis Is Automated",
+      "link": "https://aianalystlab.ai/blog/what-people-own-when-analysis-is-automated",
+      "published": "2026-09-02T00:00:00+00:00",
+      "summary": "The easy answer is the final decision. That is not enough. Four things a person has to own all the way through the work.",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "Five Things That Took My Base Salary From $92,000 to $286,000 in Four Years",
+      "link": "https://aianalystlab.ai/blog/five-things-that-took-my-salary-from-92k-to-286k",
+      "published": "2026-08-28T00:00:00+00:00",
+      "summary": "The people who get the raises are the people who get the big projects. Five habits that get you assigned to them.",
+      "source": "AI Analyst Lab"
+    },
+    {
+      "title": "Some of the Best Analysts I Ever Worked With Were Product Managers",
+      "link": "https://aianalystlab.ai/blog/the-best-analysts-i-worked-with-were-product-managers",
+      "published": "2026-08-26T00:00:00+00:00",
+      "summary": "Analytical thinking was never reserved for a title. The tools built the barriers, and the tools are taking them down again.",
+      "source": "AI Analyst Lab"
     }
   ]
 }
