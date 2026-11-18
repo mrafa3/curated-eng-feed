@@ -35,6 +35,12 @@ sources:
     url: https://www.notion.com/blog
     type: page
     pattern: ^/blog/(?!topic/|page/)[^/]+$
+  # AI Analyst Lab (run by Data Neighbor): AI analysts, context engineering for AI
+  # analytics, and data team leadership. Weekly "The Weekly Query" series from Oct 2026.
+  - name: AI Analyst Lab
+    url: https://aianalystlab.ai/blog/
+    type: page
+    pattern: ^/blog/(?!tag/|tags/|category/|categories/|page/|author/)[^/]+$
   # Paused 2026-10-10: post pages return 406 to the fetch and carry no publish date, and the
   # posts were mostly low-level infrastructure.
   # - name: Uber Engineering
