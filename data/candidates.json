@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-18T05:32:52.783928+00:00",
+  "fetched_at": "2026-11-18T05:35:22.228531+00:00",
   "max_age_days": 90,
   "failures": [],
   "candidates": [
@@ -77,21 +77,21 @@
       "title": "The Weekly Query: What is the new job of a data leader?",
       "link": "https://aianalystlab.ai/blog/weekly-query-003-the-new-job-of-a-data-leader",
       "published": "2026-11-03T00:00:00+00:00",
-      "summary": "What",
+      "summary": "What's inside: the new job of a data leader, Hex PROMPT takeaways, a 30-second lesson, leadership jobs, and upcoming workshops.",
       "source": "AI Analyst Lab"
     },
     {
       "title": "The Weekly Query: Why is AI analytics harder than AI coding?",
       "link": "https://aianalystlab.ai/blog/weekly-query-002-why-ai-analytics-is-harder-than-ai-coding",
       "published": "2026-10-27T00:00:00+00:00",
-      "summary": "What",
+      "summary": "What's inside: building an AI analyst you can trust, AI analytics headlines, capability and reliability, eight data jobs, and upcoming workshops.",
       "source": "AI Analyst Lab"
     },
     {
       "title": "The Weekly Query: What should data teams actually learn about AI right now?",
       "link": "https://aianalystlab.ai/blog/weekly-query-001-what-data-teams-should-learn-about-ai",
       "published": "2026-10-20T00:00:00+00:00",
-      "summary": "What",
+      "summary": "What's inside: AI skills for data teams, Claude Dashboards, context management, eight data jobs, and free workshops.",
       "source": "AI Analyst Lab"
     },
     {
@@ -102,10 +102,10 @@
       "source": "AI Analyst Lab"
     },
     {
-      "title": "ChatGPT",
+      "title": "ChatGPT's Data Agent: Senior Technical Execution, Junior Business Judgment",
       "link": "https://aianalystlab.ai/blog/chatgpt-data-agent-70-tests",
       "published": "2026-09-20T00:00:00+00:00",
-      "summary": "We ran 70 tests on OpenAI",
+      "summary": "We ran 70 tests on OpenAI's data agent. It caught almost every statistical trap and failed the same organizational errors people do.",
       "source": "AI Analyst Lab"
     },
     {
@@ -123,7 +123,7 @@
       "source": "AI Analyst Lab"
     },
     {
-      "title": "Ten Ways an AI Analyst Breaks | AI Analyst Lab",
+      "title": "Ten Ways an AI Analyst Breaks",
       "link": "https://aianalystlab.ai/blog/ten-ways-an-ai-analyst-breaks",
       "published": "2026-09-10T00:00:00+00:00",
       "summary": "The failures we keep hitting while building AI analysts for real companies. Not the demo failures, the ones that show up in week two.",
