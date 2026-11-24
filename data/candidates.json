@@ -1,161 +1,49 @@
 {
-  "fetched_at": "2026-11-18T05:35:22.228531+00:00",
+  "fetched_at": "2026-11-24T21:02:26.646502+00:00",
   "max_age_days": 90,
   "failures": [],
   "candidates": [
     {
-      "title": "Engineering AI Discover",
-      "link": "https://netflixtechblog.com/engineering-ai-discover-e244944cdc38",
-      "published": "2026-11-17T17:01:02+00:00",
-      "summary": "The challenges and decisions behind AI Discover\u2019s intelligence layer By Varun Khaitan , Peng Ren , Gary Tang , Itay Teller , Atif Faheem , Nipun Kumar , Donnie DeBoer , Eduardo Lundgren , Matteo Rinaldi , Raghav Bakshi We recently introduced AI Discover , a new tab in our TV app where a small group of members can try new ways to find something to watch. For years, our recommendations have worked in the background, inferring what a member might enjoy from their viewing history. AI Discover moves from that silent ranking toward steerable discovery. A member picks a theme, say \u201cQuick Watches,\u201d and gets a row of matching titles, a short note on why they fit and a few narrower themes to try next. From there, they can keep narrowing, head somewhere new or tune what they see. Building AI Discover raised a question many teams will recognize: how do you deliver a better member experience with generative AI on TV without sacrificing speed, reliability or safety? Our answer is a new intelligence layer, the agent harness behind AI Discover. For each request, it decides how to combine LLMs with our recommendation systems. It builds on years of work understanding what members enjoy, and on our recent work applying LLMs to recommendations and generative experiences. The layer itself plans each request, runs it across those systems, serves the result and evaluates it offline. This post covers the challenges we designed for and the key decisions we made along the way. Why an intelligence laye",
-      "source": "Netflix TechBlog"
-    },
-    {
-      "title": "Smooth Cruiser at Lyft: Built for Safety and Transparency",
-      "link": "https://eng.lyft.com/smooth-cruiser-at-lyft-built-for-safety-and-transparency-b6a461e16f2a",
-      "published": "2026-11-17T14:27:11+00:00",
-      "summary": "At Lyft, we want to ensure everyone on the Lyft platform is supported by smart, fair tools to improve their experience. This is the guiding principle behind Smooth Cruiser, our feature that provides Drivers with insights into their driving behavior. For a tool like this to truly help Drivers make informed decisions for themselves, it must excel in two areas: real-world scoring and increased transparency into how that score is determined. Safety scoring often relies on fixed thresholds \u2014 a single cutoff applied to every Driver, on every road, in every market. This method fails to account for the dynamic reality of driving. A harsh brake on a quiet local road is fundamentally different from a sudden stop in city traffic. Drivers need a system that recognizes these nuances. Smooth Cruiser recognizes these nuances and is built on two principles: a) score that reflects real world conditions, and b) transparency. In Part 1, we break down how the scoring works \u2014 how every signal is measured relative to local conditions, how Drivers are benchmarked against peers in structurally similar markets, and how a rolling window captures typical behavior rather than isolated moments. In Part 2, we walk through how we brought that methodology to the surface \u2014 giving Drivers direct visibility into the data behind their score, ride by ride, so they can understand it, act on it, and provide top-notch service to Riders. To understand how we built it, start with the foundation: how we measure for re",
-      "source": "Lyft Engineering"
-    },
-    {
-      "title": "The Weekly Query: How do you think critically when AI does the analysis?",
-      "link": "https://aianalystlab.ai/blog/weekly-query-005-critical-thinking-when-ai-does-the-analysis",
-      "published": "2026-11-17T00:00:00+00:00",
-      "summary": "Critical thinking, AI analytics news, impact, data jobs, and upcoming sessions.",
+      "title": "The Weekly Query: Where do you find the context your AI analyst needs, and how do you make sure it uses it?",
+      "link": "https://aianalystlab.ai/blog/weekly-query-006-context-sources-and-retrieval",
+      "published": "2026-11-24T00:00:00+00:00",
+      "summary": "Part 2 of our context tutorial, 10 growth analytics jobs, a 30-second growth lesson, and the return of Data Neighbor.",
       "source": "AI Analyst Lab"
     },
     {
-      "title": "Rebuilding Guardian: How Pinterest Upgraded Its Real-Time Abuse Platform to Modern Infrastructure\u2026",
-      "link": "https://medium.com/pinterest-engineering/rebuilding-guardian-how-pinterest-upgraded-its-real-time-abuse-platform-to-modern-infrastructure-56e45ee8f471",
-      "published": "2026-11-16T16:01:03+00:00",
-      "summary": "Rebuilding Guardian: How Pinterest Upgraded Its Real-Time Abuse Platform to Modern Infrastructure at Scale Authors : Sharon Xie, Sr. Staff Software Engineer | Zhenxiao Luo, Sr Staff Software Engineer |Yi Pan, Principal Software Engineer | Vikram Deshpande, Sr. Engineering Manager Guardian helps Pinterest teams turn real-time event data into meaningful insights and operational outcomes. It enables subject matter experts to analyze real-time event streams, identify evolving patterns, and operationalize those learnings through signals, policies, and downstream workflows. Over the years, Guardian has supported a wide range of use cases, including spam and fraud response, account takeover detection, risk monitoring, and unsafe content enforcement. As Pinterest scaled, however, the original Guardian platform began to reach its limits. To meet growing demands around scale, reliability, and compliance, we rebuilt the system as Guardian V2 on top of modern data infrastructure. In this blog series, we\u2019ll share our journey in building the next generation of Guardian, or Guardian V2. In this first part, we\u2019ll discuss the challenges we faced, the architecture shift, and the foundational decisions that improved the platform\u2019s reliability, scalability and compliance alignment. Background & Motivation Guardian\u2019s biggest strength was the fast loop it enabled from investigation to operational response. In the asynchronous pipeline, teams could analyze enriched event data, identify suspicious p",
-      "source": "Pinterest Engineering"
+      "title": "The Shape of Context at Work",
+      "link": "https://www.notion.com/blog/research-on-the-shape-of-context-at-work",
+      "published": "2026-11-23T08:00:00+00:00",
+      "summary": "Discover how shared context helps teams use AI to connect knowledge, collaborate across boundaries, and build workflows that benefit everyone.",
+      "source": "Notion Blog"
     },
     {
-      "title": "Building strong safety evaluations",
-      "link": "https://www.anthropic.com/research/building-strong-safety-evaluations",
-      "published": "2026-11-13T00:00:00+00:00",
-      "summary": "Recommendations for designing, running, and reporting safety evaluations, based on our own experiences.",
-      "source": "Anthropic Engineering"
+      "title": "Reading between the pixels: what image overlays cost brands and how we detect them at catalog scale",
+      "link": "https://craft.faire.com/reading-between-the-pixels-what-image-overlays-cost-brands-and-how-we-detect-them-at-catalog-scale-3eadcdc311c5",
+      "published": "2026-11-19T18:44:55+00:00",
+      "summary": "How we reuse stored image embeddings to screen product photos so a vision-language model reviews less than one in ten Retailers shopping on Faire scroll past dozens of product images on a single page and make split-second decisions about which listings deserve a closer look. For the independent brands selling on Faire, that image is often the first sales pitch. Many of those images were first made for a different context, like a brand\u2019s Instagram, its own storefront, or a mockup template, and they arrive with text and graphics added on top. The most common types of such overlays are stock watermarks, social handles, website addresses, promotional text, and brand logos. The most common types of overlays. All examples pictured in this article are mock listings. Faire\u2019s image guidelines require brands not to include any words, watermarks, or logos on the featured product image, because overlays can take attention away from the product itself: they can cover part of it, make claims that may be misleading, or simply make the photo look cluttered. We set this guideline based on marketplace design principles, but we wanted to dig deeper into the problem, understand its real cost, and find better solutions. To do that, we first had to identify overlays correctly and efficiently. Finding overlays across tens of millions of photos is harder than it sounds, because many products on Faire carry text, logos, and graphics by design: greeting cards, candle labels, graphic T-shirts, packaged",
+      "source": "Faire Engineering (The Craft)"
     },
     {
-      "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
-      "link": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2",
-      "published": "2026-11-12T16:01:06+00:00",
-      "summary": "Skyler Zheng | Software Engineer II; Chris Moradi | Staff Data Scientist; Lu Liu | Staff Software Engineer; Aman Gairola | Manager II; Michael Chau | Manager II The Compliance Problem Compliance means following the right steps at the right time Pinterest\u2019s Analytics Agent helps teams answer questions such as \u201cHow did query latency for the ads reporting pipeline change last week?\u201d It searches the company\u2019s data ecosystem, analyzes the relevant information, and recommends an answer or course of action. Not every question requires the same steps. We call the agent compliant when it identifies and follows the steps that apply. Improving compliance is intended to make answers more consistent and reduce the risk of incomplete or inaccurate results. Examples include: Read the data-discovery skill when it needs help finding the right tools or sources. Inspect table metadata before writing SQL to learn what the columns mean, which filters are required, and whether the table has important usage notes. Search every relevant source type , including tables, dashboards, and metrics, rather than stopping at the first useful result. These are three examples from a broader set of compliance rules, and whether they apply depends on the question. If a user provides the appropriate table, the agent may not need the data-discovery skill, while an open-ended question may require a broader search. The agent must decide which rules apply and follow them when needed. That flexibility also makes compl",
-      "source": "Pinterest Engineering"
+      "title": "When Can You Ship on Offline Evals Alone?",
+      "link": "https://engineering.atspotify.com/2026/11/when-can-you-ship-on-offline-evals-alone/",
+      "published": "2026-11-19T13:34:19+00:00",
+      "summary": "TL;DR Teams building AI features want to skip slow A/B tests and decide from offline evals alone. This post... The post When Can You Ship on Offline Evals Alone? appeared first on Spotify Engineering .",
+      "source": "Spotify Engineering"
     },
     {
-      "title": "Cyber Chaos Monkey: Staying ahead of security threats with AI agents",
-      "link": "https://shopify.engineering/cyber-chaos-monkey",
-      "published": "2026-11-12T14:57:16+00:00",
-      "summary": "How we pair AI agents with our knowledge of Shopify\u2019s systems to safely attack our production infrastructure, find bugs, and reduce risks.",
+      "title": "Building secure mobile apps in the agentic era",
+      "link": "https://shopify.engineering/secure-agentic-apps",
+      "published": "2026-11-18T20:34:30+00:00",
+      "summary": "How we scale our security with attack surface maps, focused AI reviews, and checks that improve with every vulnerability fixed.",
       "source": "Shopify Engineering"
     },
     {
-      "title": "Shopify\u2019s generative discovery model",
-      "link": "https://shopify.engineering/generative-discovery",
-      "published": "2026-11-11T18:27:48+00:00",
-      "summary": "How we train and serve a shared generative model for personalized search and recommendation at Shopify scale.",
-      "source": "Shopify Engineering"
-    },
-    {
-      "title": "Beyond Test Cards: A Fake Payment Provider for Testing at Scale",
-      "link": "https://eng.lyft.com/beyond-test-cards-a-fake-payment-provider-for-testing-at-scale-c69dddadb115",
-      "published": "2026-11-10T20:55:40+00:00",
-      "summary": "Image generated with Google Gemini, 2026 Written by Savelii Kolesnikov , Jay Patel , and Ivanna Sivak Background Lyft processes billions in payments annually, and that volume continues to grow. Agentic coding has drastically accelerated feature development, but it raises the stakes for the one phase that cannot be rushed: ensuring the highest standards of reliability and correctness in critical payment systems. Every payment platform eventually hits the same wall. Unit tests cover business rules, integration tests validate boundaries, and load tests push upstream limits, but standard testing stops the moment a request reaches a third-party processor. Processor test cards are built for simple flows: a card either passes every payment action, from authorization to capture to refund, or fails them all. Real payment flows often have one step fail while the others succeed. In this post, we\u2019ll explain why test cards break down and how we built our own fake payment provider to simulate any processor behavior on demand. Unlike a typical mock, it runs safely in production, so we can load test our payment stack and trial new workflows on simulated riders before real ones. Test cards don\u2019t get you there with rideshare Unlike paying for a product on an e-commerce website or your favorite streaming platform, Lyft, as a rideshare company, has a unique set of challenges with payments. While we can put a hold on the card on a ride request, the final charge does not always match the original ",
-      "source": "Lyft Engineering"
-    },
-    {
-      "title": "The Weekly Query: How do you build and maintain the context your AI analyst needs to scale to the rest of the company?",
-      "link": "https://aianalystlab.ai/blog/weekly-query-004-context-engineering-and-management-for-ai-analytics",
-      "published": "2026-11-10T00:00:00+00:00",
-      "summary": "Company context, domain guides, semantic models, open data jobs and Saturday\u2019s $25 Hex workshop.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "The Weekly Query: What is the new job of a data leader?",
-      "link": "https://aianalystlab.ai/blog/weekly-query-003-the-new-job-of-a-data-leader",
-      "published": "2026-11-03T00:00:00+00:00",
-      "summary": "What's inside: the new job of a data leader, Hex PROMPT takeaways, a 30-second lesson, leadership jobs, and upcoming workshops.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "The Weekly Query: Why is AI analytics harder than AI coding?",
-      "link": "https://aianalystlab.ai/blog/weekly-query-002-why-ai-analytics-is-harder-than-ai-coding",
-      "published": "2026-10-27T00:00:00+00:00",
-      "summary": "What's inside: building an AI analyst you can trust, AI analytics headlines, capability and reliability, eight data jobs, and upcoming workshops.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "The Weekly Query: What should data teams actually learn about AI right now?",
-      "link": "https://aianalystlab.ai/blog/weekly-query-001-what-data-teams-should-learn-about-ai",
-      "published": "2026-10-20T00:00:00+00:00",
-      "summary": "What's inside: AI skills for data teams, Claude Dashboards, context management, eight data jobs, and free workshops.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "Onboarding a New Analyst Is Building an AI Analyst",
-      "link": "https://aianalystlab.ai/blog/onboarding-a-new-analyst-is-building-an-ai-analyst",
-      "published": "2026-09-23T00:00:00+00:00",
-      "summary": "How to build a reliable AI analyst is the same list I would use to train a person. Six things, and what each one becomes in the system.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "ChatGPT's Data Agent: Senior Technical Execution, Junior Business Judgment",
-      "link": "https://aianalystlab.ai/blog/chatgpt-data-agent-70-tests",
-      "published": "2026-09-20T00:00:00+00:00",
-      "summary": "We ran 70 tests on OpenAI's data agent. It caught almost every statistical trap and failed the same organizational errors people do.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "I Quit Three Jobs Over Fake Data Work. Now I Ask Two Questions First.",
-      "link": "https://aianalystlab.ai/blog/two-questions-before-you-pull-a-number",
-      "published": "2026-09-14T00:00:00+00:00",
-      "summary": "Metrics that measure nothing and change nothing burn the reason senior ICs chose the work. The two questions that stop it, and the three kinds of work that\u2026",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "What 8,000 Job Postings Say About AI in Data Roles",
-      "link": "https://aianalystlab.ai/blog/ai-in-data-job-postings-2026",
-      "published": "2026-09-12T00:00:00+00:00",
-      "summary": "We read more than 8,000 live US postings across data roles and industries. Where AI is already table stakes, where it is barely asked for, and what to learn\u2026",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "Ten Ways an AI Analyst Breaks",
-      "link": "https://aianalystlab.ai/blog/ten-ways-an-ai-analyst-breaks",
-      "published": "2026-09-10T00:00:00+00:00",
-      "summary": "The failures we keep hitting while building AI analysts for real companies. Not the demo failures, the ones that show up in week two.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "When the Domain Expert Writes the Exam, the Answer Key, and the Grade",
-      "link": "https://aianalystlab.ai/blog/when-the-expert-writes-the-exam",
-      "published": "2026-09-09T00:00:00+00:00",
-      "summary": "SMEs are building AI products that pass their own evals and fail the users they were built for. Five things that keep an eval honest.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "What People Still Own When the Analysis Is Automated",
-      "link": "https://aianalystlab.ai/blog/what-people-own-when-analysis-is-automated",
-      "published": "2026-09-02T00:00:00+00:00",
-      "summary": "The easy answer is the final decision. That is not enough. Four things a person has to own all the way through the work.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "Five Things That Took My Base Salary From $92,000 to $286,000 in Four Years",
-      "link": "https://aianalystlab.ai/blog/five-things-that-took-my-salary-from-92k-to-286k",
-      "published": "2026-08-28T00:00:00+00:00",
-      "summary": "The people who get the raises are the people who get the big projects. Five habits that get you assigned to them.",
-      "source": "AI Analyst Lab"
-    },
-    {
-      "title": "Some of the Best Analysts I Ever Worked With Were Product Managers",
-      "link": "https://aianalystlab.ai/blog/the-best-analysts-i-worked-with-were-product-managers",
-      "published": "2026-08-26T00:00:00+00:00",
-      "summary": "Analytical thinking was never reserved for a title. The tools built the barriers, and the tools are taking them down again.",
-      "source": "AI Analyst Lab"
+      "title": "De-identifying text at scale: How Airbnb protects personal data in AI training",
+      "link": "https://airbnb.tech/infrastructure/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training/",
+      "published": "2026-11-18T16:33:01+00:00",
+      "summary": "Here\u2019s how Airbnb detects and replaces personal data in messages, reviews, and support chats before it reaches a model. By: Emelin Flores , Alex Klimov , Lee Formyduval , Bahador Nooraei Introduction Airbnb is built on trust. Every night that a guest books a stay, or a host welcomes someone into their home, that trust is backed by information they\u2019ve shared with us, which includes personally identifiable information (PII) such as names, home location, current location, and payment details. We now use transaction information to train machine learning models. Before we do so, we remove PII to minimize the number of copies of this information and prevent leakage into and through our models. As we\u2019ve written before , Airbnb maintains a shared taxonomy as to what constitutes PII, from commonly used fields such as names and card numbers to less frequently used fields such as precise location coordinates. We use de-identification to remove PII and replace it with simulated data that\u2019s as realistic as possible to maximize its usefulness for ML model training. Decisions relating to user privacy start as policy. These policies are set and maintained by Airbnb\u2019s Privacy Architecture team, with engagement from Legal, Policy, and Engineering. Engineering then implements policy decisions as code. This post focuses on text de-identification. We\u2019ll describe the OSS library we chose to start with, the changes we made to create a functional system for Airbnb, and how we confirm that the system",
+      "source": "Airbnb Tech Blog"
     }
   ]
 }
