@@ -1,5 +1,21 @@
 [
   {
+    "title": "When Can You Ship on Offline Evals Alone?",
+    "link": "https://engineering.atspotify.com/2026/11/when-can-you-ship-on-offline-evals-alone/",
+    "source": "Spotify Engineering",
+    "published": "2026-11-19T13:34:19+00:00",
+    "note": "Treats offline evals as a surrogate metric and asks what has to be true before an eval score alone can gate a ship decision: you need paired offline/online effects from a homogeneous class of changes, and because both numbers are noisy the naive correlation is attenuated \u2014 in their example the eval looked like it explained 24% of online variation when the true figure was 60%, so a weak-looking eval may actually be informative once measurement error is modeled. The practical artifact is the gate itself: thresholds that get stricter as the surrogate relationship weakens, with the middle band still going to an A/B test, plus a random audit pool of ship/kill decisions that keeps being A/B tested so you can detect drift in exactly the region where you stopped observing ground truth. The judge-bias point is the one to carry into agent evals \u2014 bias that is the same in both arms cancels, bias that depends on the arm can flip the sign, which is the risk when the thing you changed is the underlying model.",
+    "curated_at": "2026-11-25T14:09:14.029566+00:00"
+  },
+  {
+    "title": "De-identifying text at scale: How Airbnb protects personal data in AI training",
+    "link": "https://airbnb.tech/infrastructure/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training/",
+    "source": "Airbnb Tech Blog",
+    "published": "2026-11-18T16:33:01+00:00",
+    "note": "Ignore the privacy plumbing and read section 3 as an evaluation design: no aggregate score is ever reported, every metric is broken out per entity type and per language with the number of labeled instances behind it, plus a confusion table of which type claimed spans belonging to another, because a recognizer that misses and a recognizer that swallows another's spans are different fixes and both vanish in an average. They also score the output the system actually emits rather than an intermediate stage, keep the backend a parameter so candidate models are compared on the same golden sets and adopted only on measured gain, fold every newly found gap into the benchmark, and ship only when no language or entity type that previously worked has regressed \u2014 a concrete regression gate to copy for a text-to-SQL or triage agent. The distribution half is a data-contract pattern: the library is a step in the shared ML workflow that a team joins by declaring which columns are sensitive, and the resulting dataset tag plus recorded version and config follows into the model registry to gate deployment, rather than a policy every pipeline is trusted to implement.",
+    "curated_at": "2026-11-25T14:09:14.029566+00:00"
+  },
+  {
     "title": "How Pinterest Improved Analytics Agent Compliance with Loop Engineering",
     "link": "https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2",
     "source": "Pinterest Engineering",

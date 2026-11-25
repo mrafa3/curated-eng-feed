@@ -6,7 +6,27 @@
     <atom:link href="https://mrafa3.github.io/curated-eng-feed/feed.xml" rel="self" type="application/rss+xml"/>
     <description>A weekly hand-picked selection of engineering and data science blog posts on experimentation, forecasting, analytics engineering, and AI agents for data work.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 14:12:05 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 14:09:14 GMT</lastBuildDate>
+    <item>
+      <title>When Can You Ship on Offline Evals Alone?</title>
+      <link>https://engineering.atspotify.com/2026/11/when-can-you-ship-on-offline-evals-alone/</link>
+      <guid isPermaLink="true">https://engineering.atspotify.com/2026/11/when-can-you-ship-on-offline-evals-alone/</guid>
+      <pubDate>Wed, 25 Nov 2026 14:09:14 GMT</pubDate>
+      <category>Spotify Engineering</category>
+      <description>Treats offline evals as a surrogate metric and asks what has to be true before an eval score alone can gate a ship decision: you need paired offline/online effects from a homogeneous class of changes, and because both numbers are noisy the naive correlation is attenuated — in their example the eval looked like it explained 24% of online variation when the true figure was 60%, so a weak-looking eval may actually be informative once measurement error is modeled. The practical artifact is the gate itself: thresholds that get stricter as the surrogate relationship weakens, with the middle band still going to an A/B test, plus a random audit pool of ship/kill decisions that keeps being A/B tested so you can detect drift in exactly the region where you stopped observing ground truth. The judge-bias point is the one to carry into agent evals — bias that is the same in both arms cancels, bias that depends on the arm can flip the sign, which is the risk when the thing you changed is the underlying model.
+
+Source: Spotify Engineering</description>
+    </item>
+    <item>
+      <title>De-identifying text at scale: How Airbnb protects personal data in AI training</title>
+      <link>https://airbnb.tech/infrastructure/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training/</link>
+      <guid isPermaLink="true">https://airbnb.tech/infrastructure/de-identifying-text-at-scale-how-airbnb-protects-personal-data-in-ai-training/</guid>
+      <pubDate>Wed, 25 Nov 2026 14:09:14 GMT</pubDate>
+      <category>Airbnb Tech Blog</category>
+      <description>Ignore the privacy plumbing and read section 3 as an evaluation design: no aggregate score is ever reported, every metric is broken out per entity type and per language with the number of labeled instances behind it, plus a confusion table of which type claimed spans belonging to another, because a recognizer that misses and a recognizer that swallows another's spans are different fixes and both vanish in an average. They also score the output the system actually emits rather than an intermediate stage, keep the backend a parameter so candidate models are compared on the same golden sets and adopted only on measured gain, fold every newly found gap into the benchmark, and ship only when no language or entity type that previously worked has regressed — a concrete regression gate to copy for a text-to-SQL or triage agent. The distribution half is a data-contract pattern: the library is a step in the shared ML workflow that a team joins by declaring which columns are sensitive, and the resulting dataset tag plus recorded version and config follows into the model registry to gate deployment, rather than a policy every pipeline is trusted to implement.
+
+Source: Airbnb Tech Blog</description>
+    </item>
     <item>
       <title>How Pinterest Improved Analytics Agent Compliance with Loop Engineering</title>
       <link>https://medium.com/pinterest-engineering/how-pinterest-improved-analytics-agent-compliance-with-loop-engineering-d3c52d0abaa2</link>
